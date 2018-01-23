@@ -1,0 +1,20 @@
+{
+        "ssidList": ["%E4%B8%AD%E6%96%87", "ssid2"],
+        "filterMode": "disabled",
+        "wrlClientList": [{
+            "mac": "c8:3a:35:22:22:22",
+            "ip": "192.168.0.32",
+            "connectTime": "12312"
+        },{
+            "mac": "c8:3a:35:33:33:33",
+            "ip": "192.168.0.111",
+            "connectTime": "433"
+        }],
+        "macList": [{
+            "mac": "22:22:22:22:11:11",
+            "enable": "true"
+        },{
+            "mac": "32:11:11:22:11:11",
+            "enable": "false"
+        }]
+    }

@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<po>
+	<message msgid="Save" msgstr="儲存"/>
+	<message msgid="Restore" msgstr="還原"/>
+	<message msgid="Help" msgstr="幫助"/>
+	<message msgid="Refresh" msgstr="刷新"/>
+	<message msgid="Disable" msgstr="關閉"/>
+	<message msgid="Enable" msgstr="啟用"/>
+	<message msgid="Edit" msgstr="修改"/>
+	<message msgid="Add" msgstr="添加日誌設定"/>
+	<message msgid="Delete" msgstr="刪除"/>
+	<message msgid="MAC Address" msgstr="MAC地址"/>
+	<message msgid="IP Address" msgstr="IP地址"/>
+	<message msgid="Gateway" msgstr="閘道"/>
+	<message msgid="Subnet Mask" msgstr="子網路遮罩"/>
+	<message msgid="Device Name" msgstr="AP設備名稱"/>
+	<message msgid="Channel" msgstr="通道"/>
+	<message msgid="ID" msgstr="序號"/>
+	<message msgid="Login" msgstr="登 入"/>
+	<message msgid="User name or password is incorrect!" msgstr="您輸入的用戶名或密碼錯誤！"/>
+	<message msgid="Please enter a password!" msgstr="請您輸入密碼。"/>
+	<message msgid="Status" msgstr="狀態"/>
+	<message msgid="System Status" msgstr="系統狀態"/>
+	<message msgid="Wireless Status" msgstr="無線狀態"/>
+	<message msgid="Traffic Statistics" msgstr="AP報文統計"/>
+	<message msgid="Wireless Clients" msgstr="用戶端列表"/>
+	<message msgid="Quick Setup" msgstr="快速設定"/>
+	<message msgid="LAN Setup" msgstr="LAN口設定"/>
+	<message msgid="DHCP Server" msgstr="DHCP伺服器"/>
+	<message msgid="Channel Scan" msgstr="通道掃描"/>
+	<message msgid="Access Control" msgstr="無線存取控制"/>
+	<message msgid="Maintenance" msgstr="設備維護"/>
+	<message msgid="Reboot" msgstr="設備重啟"/>
+	<message msgid="Administrator Name" msgstr="管理員名稱"/>
+	<message msgid="Version" msgstr="版本號："/>
+	<message msgid="Please enter a valid MAC address!" msgstr="MAC位址錯誤，請輸入正確的MAC位址！"/>
+	<message msgid="Please enter a valid number!" msgstr="請輸入正確數字！"/>
+	<message msgid="Subnet mask is invalid!" msgstr="子網路遮罩無效！"/>
+	<message msgid="Undefined!" msgstr="沒有定義"/>
+	<message msgid="Permanent" msgstr="永久"/>
+	<message msgid="Description must only include numbers, letters or underscore!" msgstr="注釋只能由數位、字母、底線組成"/>
+	<message msgid="Firmware Upgrade" msgstr="軟體升級"/>
+	<message msgid="System Time" msgstr="系統時間"/>
+	<message msgid="Login Timeout" msgstr="Web閒置超時時間"/>
+	<message msgid="View Logs" msgstr="日誌查看"/>
+	<message msgid="Restore to Factory Default" msgstr="恢復出廠設定"/>
+	<message msgid="Quick Setup" msgstr="快速設定"/>
+	<message msgid="DHCP Server" msgstr="DHCP伺服器"/>
+	<message msgid="LAN Status" msgstr="LAN口狀態"/>
+	<message msgid="SSID Status" msgstr="SSID狀態"/>
+	<message msgid="WDS Status" msgstr="WDS狀態"/>
+	<message msgid="AP Mode" msgstr="AP模式"/>
+	<message msgid="WDS Mode" msgstr="WDS模式"/>
+	<message msgid="Number of Wireless Clients" msgstr="無線用戶端個數"/>
+	<message msgid="Firmware Version" msgstr="軟體版本號"/>
+	<message msgid="Hardware Version" msgstr="硬體版本號"/>
+	<message msgid="Radio Status" msgstr="射頻狀態"/>
+	<message msgid="Radio (On/Off)" msgstr="射頻開關"/>
+	<message msgid="Network Mode" msgstr="網路模式"/>
+	<message msgid="Working Status" msgstr="啟用狀態"/>
+	<message msgid="Security Mode" msgstr="加密方式"/>
+	<message msgid="Connection Status" msgstr="連接狀態"/>
+	<message msgid="Enabled" msgstr="已啟用"/>
+	<message msgid="Disabled" msgstr="未啟用"/>
+	<message msgid="Disconnected" msgstr="未連接"/>
+	<message msgid="Connected" msgstr="已連接"/>
+	<message msgid="Unknown" msgstr="未知"/>
+	<message msgid="Total RX Traffic (MB)" msgstr="總接收流量(MB)"/>
+	<message msgid="Total TX Traffic (MB)" msgstr="總發送流量(MB)"/>
+	<message msgid="Host(s) Connected Currently:" msgstr="當前連接的主機清單："/>
+	<message msgid="Connection Duration" msgstr="連線時間"/>
+	<message msgid="On" msgstr="無線已開啟"/>
+	<message msgid="Off" msgstr="無線已關閉"/>
+	<message msgid="11b/g mixed" msgstr="11b/g混合模式"/>
+	<message msgid="11b" msgstr="11b模式"/>
+	<message msgid="11g" msgstr="11g模式"/>
+	<message msgid="11b/g/n mixed" msgstr="11b/g/n混合模式"/>
+	<message msgid="11a" msgstr="11a模式"/>
+	<message msgid="No clients connected!" msgstr="無用戶端連接!"/>
+	<message msgid="Connected" msgstr="已連接"/>
+	<message msgid="Disconnected" msgstr="未連接"/>
+	<message msgid="Security Mode" msgstr="加密方式"/>
+	<message msgid="None" msgstr="未加密"/>
+	<message msgid="Default Key" msgstr="預設金鑰"/>
+	<message msgid="WEP Key 1" msgstr="WEP金鑰1"/>
+	<message msgid="WEP Key 2" msgstr="WEP金鑰2"/>
+	<message msgid="WEP Key 3" msgstr="WEP金鑰3"/>
+	<message msgid="WEP Key 4" msgstr="WEP金鑰4"/>
+	<message msgid="Cipher Type" msgstr="WPA加密規則"/>
+	<message msgid="Security Key" msgstr="金鑰"/>
+	<message msgid="Enable Scan" msgstr="開啟掃描"/>
+	<message msgid="Select" msgstr="選擇"/>
+	<message msgid="Security" msgstr="安全"/>
+	<message msgid="Unknown" msgstr="未知"/>
+	<message msgid="Start IP" msgstr="IP Pool 開始位址"/>
+	<message msgid="End IP" msgstr="IP Pool 結束地址"/>
+	<message msgid="Lease Time" msgstr="租約時間"/>
+	<message msgid="30 minutes" msgstr="30分鐘"/>
+	<message msgid="Primary DNS Server" msgstr="主DNS伺服器"/>
+	<message msgid="Secondary DNS Server (Optional)" msgstr="備用DNS伺服器(可選)"/>
+	<message msgid="Secondary DNS Server" msgstr="備用DNS地址"/>
+	<message msgid="Host Name" msgstr="主機名稱"/>
+	<message msgid="Subnet mask cannot be 255.255.255.255!" msgstr="子網路遮罩不能設為255.255.255.255 ！"/>
+	<message msgid="Please specify a valid gateway IP address!" msgstr="修改的IP位址為錯誤的IP位址，主機部分為0！"/>
+	<message msgid="Please specify a valid IP address!" msgstr="閘道位址錯誤，不能為廣播IP位址！"/>
+	<message msgid="The gateway IP address you entered is a broadcast IP address. Please specify a valid gateway IP address!" msgstr="修改的閘道位址為錯誤的位址，主機部分為1,為廣播IP位址！"/>
+	<message msgid="LAN IP address should be on the same subnet as gateway!" msgstr="LAN口IP和閘道必須在同一個網段！"/>
+	<message msgid="Start IP" msgstr="IP Pool 開始位址"/>
+	<message msgid="Subnet mask cannot be 255.255.255.255!" msgstr="子網路遮罩不能設為255.255.255.255 ！"/>
+	<message msgid="Please specify a valid start IP address!" msgstr="修改的開始位址IP為錯誤的IP位址，主機部分為0 ！"/>
+	<message msgid="Please specify a valid end IP address!" msgstr="修改的結束位址IP為錯誤的IP位址，主機部分為0 ！"/>
+	<message msgid="Please specify a valid gateway IP address!" msgstr="修改的IP位址為錯誤的IP位址，主機部分為0！"/>
+	<message msgid="The gateway IP address you entered is a broadcast IP address. Please specify a valid gateway IP address!" msgstr="修改的閘道位址為錯誤的位址，主機部分為1,為廣播IP位址！"/>
+	<message msgid="Please specify a valid primary DNS server address!" msgstr="主DNS伺服器位址錯誤！"/>
+	<message msgid="Hide SSID automatically" msgstr="自動隱藏SSID"/>
+	<message msgid="Broadcast SSID" msgstr="廣播SSID"/>
+	<message msgid="Client Isolation" msgstr="用戶端隔離"/>
+	<message msgid="SSID isolation" msgstr="SSID隔離"/>
+	<message msgid="Maximum Clients" msgstr="最大用戶端數量"/>
+	<message msgid="Key" msgstr="金鑰"/>
+	<message msgid="Key Update Interval" msgstr="金鑰更新週期"/>
+	<message msgid="Enable Wireless" msgstr="開啟無線"/>
+	<message msgid="Channel Bandwidth" msgstr="通道頻寬"/>
+	<message msgid="Extension Channel" msgstr="擴展通道"/>
+	<message msgid="Channel Lockout" msgstr="鎖定通道"/>
+	<message msgid="Beacon Interval" msgstr="Beacon間隔"/>
+	<message msgid="Fragment Threshold" msgstr="Fragment閥值"/>
+	<message msgid="(Range: 256 ~ 2346; Default: 2346)" msgstr="取值範圍：256 - 2346，預設：2346"/>
+	<message msgid="RTS Threshold" msgstr="RTS門限"/>
+	<message msgid="(Range: 1 ~ 2347; Default: 2347)" msgstr="取值範圍：1 - 2347，預設：2347"/>
+	<message msgid="DTIM Interval" msgstr="DTIM間隔"/>
+	<message msgid="(Range: 1 ~ 255; Default: 1)" msgstr="取值範圍：1 - 255，預設：1"/>
+	<message msgid="TX Power" msgstr="TX功率"/>
+	<message msgid="(dBm,Range: 17 - 23; Default: 23)" msgstr="dBm，取值範圍：17 - 23，預設：23"/>
+	<message msgid="(dBm,Range: 10 - 20; Default: 20)" msgstr="dBm，取值範圍：10 - 20，預設：20"/>
+	<message msgid="(dBm,Range: 10 - 18; Default: 18)" msgstr="dBm，取值範圍：10 - 18，預設：18"/>
+	<message msgid="Power Lockout" msgstr="鎖定功率"/>
+	<message msgid="Preamble" msgstr="無線前導碼"/>
+	<message msgid="Long Preamble" msgstr="前導碼"/>
+	<message msgid="Short Preamble" msgstr="短導碼"/>
+	<message msgid="Add to List" msgstr="添加到列表"/>
+	<message msgid="Enable Scan" msgstr="開啟掃描"/>
+	<message msgid="Specified MAC address already exists!" msgstr="指定的MAC地址已經存在."/>
+	<message msgid="WEP Open" msgstr="WEP開放系統"/>
+	<message msgid="WEP Share" msgstr="WEP共用系統"/>
+	<message msgid="Please select a filter mode!" msgstr="請先選擇過濾模式!"/>
+	<message msgid="RADIUS Server IP" msgstr="RADIUS伺服器IP"/>
+	<message msgid="Please enter 8-64 Hex characters or 8-63 ASCII characters." msgstr="請輸入8-64位十六進位碼或8-63位ASCII碼！"/>
+	<message msgid="Disable Scan" msgstr="關閉掃描"/>
+	<message msgid="Are you sure to connect to this AP?" msgstr="確定需要連接此AP嗎？"/>
+	<message msgid="Please enter a MAC address!" msgstr="請輸入MAC位址！"/>
+	<message msgid="Please enter a MAC address!" msgstr="請輸入MAC位址！"/>
+	<message msgid="Here you can configure SNMP settings. SNMP v1 and v2c are supported." msgstr="本頁設定SNMP物件屬性,支援SNMP V1&amp; V2C版本。"/>
+	<message msgid="Administrator Name" msgstr="管理員名稱"/>
+	<message msgid="Location" msgstr="位置"/>
+	<message msgid="Read Community" msgstr="讀 Community"/>
+	<message msgid="Use this section to update device's firmware for better functionalities or new features." msgstr="通過升級本AP的軟體，您將獲得新的功能。"/>
+	<message msgid="Firmware upgrade" msgstr="軟體升級"/>
+	<message msgid="Set the timer to restart" msgstr="設定定時重啟"/>
+	<message msgid="Hours" msgstr="小時"/>
+	<message msgid="Continue" msgstr="繼續"/>
+	<message msgid="This page is used to set the device's system time. You can select either to set the time manually or get the GMT time from Internet and system will automatically connect to NTP server to synchronize the time." msgstr="本頁設定AP的系統時間，您可以從網際網路上獲取標準的GMT時間。"/>
+	<message msgid="Sync Interval:" msgstr="校時週期:"/>
+	<message msgid="30 minutes" msgstr="30分鐘"/>
+	<message msgid="1 week" msgstr="一周"/>
+	<message msgid="2 weeks" msgstr="二周"/>
+	<message msgid="Time Zone:" msgstr="時區："/>
+	<message msgid="(Note: GMT time will be updated automatically only when the device is connected to Internet)" msgstr="（注意：僅在連上網際網路後才能獲取GMT時間。）"/>
+	<message msgid="Set Time and Date Manually:" msgstr="請輸入日期與時間:"/>
+	<message msgid="Day" msgstr="天"/>
+	<message msgid="Login Timeout Setup" msgstr="登入超時設定"/>
+	<message msgid="Login Timeout:" msgstr="登入超時時間："/>
+	<message msgid="Clear" msgstr="清除"/>
+	<message msgid="Time" msgstr="時間"/>
+	<message msgid="Type" msgstr="類型"/>
+	<message msgid="Log Server Port" msgstr="日誌伺服器端口"/>
+	<message msgid="Please enter an IP address." msgstr="請輸入IP位址！"/>
+	<message msgid="Number of Logs" msgstr="日誌條數設定"/>
+	<message msgid="(To use the following rules, you must check this box.)" msgstr="使用下表中出現的規則，需選中該標誌才能生效。"/>
+	<message msgid="Backup" msgstr="備份"/>
+	<message msgid="Restore" msgstr="還原"/>
+	<message msgid="Use this section to change your login user name and password." msgstr="本頁修改系統管理員的用戶名及密碼。"/>
+	<message msgid="Note: User name and password can only include 1～32 letters, numbers or underscore!" msgstr="注意：用戶名和密碼只能由字母，數位，或底線組成，長度為1～32個字元。"/>
+	<message msgid="Old Password" msgstr="原密碼"/>
+	<message msgid="New Password" msgstr="新密碼"/>
+	<message msgid="Confirm New Password" msgstr="確認新密碼"/>
+	<message msgid="Device will restart automatically! The IP address will be reset to 192.168.0.254." msgstr="設備將自動重啟！IP將更新為：192.168.0.254，"/>
+	<message msgid="User Name and Password will be reset to admin. Update your PC's TCP/IP settings and re-access the utility if the webpage is not refreshed." msgstr="用戶名和密碼更新為：admin。如果頁面沒有刷新請更新您電腦的網路設定後重新登入！"/>
+	<message msgid="Please enter a device name!" msgstr="請輸入裝置名稱！"/>
+	<message msgid="Write/Read Community" msgstr="讀/寫 Community"/>
+	<message msgid="New user name field should not be left blank!" msgstr="新用戶名不能為空！"/>
+	<message msgid="New User Name must only include alphanumeric characters or underscore!" msgstr="新用戶名只能含有字母，數位或底線！"/>
+	<message msgid="New Password can only include letters, numbers or underscore!" msgstr="新密碼只能含有字母，數位或底線！"/>
+	<message msgid="To activate loaded settings, you need to reboot the device." msgstr="導入後,需要重新啟功！"/>
+	<message msgid="Please specify a valid timeout value between 1-60 minutes!" msgstr="請輸入有效超時時間,範圍:1-60分鐘！"/>
+	<message msgid="The year must be between 1970～2037!" msgstr="請輸入合法的年，應在1970～2037之間！"/>
+	<message msgid="Please enter a valid month!" msgstr="請輸入合法的月！"/>
+	<message msgid="Please enter a valid day!" msgstr="請輸入合法的日！"/>
+	<message msgid="Please specify a valid time!" msgstr="請輸入合法的時間！"/>
+	<message msgid="Are you sure you want to update your device?" msgstr="您確信要升級嗎？"/>
+	<message msgid="Please enter an IP address." msgstr="請輸入IP位址！"/>
+	<message msgid="Diagnosing...Please wait." msgstr="網路診斷中，請稍後..."/>
+	<message msgid="Please enter valid value." msgstr="請輸入正確格式！"/>
+	<message msgid="Please enter a valid IP or domain name!" msgstr="請輸入正確IP位址！"/>
+	<message msgid="Device Name" msgstr="AP設備名稱"/>
+	<message msgid="Username" msgstr="用戶名:"/>
+	<message msgid="Password" msgstr="密　碼:"/>
+	<message msgid="Action" msgstr="操作"/>
+	<message msgid="Username:" msgstr="用戶名:"/>
+	<message msgid="Password:" msgstr="密　碼:"/>
+	<message msgid="Please enter a user name!" msgstr="請您輸入用戶名！"/>
+	<message msgid="Country/Region" msgstr="國家或地區"/>
+	<message msgid="United States" msgstr="美國"/>
+	<message msgid="China" msgstr="中國"/>
+	<message msgid="User Name:" msgstr="用戶名:"/>
+	<message msgid="2.4GHz Traffic Statistics" msgstr="2.4GHz報文統計"/>
+	<message msgid="5GHz Traffic Statistics" msgstr="5GHz報文統計"/>
+	<message msgid="Network" msgstr="網路設定"/>
+	<message msgid="Wireless" msgstr="無線設定"/>
+	<message msgid="Basic" msgstr="基本設定"/>
+	<message msgid="2.4GHz Basic" msgstr="2.4GHz基本設定"/>
+	<message msgid="5GHz Basic" msgstr="5GHz基本設定"/>
+	<message msgid="Radio" msgstr="射頻設定"/>
+	<message msgid="2.4GHz Radio" msgstr="2.4GHz射頻設定"/>
+	<message msgid="5GHz Radio" msgstr="5GHz射頻設定"/>
+	<message msgid="2.4GHz Signal Scan" msgstr="2.4G無線通道掃描"/>
+	<message msgid="5GHz Signal Scan" msgstr="5G無線通道掃描"/>
+	<message msgid="Advanced" msgstr="高級設定"/>
+	<message msgid="2.4GHz Advanced" msgstr="2.4GHz高級設定"/>
+	<message msgid="5GHz Advanced" msgstr="5GHz高級設定"/>
+	<message msgid="2.4GHz Control" msgstr="2.4GHz無線存取控制"/>
+	<message msgid="5GHz Control" msgstr="5GHz無線存取控制"/>
+	<message msgid="SNMP" msgstr="SNMP設定"/>
+	<message msgid="Tools" msgstr="系統工具"/>
+	<message msgid="Time &amp; Date" msgstr="時間管理"/>
+	<message msgid="Logs" msgstr="日誌查看"/>
+	<message msgid="Configuration" msgstr="配置管理"/>
+	<message msgid="Username &amp; Password" msgstr="用戶名與密碼"/>
+	<message msgid="Diagnostics" msgstr="診斷工具"/>
+	<message msgid="Copyright© 2017 by IP-COM Networks Co.,Ltd. All rights reserved." msgstr="Copyright (c) 2017 深圳市和為順網路技術有限公司版權所有，保留一切權利。"/>
+	<message msgid="The web utility requires IE 6.0 or a higher browser!" msgstr="請使用IE6版本以上流覽器進行設定!"/>
+	<message msgid="User" msgstr="普通用戶"/>
+	<message msgid="Upgrading... Please do NOT disconnect power connection!" msgstr="設備正在升級，請勿關閉電源…… "/>
+	<message msgid="Restoring to factory default settings... Please wait!" msgstr="設備正在恢復出廠設定，請稍候…… "/>
+	<message msgid="Rebooting...Please wait!" msgstr="設備正在重啟，請稍候…… "/>
+	<message msgid="MAC address is error! Please enter a valid MAC address!" msgstr="MAC位址錯誤，請輸入正確的MAC位址！"/>
+	<message msgid="The MAC address entered is a multicast address! Please retry!" msgstr="MAC位址為組播位址,請重新輸入！"/>
+	<message msgid="URL string includes invalid characters: %s" msgstr="字串中含有非法字元%s。"/>
+	<message msgid="Please enter %s!" msgstr="請輸入%s！"/>
+	<message msgid="%s error!" msgstr="%s 錯誤！"/>
+	<message msgid="%d day ';" msgstr="%d 天"/>
+	<message msgid="Primary DNS Server and Secondary DNS Server can't be the same." msgstr="主DNS伺服器不能與備用DNS伺服器相同。"/>
+	<message msgid="Client List" msgstr="用戶端列表"/>
+	<message msgid="LAN Setup:lan.asp" msgstr="LAN口設定：lan.asp"/>
+	<message msgid="Wireless Bridge" msgstr="無線橋接"/>
+	<message msgid="Control" msgstr="無線存取控制"/>
+	<message msgid="2.4GHz Wireless Status" msgstr="2.4GHz無線狀態"/>
+	<message msgid="5GHz Wireless Status" msgstr="5GHz無線狀態"/>
+	<message msgid="2.4GHz Client List" msgstr="2.4GHz用戶端列表"/>
+	<message msgid="5GHz Client List" msgstr="5GHz用戶端列表"/>
+	<message msgid="Log Setup" msgstr="日誌設定"/>
+	<message msgid="Backup &amp; Restore" msgstr="備份與恢復"/>
+	<message msgid="User Name &amp; Password" msgstr="用戶名和密碼"/>
+	<message msgid="System Update" msgstr="系统更新"/>
+	<message msgid="Warning" msgstr="警告"/>
+	<message msgid="QVLAN Setup" msgstr="QVLAN設定"/>
+	<message msgid="2.4GHz QVLAN Setup" msgstr="2.4GHz QVLAN設定"/>
+	<message msgid="5GHz QVLAN Setup" msgstr="5GHz QVLAN設定"/>
+	<message msgid="DHCP Client List" msgstr="DHCP用戶端列表"/>
+	<message msgid="Signal Scan" msgstr="無線通道掃描"/>
+	<message msgid="LED" msgstr="LED燈控制"/>
+	<message msgid="Device Name: Displays the device name." msgstr="AP設備名稱：AP的設備名稱，方便您在使用統一管理軟體管理多個AP時能很容易地區分開來。您可以在LAN口設定中修改AP設備名稱。"/>
+	<message msgid="System Time: Displays the current system time." msgstr="系統時間：AP當前使用的時間。只要一上網，系統時間即會與網路時間同步。"/>
+	<message msgid="Up Time: Displays the device's uptime." msgstr="執行時間：AP自開機到當前時刻所經歷的時間。"/>
+	<message msgid="Number of Wireless Clients: This section displays the information of wireless connected clients." msgstr="無線用戶端個數：連接上AP的無線用戶端的總和。"/>
+	<message msgid="Firmware Version: Displays the device's current firmware version." msgstr="軟體版本號：AP的當前軟體版本，在升級軟體時方便使用者區分。"/>
+	<message msgid="Hardware Version: Displays the device's hardware version." msgstr="硬體版本號：AP的硬體版本號。"/>
+	<message msgid="Primary DNS Server:  Show the necessary DNS address provided by your ISP." msgstr="主DNS伺服器：顯示AP的主DNS伺服器位址。"/>
+	<message msgid="Secondary DNS Server:  Show the other DNS address if your ISP offers you two DNS addresses." msgstr="備用DNS地址：顯示AP的備用DNS伺服器位址。"/>
+	<message msgid="MAC Address: Displays the current AP's LAN MAC address." msgstr="MAC位址：LAN口的有線MAC地址。如果您用網線與AP相連接，這個MAC位址就可以通過網線與其他網路進行通信。"/>
+	<message msgid="IP Address: Displays the current AP's IP address." msgstr="IP地址：AP的管理IP地址。如果您要對AP進行配置，那麼您需要用這個IP位址登錄AP的管理介面。您可以在LAN口設定中修改IP位址。"/>
+	<message msgid="Subnet Mask: Displays the current AP's subnet mask. The default is 255.255.255.0." msgstr="子網路遮罩：從子網路遮罩可以看出與AP在同一網段的主機個數。子網路遮罩預設為255.255.255.0，前面3個255不是主機位元，只有最後一位元才能用來設定主機，最大可設定254個，AP本身佔用了一個，所以還可以設定253個。即您可以將自己的IP設定為192.168.0.X，X的範圍是1~253，這樣才可以訪問AP的管理介面。"/>
+	<message msgid="Radio" msgstr="射頻設定"/>
+	<message msgid="Radio (On/Off): Displays the primary SSID's wireless status." msgstr="射頻開關：顯示AP主SSID的無線是否己開啟。可以無線設定-基本設定中修改。"/>
+	<message msgid="Network Mode: Displays currently operative network mode. We recommend you to select 11b/g/n mixed mode." msgstr="網路模式：顯示AP所用的網路模式。可以在無線設定-射頻設定中修改。建議選用11b/g/n混合模式，這樣無線速率最高。"/>
+	<message msgid="Channel: Displays the channel which is currently operating on." msgstr="通道：AP當前的無線發射信號使用的通道。可以在無線設定-射頻設定中修改。通道儘量選用與相鄰AP相隔最大的通道，這樣干擾最小。"/>
+	<message msgid="SSID: Displays the current SSIDs of the wireless network." msgstr="SSID：顯示AP當前的SSID名稱。可以在無線設定-基本設定中修改。"/>
+	<message msgid="MAC Address: Displays the current AP's MAC addresses." msgstr="MAC地址：顯示AP的SSID的MAC位址，即每個SSID與其他網路通信必須要用到的位址。"/>
+	<message msgid="Working Status: Displays SSID's enabling status." msgstr="啟用狀態：顯示AP每個SSID的開啟狀態。己啟用表示此SSID可以發射無線信號，無線用戶端可以搜索到此SSID。未啟用表示此SSID不能發射無線信號，也就搜索不到此SSID了。可以在無線設定-基本設定中修改SSID的啟用狀態。"/>
+	<message msgid="Security Mode: Displays current security mode." msgstr="安全模式：顯示每個SSID的加密方式。可以在無線設定-基本設定中修改。"/>
+	<message msgid="MAC Address: Displays the remote AP's MAC address." msgstr="MAC位址：顯示對端AP的MAC地址。做WDS功能時，需要2個或多個AP之前相互填寫對方的MAC位址。"/>
+	<message msgid="Connection Status: Displays the device's connection status." msgstr="連接狀態：WDS的連接狀態。未連接表示AP沒有成功連接到對端AP上面。己連接表示AP已經單方向地連接上了對端AP。"/>
+	<message msgid="Note: When WDS is disabled, this status won't be displayed." msgstr="注意：當未啟用WDS時，不會顯示該狀態。"/>
+	<message msgid="SSID: It specifies the SSID of an enabled wireless network of the AP." msgstr="SSID：顯示AP當前的SSID名稱。"/>
+	<message msgid="Total RX Traffic: Total RX bytes SSID has received." msgstr="總接收流量：SSID接收到的總的位元組數。"/>
+	<message msgid="Total RX Packets: Total RX packets SSID has received." msgstr="總接收資料包：SSID接收到總的資料包的個數。"/>
+	<message msgid="Total TX Traffic: Total TX bytes SSID has transmitted." msgstr="總發送流量：SSID向外發送的總的位元組數。"/>
+	<message msgid="Total TX Packets: Total TX packets SSID has transmitted." msgstr="總發送資料包：SSID向外發送的總的資料包的個數。"/>
+	<message msgid="Select the SSID you want to check and wireless client information will appear accordingly." msgstr="選擇您要查看的SSID，就會顯示此SSID下無線用戶端的資訊。"/>
+	<message msgid="MAC Address : Displays wireless client's MAC address." msgstr="MAC地址：無線用戶端的MAC地址。"/>
+	<message msgid="IP Address : Displays wireless client's IP address." msgstr="IP：無線用戶端的IP地址。"/>
+	<message msgid="IP: Displays wireless client's IP address. If it is not on the same subnet as that of AP, it will display unknown." msgstr="IP：無線用戶端獲取到的IP地址。如果與AP在不同網段，會顯示未知。"/>
+	<message msgid="Connection Duration: Displays connection duration SSID has connected to." msgstr="連線時間：顯示無線用戶端連接上此SSID的時間。"/>
+	<message msgid="TX Rate: Displays the current device's send speed." msgstr="發送速率：當前用戶端傳輸速率。"/>
+	<message msgid="RX Rate: Displays the current device's receive speed." msgstr="接收速率：當前用戶端接收速率。"/>
+	<message msgid="This device supports 3 working modes. You can select it as you need." msgstr="本設備共支援3種工作模式，您可以根據具體的應用選擇不同的工作模式。"/>
+	<message msgid="AP Mode: It can achieve the conversion between cable signals and wireless signals. If this device is connected to the broadband interface of a hotel room, you can achieve network sharing among multiple PCs without any configuration." msgstr="AP模式：可以作為有線信號與無線信號的轉換器，譬如用網線將設備與飯店房間內寬頻介面連接，無需設定即可實現多台電腦共用無線上網。"/>
+	<message msgid="WDS Mode: In this bridging mode,the primary SSID and channel will be the same as that of the remote AP automatically. And so will the security mode and key." msgstr="WDS模式：橋接器模式，主SSID、通道將自動設定成和對端AP的一樣，同時，加密方式和金鑰也要與對端一致。"/>
+	<message msgid="Client AP: The primary SSID and channel will be the same as that of the upstream AP automatically. So will the security mode and key" msgstr="Client+AP：主SSID、通道將自動設定成和上級AP的一樣，同時加密方式與金鑰也需一致。"/>
+	<message msgid="The secondary SSID (wireless network) now works as a wireless Access Point, providing access to wireless clients. In this mode, the DHCP server is disabled automatically." msgstr="此時次SSID為無線AP模式，提供無線用戶端連接。使用此模式時，DHCP伺服器將被關閉。"/>
+	<message msgid="In this mode, this device can be connected to wireless clients, but cannot connect to other APs actively." msgstr="在AP模式下，AP可以接受無線用戶端的連接，但不能去連接其他AP。"/>
+	<message msgid="SSID: Displays the primary SSID's name." msgstr="SSID：設定主SSID的名稱。"/>
+	<message msgid="Security Mode: Displays primary SSID's security mode." msgstr="安全模式：設定主SSID的安全模式，選擇安全模式後，可設定主SSID的無線密碼。"/>
+	<message msgid="In this mode, maxiume 4 Aps can access to the device at same time." msgstr="在WDS模式下，AP可與最多4個AP進行連接。"/>
+	<message msgid="SSID: The default is this device's primary SSID. Once WDS is enabled, the primary SSID will be modified to the first remote AP's SSID." msgstr="SSID：預設顯示為AP的主SSID。一旦開始做WDS功能，主SSID會自動修改為對端第一個AP的SSID。"/>
+	<message msgid="Security Mode: You can configure primary SSID's security mode and it should be kept the same as that of the remote AP." msgstr="安全模式：設定主SSID的加密方式，必須與對端AP的加密方式完全一樣。"/>
+	<message msgid="MAC Address: You can enter the remote MAC address manually or open scan to add it automatically." msgstr="MAC地址：可以手動填寫對端MAC，也可以通過掃描，自動添加對端的MAC位址。"/>
+	<message msgid="Channel: When WDS is enabled, please keep all APs on the same channel." msgstr="上級AP的通道：做WDS功能時，應保證所有AP在同一通道。"/>
+	<message msgid="Status:" msgstr="狀態："/>
+	<message msgid="Unknown: The default status is unknown." msgstr="未知：預設狀態，當未開始做WDS功能時，狀態為未知。"/>
+	<message msgid="Connected: %s has connected to the remote AP successfully. But in WDS mode,the remote AP also needs to connect to %s at the same time." msgstr="己連接：表示%s單方向地連接到了對端AP上。對端AP也要成功連接上%s，WDS才算做成功了。"/>
+	<message msgid="Disconnected: %s hasn't connected to the remote AP." msgstr="未連接：表示AP沒有成功連接上對端AP。"/>
+	<message msgid="Enable Scan: Scans wireless signals nearby." msgstr="開啟掃描：掃描附件無線信號，便於自動添加對端AP的資訊。"/>
+	<message msgid="Note:" msgstr="注意事項："/>
+	<message msgid="In WDS mode,the two APs should support WDS and you should keep their SSIDs, channels, security modes and keys the same. As for IP address, they should not be the same but on the same network segment;" msgstr="1、WDS功能需要兩台AP均支援此功能，而且SSID、通道、加密方式和密碼必須與對端AP的相同，IP位址在同一網段但要設定為不同IP"/>
+	<message msgid="2. Once the security mode has been changed, please reboot the device." msgstr="2、 如果改變加密方式，請重啟AP。"/>
+	<message msgid="AP Client Mode" msgstr="APClient模式"/>
+	<message msgid="In this mode, this AP negotiates with the upstream AP successfully and also provides access to lower clients. The SSID of this AP would not be changed." msgstr="在APClient模式下，本AP與上級AP協商成功，同時接受下級用戶端的無線連接。下級用戶端連接上本AP且上級AP有DHCP伺服器時，可以從上級AP獲取IP位址。此模式下，不會改變本AP的SSID。"/>
+	<message msgid="SSID: You can configure the upstream AP's SSID name here." msgstr="SSID：設定上級AP的SSID名稱。"/>
+	<message msgid="Security Mode: You can configure the upstream AP's security mode here." msgstr="安全模式：設定上級AP的安全模式等。"/>
+	<message msgid="MAC Address: You can configure the uplinked AP's MAC address here." msgstr="上級AP的MAC地址：設定上級AP的MAC位址。"/>
+	<message msgid="Upstream AP Channel: You can configure the upstream AP's channel here." msgstr="上級AP的通道：設定上級AP的通道。"/>
+	<message msgid="Here you can configure the LAN IP address." msgstr="設定本AP的LAN口參數。"/>
+	<message msgid="IP Address: The AP's LAN IP address. The default is 192.168.0.254." msgstr="IP地址：本AP的區域網路IP位址。出廠值預設為192.168.0.254，您可以根據需要改變它。"/>
+	<message msgid="Subnet Mask: The AP's LAN subnet mask." msgstr="子網路遮罩：本AP對區域網路的子網路遮罩。"/>
+	<message msgid="Gateway: Enter the IP address of the upstream router." msgstr="閘道：設定為上級路由器的閘道。"/>
+	<message msgid="Note" msgstr="注意事項"/>
+	<message msgid="If you change this IP address, you must use the new one to re-log on to this web UI." msgstr="如果您修改了該IP地址，您必須用修改後的IP位址才能登入AP的WEB介面進行管理，"/>
+	<message msgid="If necessary please press the Reset button to restore factory settings." msgstr="同時區域網路中所有電腦的預設閘道器必須設定為此AP的閘道才能正常上網。緊急時，請使用設備上的重定按鈕進行重定。"/>
+	<message msgid="DHCP Server: Select whether to enable or disable the DHCP server feature." msgstr="DHCP伺服器：如果您想使用DHCP的自動分配IP功能，請勾選該選項。"/>
+	<message msgid="Start IP:  Enter the starting IP address for the DHCP server's IP assignment." msgstr="IP池開始位址： DHCP伺服器所自動分配的IP的起始位址。"/>
+	<message msgid="End IP:  Enter the ending IP address for the DHCP server's IP assignment." msgstr="IP池結束地址： DHCP伺服器所自動分配的IP的結束位址。"/>
+	<message msgid="Lease Time:  The length of time for the IP address lease." msgstr="租約時間： DHCP伺服器分配的IP地址租期。"/>
+	<message msgid="Primary DNS Server:  Enter the necessary DNS address provided by your ISP (This field cannot be blank). Consult your ISP if you are not clear." msgstr="主DNS伺服器： 必選項，填入ISP提供給您的DNS伺服器，不清楚可以向ISP詢問。"/>
+	<message msgid="Secondary DNS Server:  Enter the other DNS address if your ISP offers you two DNS addresses (This field is optional)." msgstr="備用DNS伺服器： 可選項，如果ISP提供給您了兩個DNS伺服器，則您可以把另一個DNS伺服器的IP位址填於此處。"/>
+	<message msgid="To apply the DHCP server settings to all your LAN PCs, you must set all PCs to 'Obtain an IP address automatically' and 'Obtain DNS server address automatically' respectively." msgstr="為了使用本路由器的DHCP伺服器功能，區域網路中各電腦的IP位址必須設定為‘自動獲得IP地址’"/>
+	<message msgid="In this section you can configure the basic wireless settings of the device such as the SSID (name of the network) and broadcast channel." msgstr="此頁面主要對無線基本資訊進行設定，建議只設定SSID和加密，其他選項保持預設。"/>
+	<message msgid="Enable: Select it to enable this SSID." msgstr="啟用：勾選該選項則啟用該SSID。"/>
+	<message msgid="Hide SSID automatically: If you select this item, and when number of clients reach to the maximum, this SSID will be hidden automatically.If you select this item,SSID Broadcast can't be selected." msgstr="自動隱藏SSID：勾選該選項則在用戶端數量達到最大值時自動隱藏該SSID。"/>
+	<message msgid="SSID Broadcast: This option allows you to broadcast SSID publicly, if you choose to disable it, the SSID will be hidden." msgstr="廣播SSID：無線用戶端在本地區域掃描要關聯的無線網路時，可以檢測到SSID廣播。 如果選中，AP將向所有的無線主機廣播自己的SSID。"/>
+	<message msgid="Client Isolation: Isolates clients connecting to the same SSID." msgstr="用戶端隔離：選擇開啟用戶端隔離，則將同一SSID下的無線用戶端之間相互隔離。"/>
+	<message msgid="WMF: Generally, multicast packets are usually transmitted at the lowest rate, like 1 Mbps. As unicast packets have advantages, like high auto-negotiation rate and reliable feedback mechanism, multicast-to-unicast can be a solution to packets drooping and large transmission delay." msgstr="組播轉單播：組播資料包一般都用最低速率傳輸（如1 Mbps），效率很低。組播轉單播技術可利用單播報文協商速率高及有可靠回饋機制的優勢，解決了無線網路中，視頻點播等組播應用下掉包、延時大導致視頻不流暢的問題。"/>
+	<message msgid="SSID Isolation: Isolates clients connecting to different SSIDs." msgstr="SSID隔離：選擇開啟SSID隔離，則將不同SSID下的無線用戶端之間相互隔離。"/>
+	<message msgid="WMM" msgstr="WMM"/>
+    	<message msgid="WMM: WMM is QoS for your wireless network. Enabling this option may ensure better online stream wireless multimedia data such as video or audio. EDCA (Enhanced Distributed Channel Access) is a channel contention mechanism defined by WMM, so that packets who have high priority can be transmitted in advance and get more bandwidth." msgstr="WMM：EDCA（Enhanced Distributed Channel Access，增强的分布式信道访问）是WMM定义的一套信道竞争机制，有利于高优先级的报文享有优先发送的权利和更多的带宽。"/>
+	<message msgid="APSD Capable: Automatic Power Save Delivery. When no traffic is transmitted on the AP, in APSD mode, it will lead to lower power consumption. It is disabled by default." msgstr="自动省电模式, AP在一段时间内没有流量时使用低功耗 模式默认为关闭"/>
+	<message msgid="Network Mode: 11ac, 11a/n and 11a are available here." msgstr="网络模式：可以选择11ac，11a/n混合模式，11a模式。"/>
+	<message msgid="Aging Time: It specifies the wireless client disconnection interval of the AP to allow the AP to disconnect from a wireless client if no traffic is transmitted or received by the wireless client in the interval." msgstr="老化时间：终端在规定时间内没有任何流量，处于不活动状态， AP会自动将终端断开。"/>	
+	<message msgid="Maximum Clients: Total clients should be within 128." msgstr="最大用戶端數量：已開啟的SSID最大用戶端數量，總和不能超過128。"/>
+	<message msgid="SSID: This is the public name of your wireless network. Select the SSID you wish to configure from the drop-down list." msgstr="SSID：無線網路中所有設備共用的網路名稱，可從下拉清單中選擇某一SSID進行相應設定。"/>
+	<message msgid="Chinese SSID Encode: To support Chinese SSID according to the wireless client supports codeing format selection UFT-8/GB2312 code, the default is UTF-8." msgstr="中文SSID編碼格式：可以根據您的無線用戶端支援的編碼格式選擇UTF-8/GB2312編碼來支援中文SSID顯示，預設為UTF-8。"/>
+	<message msgid="Security Mode: Select WEP, WPA-PSK or WPA2-PSK." msgstr="安全模式：可以選擇不加密，WEP，WPA/WPA2個人和WPA/WPA2企業模式；"/>
+	<message msgid="(1).WEP: compliance with the full IEEE 802.11 standard." msgstr="(1).WEP：使用802.11標準的安全模式。"/>
+	<message msgid="Encryption Type: Open, Shared, 802.1X" msgstr="認證類型：Open（使用開放系統方式），Shared（使用共用金鑰方式），802.1x（使用Radius伺服器進行身份認證）；"/>
+	<message msgid="Enter a WEP key that is either 5~13 ASCII characters or 10~26 Hex characters when your encryption type is Open and Shared." msgstr="其中Open和Shared可以輸入5或13個有效ASCII碼，或者輸入10或26個有效Hex碼（16進制數，只能含0-9,a-f,A-F），可同時設定4個金鑰，只有選擇的預設金鑰有效；802.1x需輸入伺服器位址，端口號，1-64位ASCII碼金鑰。"/>
+	<message msgid="(2)WPA/WPA2-PSK: A mode based on WPA/WPA2-PSK .You can enable personal (PSK) or mixed mode, but you must make sure that the wireless client also supports the selected encryption method." msgstr="(2).WPA/WPA2個人模式：基於共用金鑰的WPA或WPA2模式。&#xA;可分為WPA-PSK，WPA2-PSK和Mixed WPA/WPA2-PSK加密，可以使用個人或混合模式。"/>
+	<message msgid="Cipher Type: Select AES, TKIP and TKIP&amp;AES;" msgstr="加密規則：可選擇AES，TKIP和TKIP&amp;AES；"/>
+	<message msgid="Key: Enter a security key that is either 8-63 ASCII characters or 8-64 Hex characters." msgstr="金鑰：允許輸入8-63個有效ASCII碼或64個Hex碼；"/>
+	<message msgid="Key Update Interval: You can configure security key's upgrade cycle here(60—99999 seconds)." msgstr="金鑰更新週期,範圍：60~99999。"/>
+	<message msgid="(3)WPA/WPA2 : A mode based on Radius server authentication." msgstr="(3).WPA/WPA2企業模式：基於Radius伺服器進行身份認證並得到金鑰的WPA或WPA2模式。"/>
+	<message msgid="RADIUS Server: Displays the Radius server's IP address." msgstr="Radius伺服器：進行身份認證的Radius伺服器的IP位址；"/>
+	<message msgid="RADIUS Port : Authentication port for Radius server. The default is 1812." msgstr="Radius端口：Radius伺服器使用的認證端口，預設值為1812；"/>
+	<message msgid="RADIUS Password: Enter a key that is 1-64 ASCII characters." msgstr="Radius金鑰：允許輸入1-64個有效ASCII碼；"/>
+	<message msgid="Key Update Interval: 60—99999 seconds." msgstr="金鑰更新週期,範圍：60~99999。"/>
+	<message msgid="Note:" msgstr="注意："/>
+	<message msgid="When your security mode is WEP or WPA/WPA2, please be sure your wireless client supports it." msgstr="選擇WEP或WPA/WPA2加密時必須確定您的無線用戶端支援該加密方式。"/>
+	<message msgid="Here you can configure basic wireless settings including network mode, channel, extension channel, channel bandwidth and etc." msgstr="此頁面主要對無線主介面的參數進行設定。"/>
+	<message msgid="Country/Region: It specifies the country or region where the AP is located so that the channel regulations of the country or region are applied." msgstr="國家或地區: 選擇AP當前所在的國家或地區，以適應不同國家或地區對通道的管制要求。默認為中國。"/>
+	<message msgid="Network Mode: Select a proper network mode: 11 b/g/n mixed, 11 b/g mixed, 11g or 11b." msgstr="網路模式：可以選擇11b/g混合模式，11b模式，11g模式或11b/g/n混合模式。"/>
+	<message msgid="Channel Bandwidth: Channel Bandwidth is used to set the upper frequency limitation and lower frequency limitation for specified channel." msgstr="通道頻寬：是指限定了允許通過該通道的信號下限頻率和上限頻率，也就是限定了一個頻率通帶"/>
+	<message msgid="WMM: Short for Wi-Fi Multimedia, it is a wireless quality of service (QoS) protocol ensuring that packets with high priorities are transmitted first for better audio and video service quality on wireless networks." msgstr="WMM: WMM主要是用來優化語音、視頻等多媒體資料流程的網路通信品質，以保障這些應用與網路資源建立穩定連接 "/>
+	<message msgid="APSD: Short for Automatic Power Save Delivery, it lowers power consumption by the AP when no traffic is transmitted or received by the AP during a specified period. By default, it is disabled." msgstr="APSD: 自動省電模式，AP在一段時間內沒有流量時使用低功耗。模式預設為關閉。"/>
+	<message msgid="Aging Time: It specifies the wireless client disconnection interval of the AP to allow the AP to disconnect from a wireless client if no traffic is transmitted or received by the wireless client in the interval." msgstr="老化時間：終端在規定時間內沒有任何流量，處於不活動狀態， AP會自動將終端斷開"/>
+	<message msgid="Channel: For an optimal wireless performance, you may select the least interferential channel. It is advisable that you select 'Auto' to let the device detect and select the best possible channel for your wireless network to operate on." msgstr="通道：您可以選擇下拉清單中任何一個通道或者是自動模式，盡可能選擇當前區域使用比較少的通道以避免干擾。"/>
+	<message msgid="Extension Channel: This is used to ensure N speeds for 802.11n devices on the network (2.4GHz)." msgstr="擴展通道：在2.4GHz網路，用於確定11n模式時本網路工作的頻率段。"/>
+	<message msgid="Channel Lockout: You can configure channel lockout, channel bandwidth and channel extension here. In AP Client, just keep the default configuration and the channel will be kept the same as that of the uplinked device automatically." msgstr="鎖定通道：可以鎖定通道，通道頻寬與擴展通道的設定。其中AP client下不可修改保持預設即可，通道設定會自動保持與上一級設備參數相同。"/>
+	<message msgid="Key Update Interval: You can configure security key's upgrade cycle here.60—99999 seconds. If set to 0, key will not be updated." msgstr="金鑰更新週期：設定加密有效週期，範圍：60—99999，0代表不更新。"/>
+	<message msgid="You can open scan to scan current wireless signals." msgstr="掃描當前區域中存在的無線網路工作的通道。"/>
+	<message msgid="WDS" msgstr="WDS"/>
+	<message msgid="WDS Mode: If you select WDS Repeater mode, you can enable scan to automatically add the MAC address of the selected remote device to the AP MAC address field and then manually set the primary SSID, mode, channel, security mode and security key of your AP to match the remote AP.For better compatibility with the remote AP, WEP encryption is recommended." msgstr="WDS模式：選擇WDS Repeater模式時，通過掃描選擇把對端MAC自動添加到AP MAC位址欄中，還需手動將主SSID，模式與通道，加密方式與密碼修改成對端AP一致，建議使用WEP加密方式，可以提高和對端AP的相容性。"/>
+	<message msgid="This section allows you to configure advanced wireless settings. if you are new to networking and have never configured these settings before, we recommend you to leave the default settings unchanged." msgstr="使用無線高級設定可以詳細地設定無線功能，包含了無線基本設定之外的設定項，在您不瞭解這些設定規則時請保留預設設定。"/>
+	<message msgid="Beacon Interval: This is a time interval between any two consecutive Beacon packets sent by an Access Point to synchronize a wireless network. Specify a valid value between %s and 999. The default setting is %s." msgstr="Beacon間隔：其取值範圍是%s~999，預設值是%s，設定可以幫助你提高無線用戶端的性能，Beacon Interval就是無線AP隔多久發送一個Beacon。無線網卡都在ISM頻道內一直持續掃描，等到掃到無線AP的Beacon時，就會在無線網路連接中顯示這個無線AP；"/>
+	<message msgid="Fragment Threshold: Specify a valid Fragment Threshold value between 255 and 2346. The default is 2346. Any wireless packet exceeding the preset value will be divided into several fragments before transmission." msgstr="Fragment閥值：其取值範圍是256~2346，預設值2346，設定的是最大包長度，如果資料超過這個長度，就必須被分包傳輸；"/>
+	<message msgid="RTS Threshold: Specify a valid value between 1 and 2347. The default is 2347. If a packet exceeds the preset value, RTS/CTS scheme will be used to reduce collisions. A smaller value is recommended if you have distant clients or interference on your network." msgstr="RTS門限：其取值範圍是1~2347，預設值是2347，RTS（Request To Send），當資料包的大小超過這個閾值時，使用RTS/CTS機制，降低發生衝突的可能性。在存在干擾長距離用戶端接入情況下，可以設定相對較小的RTS值；"/>
+	<message msgid="DTIM Interval: A DTIM (Delivery Traffic Indication Message) Interval is a countdown informing clients of the next window for listening to broadcast and multicast messages. When such packets arrive in the router's buffer, the router will send DTIM (delivery traffic indication message) and DTIM interval to alert clients of the receiving packets. Specify a valid value between 1~255. The default is 1." msgstr="DTIM間隔：這個值表示delivery traffic indication message(DTIM)間隔，取值範圍是1~255，預設值是1。DTIM欄是一個倒數欄，用於通知用戶端下一個監聽廣播和多播資訊的視窗。當AP緩衝了發送到用戶端的廣播或多播資訊，它發送下一個DTIM及DTIM間隔，喚醒用戶端接收這些資訊。"/>
+	<message msgid="Receive Signal Strength:This section allows AP to receive signal strength (in dBm) , range: (-90~-60) dBm.2.4GHz :the default is -90dBm,5GHz :the default is -90dBm." msgstr="接入信號強度：接入信號強度限制，取值範圍：(-90~-60)dBm，2.4G預設：-90dBm,5G預設：-90dBm。"/>
+	<message msgid="Receive Signal Strength:This section allows AP to receive signal strength (in dBm) , range: (-90 ~ -60) dBm.2.4G :the default is -90dBm." msgstr="接入信號強度：接入信號強度限制，取值範圍：(-90 - -60)dBm，2.4G預設：-90dBm。"/>
+	<message msgid="Interference mitigation: interference mitigation mode , range: 0-4. The default is 2." msgstr="Interference模式：干擾抑制模式設定，取值範圍：0 - 4，預設：2。"/>
+	<message msgid="(1).mode 0: All interference mitigation is disabled." msgstr="（1）模式0：禁用所有干擾抑制。"/>
+	<message msgid="(2).mode 1: Non-wireless LAN Interference mitigation is enabled." msgstr="（2）模式1：啟用同頻段干擾抑制，如微波爐、手機、藍芽設備造成的同頻干擾。"/>
+	<message msgid="(3).mode 2: Wireless LAN Interference mitigation is enabled." msgstr="（3）模式2：強制開啟無線電干擾抑制。"/>
+	<message msgid="(4).mode 3: Auto Wireless LAN Interference mitigation is enabled and active." msgstr="（4）模式3：自動無線電干擾抑制模式啟用。"/>
+	<message msgid="(5).mode 4: Auto Wireless LAN Interference mitigation is enabled and noise reduction is enabled." msgstr="（5）模式4：自動無線電干擾抑制模式啟用並降低雜訊。"/>
+	<message msgid="TX Power: Control TX power.2.4G range: 17-23dBm. The default is 23dBm, 5G range: 17-21dBm. The default is 21dBm." msgstr="TX功率：輸出功率控制，2.4GHz取值範圍是17 - 23dBm，預設值是23dBm，5GHz取值範圍是17 - 21dBm，預設值是21dBm。"/>
+	<message msgid="TX Power: Control TX power.2.4G range: %s-%sdBm. The default is %sdBm." msgstr="TX功率：輸出功率控制，2.4GHz取值範圍是%s - %sdBm，預設值是%sdBm。"/>
+	<message msgid="TX Power: Control TX power.2.4G range: %s-%sdBm. The default is %sdBm, 5G range: %s-%sdBm. The default is %sdBm." msgstr="TX功率：輸出功率控制，2.4GHz取值範圍是%s - %sdBm，預設值是%sdBm，5GHz取值範圍是%s- %sdBm，預設值是%sdBm。"/>
+	<message msgid="Power Lockout: Once enabled, you can lockout this configuration." msgstr="鎖定功率：鎖定功率即啟動情況下可鎖定無線功率的設定。"/>
+	<message msgid="The 8 bytes of the preamble and the Start of Frame create a pattern of 64 bits. 7 bytes of the preamble are for synchronization and 1 byte is for SFD, which basically says here comes a new frame, being a 'get ready' notification. There are two types of preambles: long preamble and short preamble. By default, the device transmits data using the long preamble." msgstr="無線前導碼：前導碼是資料幀頭部的一組Bit位，用於同步發送端與接收端的傳輸信號。分長前導碼與短前導碼，預設情況下設備選擇長前導碼傳輸資料，為了提高網路傳輸效率，可以使用短前導碼。"/>
+	<message msgid="5GHz SSID Priority: If your wireless client supports 5GHz WIFI,client will preferential choose 5GHz ssid which 2.4GHz and 5GHz SSID and security is same." msgstr="5GHz優先：如果您的無線用戶端支持雙頻WIFI，則當AP兩個頻段的SSID和密碼相同時，用戶端會將會優先選擇5GHz SSID進行連接。"/>
+	<message msgid="Note:5GHZ SSID priority only supports WPA/WPA2-Personal security mode.it does not support Chinese SSID." msgstr="注意：5GHZ優先僅支持WPA/WPA2個人加密，不支持中文SSID。"/>
+	<message msgid="Wireless Access Control" msgstr="無線存取控制"/>
+	<message msgid="Specify a list of devices to allow or disallow a connection to your wireless network via the device's MAC addresses." msgstr="使用無線存取控制功能，可以根據PC的無線網卡MAC位址控制其是否可以與AP進行通信。"/>
+	<message msgid="To deactivate this feature, select 'Disable'; to activate it, select 'Allow' or 'Deny'." msgstr="要禁用無線存取控制功能，請選關閉；要設定該功能，請選擇僅允許或僅禁止。"/>
+	<message msgid="QVLAN Configuration" msgstr="QVLAN配置"/>
+	<message msgid="When 802.1 QVLAN enabled, this device can be used with switches with VLAN function and establish multiple wireless subnets. Clients connecting to different VLAN IDs cannot access each other." msgstr="即802.1Q vlan技術，在開啟該vlan功能後，AP接入器可以結合帶VLAN功能的交換機一起使用，建立多個無線子網，且接入不同VLAN ID的無線工作網站將無法互相訪問。"/>
+	<message msgid="SSID: It specifies the SSID of an enabled wireless network of the AP." msgstr="SSID：標識無線網路的名稱，最大支援32個字元。"/>
+	<message msgid="VLAN ID: You can configure VLAN ID here(1-4094)." msgstr="VLAN ID: 可配置VLAN的ID標識，範圍在1-4094。"/>
+	<message msgid="You can configure SSID's binding info to VLAN here. The default is 1000(1-4094)." msgstr="此頁面主要用於配置AP中各SSID與VLAN的綁定資訊，從而可以使無線設備中所綁定的VLAN資料流程間是獨立的、不能互訪的。預設綁定的VLAN號為1000，可綁定的VLAN範圍為1-4094。"/>
+	<message msgid="SNMP" msgstr="SNMP"/>
+	<message msgid="Here you can configure SNMP v1 &amp; v2c that can read and write Administrator Name, Device Name, and Location." msgstr="本頁設定SNMP物件屬性，支援SNMP V1&amp;V2C版本，可以對系統的三個標準MIB節點：管理員名稱，設備名稱和位置，進行讀寫設定；"/>
+	<message msgid="SNMP Agent" msgstr="SNMP設定：選擇禁用/啟用，將關閉/打開SNMP代理功能；"/>
+	<message msgid="Read Community: Specify a community string for reading SNMP proxy information." msgstr="讀 Community：設定讀取SNMP代理資訊的團體名；"/>
+	<message msgid="Write/Read Community: Specify a community string for writing/reading SNMP proxy information." msgstr="讀/寫 Community：設定讀/寫SNMP代理資訊的團體名。"/>
+	<message msgid="Time Reboot" msgstr="自訂重啟"/>
+	<message msgid="Here you can time the AP to reboot. Time is based on 24hs/day format. When setting the time reboot feature, make sure the device's system time synchronizes with Internet time server." msgstr="您可以通過本頁設定本AP的定時重啟功能。其中時間是按24小時標準，如果設定了定時重啟功能，請確保與設備的網路時間同步。"/>
+	<message msgid="This section assists you in setting the device's current time; you can select to either  set the time and date manually or obtain the GMT time from Internet automatically." msgstr="您可以通過本頁設定本AP的系統時間和您所在的時區，如果啟用網路校時，當系統連接網際網路後會自動連接NTP伺服器進行時間同步，您也可以手動輸入或複製本地時間。"/>
+	<message msgid="Timeout Setup" msgstr="超時設定"/>
+	<message msgid="Here you can configure the web login timeout (1-60 minutes). The default is 5 minutes." msgstr="您可以通過本頁設定您過多長時間需要重新輸入密碼登陸到AP設定頁面，單位為分鐘，預設值為5，範圍：1～60分鐘。"/>
+	<message msgid="Click this button to reset the device to factory default values." msgstr="恢復出廠設定按鈕將使AP的所有設定恢復到出廠時的預設狀態。其中："/>
+	<message msgid="Default User Name: admin." msgstr="預設的用戶名為：admin"/>
+	<message msgid="Default Password: admin." msgstr="預設的密碼為：admin"/>
+	<message msgid="Default IP Address: 192.168.0.254" msgstr="預設的IP地址為：192.168.0.254"/>
+	<message msgid="Default Subnet Mask: 255.255.255.0" msgstr="預設的子網路遮罩為：255.255.255.0"/>
+	<message msgid="This section allows you to change your login user name and password." msgstr="本頁可以修改系統管理員的用戶名及密碼。"/>
+	<message msgid="Log Settings" msgstr="日誌設定"/>
+	<message msgid="Log Server IP Address:  SysLog Server IP Address." msgstr="日誌伺服器IP位址： SysLog伺服器的IP地址；"/>
+	<message msgid="Log Server Port: Refers to the protocol port for syslog (514 by default). You should set it the same to the host server." msgstr="日誌伺服器端口：SysLog服務的協定端口（預設端口514），可根據SysLog伺服器設定的端口，進行修改；它應與SysLog伺服器保持一致；"/>
+	<message msgid="Enable:  Select whether to enable the log server." msgstr="啟用： 選擇是否啟用本SysLog伺服器。"/>
+	<message msgid="This section allows you to modify LED status." msgstr="本頁可修改LED燈的開啟關閉狀態。"/>
+	<message msgid="Signal Level:Used to adjust the signal Level, the higher level means better signal reception ability." msgstr="信號接收強度：用來調節信號的接收能力，級別越高，接收能力越強."/>
+	<message msgid="Short distance" msgstr="短距離"/>
+	<message msgid="In this mode, AP can transfer data and supply power by CAT 5e/6 UTP cables, the max distance is 100 meters." msgstr="此模式下AP支援最長100米的網線供電距離，要求是超5類線或6類線。"/>
+	<message msgid="Long distance" msgstr="遠距離"/>
+	<message msgid="In this mode, AP can transfer data and supply power by CAT5e/6 UTP cables, the max distance is 150-200 meters. Only for some tough deploy condition, and the performance can deteriorate." msgstr="此模式下AP支援最長150-200米的網線供電距離(視網線品質而定)，要求是超5類線或6類線。註：此模式只針對特定部署環境， 網口輸送量性能可能會有所下降。"/>
+	<message msgid="Up Time" msgstr="執行時間"/>
+	<message msgid="Working Mode" msgstr="運行模式"/>
+	<message msgid="Configurations saved" msgstr="保存設定"/>
+	<message msgid="Total RX Packets (Num)" msgstr="總接收資料包"/>
+	<message msgid="Total TX Packets (Num)" msgstr="總發送資料包"/>
+	<message msgid="Wireless Client List" msgstr="連接列表"/>
+	<message msgid="This section displays information of connected clients (if any)." msgstr="本頁顯示無線AP的連接資訊。"/>
+	<message msgid="Note: If the wireless client's IP address is not on the same subnet as that of W185AP, it will display unknown." msgstr="（註，當連接的用戶端設定的IP與AP LAN口IP不在同網段時，清單中IP欄資料將顯示為：未知）"/>
+	<message msgid="Encryption" msgstr="加密"/>
+	<message msgid="Bandwidth" msgstr="頻寬"/>
+	<message msgid="TX Rate" msgstr="發送速率"/>
+	<message msgid="RX Rate" msgstr="接收速率"/>
+	<message msgid="APClient Mode" msgstr="APClient模式"/>
+	<message msgid="11a/n" msgstr="11a/n混合模式"/>
+	<message msgid="Unknow" msgstr="未知"/>
+	<message msgid="%d Day %d h %d m %d s" msgstr="%d 天 %d 小時 %d 分鐘 %d 秒"/>
+	<message msgid="%d h %d m %d s" msgstr="%d 小時 %d 分鐘 %d 秒"/>
+	<message msgid="WIFI Radio" msgstr="無線頻率選擇"/>
+	<message msgid="Unknow" msgstr="未知"/>
+	<message msgid="Band Selection" msgstr="無線頻段選擇"/>
+	<message msgid="Mode" msgstr="模式選擇"/>
+	<message msgid="Authentication Type" msgstr="認證類型"/>
+	<message msgid="RADIUS Server:" msgstr="RADIUS伺服器IP:"/>
+	<message msgid="RADIUS Port:" msgstr="RADIUS端口:"/>
+	<message msgid="RADIUS Password:" msgstr="RADIUS金鑰:"/>
+	<message msgid="Security Key 1" msgstr="金鑰 1"/>
+	<message msgid="Security Key 2" msgstr="金鑰 2"/>
+	<message msgid="Security Key 3" msgstr="金鑰 3"/>
+	<message msgid="Security Key 4" msgstr="金鑰 4"/>
+	<message msgid="(Status:" msgstr="（狀態："/>
+	<message msgid="The Uplink AP's Channel Bandwidth" msgstr="上級AP的通道頻寬"/>
+	<message msgid="The Upstream AP's Extension Channel" msgstr="上級AP的擴展通道"/>
+	<message msgid="Uplink AP MAC Address" msgstr="上級AP的MAC地址"/>
+	<message msgid="The Uplinked AP's channel" msgstr="上級AP的通道"/>
+	<message msgid="The Upstream AP's Network Mode" msgstr="上級AP的網路模式"/>
+	<message msgid="Signal Intensity" msgstr="信號強度"/>
+	<message msgid="Address Mode" msgstr="IP獲取方式"/>
+	<message msgid="Please wait for 10 seconds to save new ip." msgstr="請稍等十幾秒保存新的IP."/>
+	<message msgid="Dynamic IP" msgstr="動態獲取"/>
+	<message msgid="Static IP" msgstr="手動設定"/>
+	<message msgid="For example: 192.168.1.1" msgstr="例如:192.168.1.1"/>
+	<message msgid="For example: 255.255.255.0" msgstr="例如:255.255.255.0"/>
+	<message msgid="Device name can only be made up of numbers, letters, underline, dot, hyphen, or Chinese." msgstr="設備名稱僅支援字母，數位，連字號（-），底線，點號（.）和中文字元"/>
+	<message msgid="The length of device name should not be greater than 32 bits." msgstr="設備名稱長度不能超過32位"/>
+	<message msgid="Ethernet Mode" msgstr="埠驅動能力"/>
+	<message msgid="10M half-duplex" msgstr="增強模式（該模式下會影響埠協商速率）"/>
+	<message msgid="Auto-negotiation" msgstr="標準模式"/>
+	<message msgid="DHCP Setup" msgstr="DHCP設定"/>
+	<message msgid="7 days" msgstr="7天"/>
+	<message msgid="3 days" msgstr="3天"/>
+	<message msgid="1 day" msgstr="1天"/>
+	<message msgid="12 hours" msgstr="12小時"/>
+	<message msgid="6 hours" msgstr="6小時"/>
+	<message msgid="1 hour" msgstr="1小時"/>
+	<message msgid="The Subnet mask must large or equal than LAN IP's Subnet mask!" msgstr="子網路遮罩必須大於或者等於LAN子網路遮罩。"/>
+	<message msgid="DHCP Client List" msgstr="DHCP連接列表"/>
+	<message msgid="Once DHCP is enabled, client list will be refreshed automatically every five seconds." msgstr="如果您啟用DHCP功能後，用戶端列表每5秒會自動刷新一次。"/>
+	<message msgid="You must log in as an administrator to make any change." msgstr="您沒有修改許可權,請以管理員用戶登陸修改！"/>
+	<message msgid="You have already saved the settings. No need to do it again." msgstr="請勿重複儲存！"/>
+	<message msgid="Please input a valid IP address!" msgstr="IP位址最後一位不能為255，請輸入一個有效的IP位址！"/>
+	<message msgid="The new subnet mask is smaller than the old one, which may affect other functionalities. Are you sure you want to save the change?" msgstr="修改後的子網路遮罩小於原來的子網路遮罩，可能影響其它功能的設定，確定要修改子網路遮罩？"/>
+	<message msgid="LAN IP address should not be the same as that of gateway!" msgstr="LAN口IP不能和閘道相同！"/>
+	<message msgid="If you change this LAN IP address, you must use the new one to re-log on to this utility. Are you sure you want to continue?" msgstr="更改IP位址後，您需要以新的IP重新登入！"/>
+	<message msgid="The start IP and LAN IP should be in the same network segment!" msgstr="開始IP應該與LAN口IP在同一網段！"/>
+	<message msgid="The end IP and  LAN IP should be in the same network segment!" msgstr="開始結束IP應該在同一網段！"/>
+	<message msgid="The start IP address you entered is a broadcast IP address. Please specify a valid start IP address!" msgstr="修改的開始位址IP為錯誤的IP位址，主機部分為1,為廣播IP位址！"/>
+	<message msgid="End IP Address" msgstr="結束地址"/>
+	<message msgid="The end IP address you entered is a broadcast IP address. Please specify a valid end IP address!" msgstr="修改的結束位址IP為錯誤的IP位址，主機部分為1,為廣播IP位址！"/>
+	<message msgid="Please specify a valid secondary DNS server address!" msgstr="主DNS伺服器位址錯誤！"/>
+	<message msgid="Please enter a valid Device Name!" msgstr="請輸入有效的裝置名稱！"/>
+	<message msgid="The start IP address should be smaller than the end IP address!" msgstr="開始位址不能大於結束位址！"/>
+	<message msgid="WMF" msgstr="組播轉單播"/>
+	<message msgid="(Range:1~%s)" msgstr="（範圍：1~%s）"/>
+	<message msgid="Encryption Type" msgstr="認證類型"/>
+	<message msgid="(Range: 1025~65535,default: 1812)" msgstr="（取值範圍：1025 ~ 65535，預設：1812）"/>
+	<message msgid="s (Range: 60~99999 seconds. If set to 0, key will not be updated.)" msgstr="秒（範圍：60~99999，0代表不更新。）"/>
+	<message msgid="Channel Scan:" msgstr="通道掃描："/>
+	<message msgid="Chinese SSID Encode" msgstr="中文SSID編碼格式"/>
+	<message msgid="In WDS Mode,the frist ssid can't be changed." msgstr="WDS模式不能修改第一個SSID配置"/>
+	<message msgid="In Ap Clinet Mode or WDS Mode,this page can't be changed." msgstr="Apclient模式下該頁面修改無效"/>
+	<message msgid="Transmission Link" msgstr="天線切換"/>
+	<message msgid="1x1" msgstr="單天線"/>
+	<message msgid="2x2" msgstr="雙天線"/>
+	<message msgid="Antenna" msgstr="天線介面"/>
+	<message msgid="Antenna 0" msgstr="天線1"/>
+	<message msgid="Antenna 1" msgstr="天線2"/>
+	<message msgid="Aging Time" msgstr="用戶端老化時間"/>
+	<message msgid="1 minute" msgstr="1分鐘"/>
+	<message msgid="5 minutes" msgstr="5分鐘"/>
+	<message msgid="10 minutes" msgstr="10分鐘"/>
+	<message msgid="15 minutes" msgstr="15分鐘"/>
+	<message msgid="Wireless-Advanced" msgstr="無線高級設定"/>
+	<message msgid="(Range: 100 ~ 999; Default: 100)" msgstr="（ms，取值範圍：100 ~ 999，預設：100）"/>
+	<message msgid="(Range: 200 ~ 999; Default: 200)" msgstr="（ms，取值範圍：200 ~ 999，預設：200）"/>
+	<message msgid="(Range: 0 - 3; Default: 3)" msgstr="（取值範圍：0 ~ 3，預設：3）"/>
+	<message msgid="Receive Signal Strength" msgstr="接入信號強度限制"/>
+	<message msgid="(dBm,Range: -90 - -60; Default: -80)" msgstr="（dBm，取值範圍：-90 ~ -60，預設：-80）"/>
+	<message msgid="(dBm,Range: -90 - -60; Default: -90)" msgstr="（dBm，取值範圍：-90 ~ -60，預設：-90）"/>
+	<message msgid="Interference mitigation" msgstr="Interference模式"/>
+	<message msgid="(Range: 0 - 4; Default: 2)" msgstr="（取值範圍：0 - 4，預設：2）"/>
+	<message msgid="(dBm,Range: %s ~ %s; Default: %s)" msgstr="（dBm，取值範圍：%s ~ %s，預設：%s）"/>
+	<message msgid="Signal Level" msgstr="信號接收能力"/>
+	<message msgid="Level 1" msgstr="級別1"/>
+	<message msgid="Level 2" msgstr="級別2"/>
+	<message msgid="Level 3" msgstr="級別3"/>
+	<message msgid="Level 4" msgstr="級別4"/>
+	<message msgid="Level 5" msgstr="級別5"/>
+	<message msgid="Wireless LED" msgstr="LED燈開關"/>
+	<message msgid="5GHZ SSID priority" msgstr="5GHZ優先"/>
+	<message msgid="Signal Transmission" msgstr="穿牆能力"/>
+	<message msgid="coverage-oriented" msgstr="強覆蓋"/>
+	<message msgid="capacity-oriented" msgstr="高密度"/>
+	<message msgid="Signal Reception" msgstr="部署方式"/>
+	<message msgid="Default" msgstr="預設"/>
+	<message msgid="Devices requiring a reboot to apply the change, reboot it now?" msgstr="您當前的配置專案需要重啟AP才能生效， 請確認是否立即重啟？"/>
+	<message msgid="Airtime Scheduling" msgstr="空口調度"/>
+	<message msgid="Specify a list of devices to allow or disallow a connection to your wireless network via the devices' MAC addresses. This can be set separately on each SSID." msgstr="配置無線介面MAC位址過濾策略,分別對每個SSID設定。"/>
+	<message msgid="MAC Filter Mode" msgstr="MAC過濾模式"/>
+	<message msgid="Allow" msgstr="僅允許"/>
+	<message msgid="Deny" msgstr="僅禁止"/>
+	<message msgid="QVLAN" msgstr="QVLAN"/>
+	<message msgid="WDS" msgstr="WDS連接"/>
+	<message msgid="Note:WDS Settings" msgstr="注意: 設定"/>
+	<message msgid="1. In this mode, when you open scan and save your configurations, the remote MAC address will be filled in automatically and so the SSID. For stability, please keep the mode, channel, the extension channel the same as the remote one. You can configure it in &quot;Wireless&gt;Radio&quot;." msgstr="null"/>
+	<message msgid="2. If you want to configure the encryption, click 'Wireless&gt;Basic' and remember to keep security mode and key the same as the remote one." msgstr=" 2、如果對無線進行了加密，加密方式與金鑰也應與對端一致，請在“無線設定-&amp;gt;加密方式”中設定。"/>
+	<message msgid="3. In this mode, only the primary SSID can be connected." msgstr="3、WDS預設使用主SSID進行連接，並且只能通過主SSID進行連接。"/>
+	<message msgid="2.4GHz and 5GHz own the same main ssid VLAN ID, 5GHz Qvlan main ssid VLAN ID will be change too,are you continue?" msgstr="2.4GHz 和 5GHz 共用一個主SSID VLAN ID,5GHz 主SSID VLAN ID將隨2.4GHz 主SSID VLAN ID改變而改變，確定繼續？"/>
+	<message msgid="2.4GHz and 5GHz own the same main ssid VLAN ID, 2.4GHz Qvlan main ssid VLAN ID will be change too,are you continue?" msgstr="2.4GHz 和 5GHz 共用一個主SSID VLAN ID,2.4GHz 主SSID VLAN ID將隨5GHz 主SSID VLAN ID改變而改變，確定繼續？"/>
+	<message msgid="In WDS mode, the first SSID cannot be disabled!" msgstr="WDS模式下第一個SSID不能禁用，否則該功能會無法正常使用！"/>
+	<message msgid="In AP Client mode, the first SSID cannot be disabled!" msgstr="AP Client模式下第一個SSID不能禁用，否則該功能會無法正常使用！"/>
+	<message msgid="In AP Client mode, channel lockout has been enabled. No configuration is needed!" msgstr="AP Client模式下通道鎖定已啟用，不需做任何設定，否則影響正常使用！"/>
+	<message msgid="In WDS mode, channel lockout has been enabled. No configuration is needed!" msgstr="WDS模式下通道鎖定已啟用，不需做任何設定，否則影響正常使用！"/>
+	<message msgid="Open Scan" msgstr="開啟掃描"/>
+	<message msgid="Up to 16 MAC address entries can be configured!" msgstr="MAC位址最多能配置16條。"/>
+	<message msgid="Are you sure you want to delete this entry?" msgstr="確認要刪除嗎？"/>
+	<message msgid="The specified MAC address already exists!" msgstr="指定的MAC地址已經存在。"/>
+	<message msgid="Please enter the WEP key %s" msgstr="請輸入WEP金鑰%s。"/>
+	<message msgid="WEP key %s is invalid! Please enter 5 or 13 ASCII characters!" msgstr="WEP金鑰%s無效，請輸入5或13個ASCII碼！"/>
+	<message msgid="WEP key %s is invalid! Please enter 10 or 26 Hex characters." msgstr="WEP金鑰%s無效，請輸入10或26個Hex碼！"/>
+	<message msgid="Invalid WEP security key %s. %s can't be included." msgstr="字串中含有非法字元%s。"/>
+	<message msgid="Please enter valid RADIUS port number!" msgstr="請輸入正確的RADIUS端口號！"/>
+	<message msgid="Please enter valid RADIUS Password!" msgstr="請輸入正確的RADIUS金鑰，1-64位ASCII碼！"/>
+	<message msgid="Invalid security key. %s can't be included." msgstr="字串中含有非法字元%s。"/>
+	<message msgid="Address" msgstr="MAC地址"/>
+	<message msgid="Signal Strength" msgstr="信號強度"/>
+	<message msgid="Bandwidth" msgstr="通道頻寬"/>
+	<message msgid="%s is invalid %s range: %s ~ %s.They must be round numbers!" msgstr="%s無效,%s範圍:%s - %s，且為整數！"/>
+	<message msgid="Please enter SSID!" msgstr="SSID不能為空！"/>
+	<message msgid="SSID includes invalid characters: %s" msgstr="SSID不能含有：%s"/>
+	<message msgid="SSID can only include up to 32 characters!" msgstr="SSID不能超過32個字元(中文占3個字元)！"/>
+	<message msgid="This MAC address already exists! Please enter a new one!" msgstr="請不要輸入重複MAC位址！"/>
+	<message msgid="Total maximum clients should be within 128!" msgstr="已開啟的SSID最大用戶端數量總和不能超過128！"/>
+	<message msgid="Limit numbers of client" msgstr="用戶端數量限制"/>
+	<message msgid="Key Update Interval must be either 0 or 60~99999!" msgstr="金鑰更新週期無效,範圍：60~99999。"/>
+	<message msgid="QVLAN disabled or no changes, please do not save again!" msgstr="QVLAN未啟用或未修改，請勿重複儲存！"/>
+	<message msgid="If save the configurations, the device will reboot immediately. Are you sure to reboot?" msgstr="儲存設定，設備將會重啟，是否重啟？"/>
+	<message msgid="Please enable 2.4GHz network!" msgstr="請先開啟2.4G無線網路！"/>
+	<message msgid="Please enable 5GHz network!" msgstr="請先開啟5G無線網路！"/>
+	<message msgid="Please enter MAC address!" msgstr="請輸入MAC位址！"/>
+	<message msgid="Please enter different MAC addresses!" msgstr="請不要輸入重複MAC位址！"/>
+	<message msgid="You must allow the feature or specify a rule!" msgstr="選擇僅允許時必須輸入或啟用一條規則！"/>
+	<message msgid="You must disable the feature or specify a rule!" msgstr="選擇僅禁止時必須輸入一條規則！"/>
+	<message msgid="When saved, the first SSID will be enabled and you should modify the permitted numbers of clients!" msgstr="儲存後第一個SSID會被啟用，此時所啟用的SSID最大用戶端數量之和已大於128，請修改無線基本設定中SSID允許的最大用戶端數量！"/>
+	<message msgid="SSID can not be same with same band other SSID" msgstr="SSID不能與本設備同頻段的其他SSID相同"/>
+	<message msgid="All the VLAN ID is the same, please tag different VLAN ID for different SSID" msgstr="配置的VLAN ID不能全部相同！"/>
+	<message msgid="SNMP Version" msgstr="SNMP版本"/>
+	<message msgid="Read/Write Community" msgstr="讀/寫 Community"/>
+	<message msgid="Read Community must be 'private' or 'public'!" msgstr="讀 Community必須為'private'或者'public'！"/>
+	<message msgid="Write/Read Community must be 'private' or 'public'!" msgstr="讀/寫 Community必須為'private'或者'public'！"/>
+	<message msgid="Read Community should not be the same as that of Write/Read Community!" msgstr="讀 Community 不能和讀/寫 Community 相同"/>
+	<message msgid="Select a Firmware File:" msgstr="選擇韌體檔："/>
+	<message msgid="Note: Do not disconnect the device from power and network connections while upgrade is in process, otherwise it may be permanently damaged. When upgrade is complete, the device restarts automatically. Upgrade may take about 90 seconds. Please wait." msgstr="注意：升級過程不能關閉AP電源，否則將導致AP損壞而無法使用。升級成功後，AP將自動重啟。升級過程約90秒左右，請等候。"/>
+	<message msgid="Device is upgrading,this may take about 90 seconds. Please wait..." msgstr="設備正在升級，升級需持續兩分鐘左右，升級完成後頁面會自動跳轉，請耐心等侯....."/>
+	<message msgid="Device is upgrading,this may take about 2 minutes. Please wait..." msgstr="設備正在升級，升級需持續兩分鐘左右，升級完成後頁面會自動跳轉，請耐心等侯"/>
+	<message msgid="Please select a firmware file!" msgstr="請首先選擇升級檔！"/>
+	<message msgid="Are you sure to upgrade?" msgstr="您確定要升級嗎？"/>
+	<message msgid="File" msgstr="文件"/>
+	<message msgid="Current Firmware Version" msgstr="當前系統版本"/>
+	<message msgid="Release Date" msgstr="發佈日期"/>
+	<message msgid="Current Firmware Version: %s;  Release Date: %s" msgstr="當前系統版本： %s; 發佈日期: %s"/>
+	<message msgid="Upgrade" msgstr="升級"/>
+	<message msgid="An error is found!" msgstr="對不起！出現錯誤。"/>
+	<message msgid="Error!" msgstr="格式錯誤"/>
+	<message msgid="Error（CRC error)!" msgstr="格式錯誤（CRC校驗錯誤）"/>
+	<message msgid="Error (Upgrade file is oversized)!" msgstr="格式錯誤（升級檔太大）"/>
+	<message msgid="Upgrade failed!" msgstr="升級失敗"/>
+	<message msgid="ERROR" msgstr="配置檔升級錯誤"/>
+	<message msgid="An error occurred during policy upgrade (transmission error)." msgstr="策略檔升級錯誤（傳輸錯誤）"/>
+	<message msgid="Policy file is in wrong format!" msgstr="策略檔案格式錯誤"/>
+	<message msgid="Old-version policy file cannot be upgraded!" msgstr="不能升級舊版本的策略檔"/>
+	<message msgid="Policy upgrade failed (An error occurred when writing flash)." msgstr="策略檔升級失敗（寫flash錯誤）"/>
+	<message msgid="Please enter the right password!" msgstr="原密碼錯誤，請重新輸入"/>
+	<message msgid="This page allows you to configure the rebooting time, or click the 'Reboot' button to restart your device." msgstr="此頁面可設定AP定時重啟時間,然後儲存設定;也可按一下重啟AP按鈕使AP立刻重啟。"/>
+	<message msgid="Reboot AP" msgstr="重啟AP"/>
+	<message msgid="You need to reboot this device to save your configurations." msgstr="該設定需要重啟路由器才能生效。"/>
+	<message msgid="Reboot Now" msgstr="重啟AP （立刻重啟）"/>
+	<message msgid="Here you can time the device to reboot." msgstr="本頁設定路由器定時重啟。"/>
+	<message msgid="Enable Auto Reboot" msgstr="開啟自訂重啟功能"/>
+	<message msgid="AUTO Reboot Type" msgstr="自訂重啟類型"/>
+	<message msgid="As Interval" msgstr="按間隔時間段重啟"/>
+	<message msgid="As Scheduled" msgstr="定時重啟"/>
+	<message msgid="Time Reboot at" msgstr="定時重啟時間"/>
+	<message msgid="Time Reboot on" msgstr="定時重啟日期"/>
+	<message msgid="Reboot Interval" msgstr="間隔時間"/>
+	<message msgid="eg" msgstr="例如"/>
+	<message msgid="Mon" msgstr="週一"/>
+	<message msgid="Tue" msgstr="週二"/>
+	<message msgid="Wed" msgstr="週三"/>
+	<message msgid="Thur" msgstr="週四"/>
+	<message msgid="Fri" msgstr="週五"/>
+	<message msgid="Sat" msgstr="週六"/>
+	<message msgid="Sun" msgstr="周日"/>
+	<message msgid="Everyday" msgstr="每天"/>
+	<message msgid="Please enter Time Reboot at" msgstr="請輸入重啟時間"/>
+	<message msgid="Pliease enter right Reboot time at" msgstr="請填寫正確的重啟時間"/>
+	<message msgid="Reboot Interval is range from 10 to 7200 minute" msgstr="間隔時間必須在10-7200分鐘範圍之內"/>
+	<message msgid="(minute, range: 10~7200)" msgstr="（分鐘，取值範圍：10-7200）"/>
+	<message msgid="eg: 23:59" msgstr="例如：23:59"/>
+	<message msgid="Max Connections" msgstr="最大連接數量"/>
+	<message msgid="Max Download Traffic" msgstr="最大下載流量"/>
+	<message msgid="Please select the day(s) when you want your device to restart." msgstr="請選擇重啟日期!"/>
+	<message msgid="Please enter correct time settings." msgstr="請輸入正確的時間資訊！"/>
+	<message msgid="Please specify a correct limit for maximum clients." msgstr="請輸入正確的用戶端數閥值！"/>
+	<message msgid="Please specify a correct limit for maximum download traffic." msgstr="請輸入正確的下載流量閥值！"/>
+	<message msgid="Note: System time will be lost when the device is disconnected from power supply. However, it will be updated automatically when the device reconnects to Internet." msgstr="注意：關閉AP電源後，時間資訊會丟失，當您下次開機連上Internet後，AP將會自動獲取GMT時間。"/>
+	<message msgid="Sync with Internet time servers" msgstr="啟用網路校時"/>
+	<message msgid="1 hour" msgstr="一小時"/>
+	<message msgid="2 hours" msgstr="二小時"/>
+	<message msgid="12 hours" msgstr="半天"/>
+	<message msgid="1 day" msgstr="一天"/>
+	<message msgid="2 days" msgstr="两天"/>
+	<message msgid="(GMT-12:00) Enewetak Island" msgstr="（GMT-12:00）艾尼威托克島"/>
+	<message msgid="(GMT-11:00) Samoa" msgstr="（GMT-11:00）東薩摩亞群島"/>
+	<message msgid="(GMT-10:00) Hawaii" msgstr="（GMT-10:00）夏威夷群岛"/>
+	<message msgid="(GMT-09:00) Alaska" msgstr="（GMT-09:00）阿拉斯加"/>
+	<message msgid="(GMT-08:00) San Francisco" msgstr="（GMT-08:00）舊金山"/>
+	<message msgid="(GMT-07:00) Denver" msgstr="（GMT-07:00）美國丹佛"/>
+	<message msgid="(GMT-06:00) Mexico City, Guatemala, Costarica, Salvador, Nicaragua" msgstr="（GMT-06:00）墨西哥城,瓜地馬拉,哥斯大黎加,薩爾瓦多,尼加拉瓜"/>
+	<message msgid="(GMT-05:00) New York, Ottawa" msgstr="（GMT-05:00）北美東部標準時,紐約,渥太華"/>
+	<message msgid="(GMT-04:00) Chile, Brazil" msgstr="（GMT-04:00）智利,巴西"/>
+	<message msgid="(GMT-03:00) Buenos Aires" msgstr="（GMT-03:00）布宜諾賽勒斯"/>
+	<message msgid="(GMT-02:00) Mid-Atlantic" msgstr="（GMT-02:00）大西洋中部"/>
+	<message msgid="(GMT-01:00) Cape Verde Islands" msgstr="（GMT-01:00）佛德爾群島"/>
+	<message msgid="(GMT) Greenwich Mean Time" msgstr="（GMT）格林威治（子午線）標準時間"/>
+	<message msgid="(GMT+01:00) Denmark, Germany, Norway, Hungary, France, Belgium" msgstr="（GMT+01:00）中歐標準時,丹麥,德國,挪威,匈牙利,法國,比利時"/>
+	<message msgid="(GMT+02:00) Israel, Egypt, Bucharest" msgstr="（GMT+02:00）東歐標準時,以色列,埃及,布加勒斯特"/>
+	<message msgid="(GMT+03:00) Moscow" msgstr="（GMT+03:00）莫斯科時間"/>
+	<message msgid="(GMT+04:00) Sultanate of Oman, Mauritania, Reunion Island" msgstr="（GMT+04:00）阿曼,茅利塔尼亞,留尼旺島"/>
+	<message msgid="(GMT+05:00) Pakistan, Novaya Zemlya, Maldives" msgstr="（GMT+05:00）巴基斯坦,新地島,馬爾地夫"/>
+	<message msgid="(GMT+05:30) Madras,Calcutta,Bombay,New Delhi" msgstr="（GMT+05:30）馬德拉斯,加爾各答,孟買,新德里"/>
+	<message msgid="(GMT+06:00) Colombo" msgstr="（GMT+06:00）可倫坡"/>
+	<message msgid="(GMT+07:00) Bangkok, Jakarta" msgstr="（GMT+07:00）曼谷,雅加達"/>
+	<message msgid="(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumuqi, Taipei" msgstr="（GMT+08:00）北京,重慶,烏魯木齊,香港特別行政區,臺北"/>
+	<message msgid="(GMT+09:00) Tokyo, Pyongyang" msgstr="（GMT+09:00）東京,平壤"/>
+	<message msgid="(GMT+10:00) Sydney, Guam" msgstr="（GMT+10:00）悉尼,關島"/>
+	<message msgid="(GMT+11:00) Solomon Islands" msgstr="（GMT+11:00）所羅門群島"/>
+	<message msgid="(GMT+12:00) Wellington" msgstr="（GMT+12:00）威靈頓時間"/>
+	<message msgid="Year" msgstr="年"/>
+	<message msgid="Month" msgstr="月"/>
+	<message msgid="h" msgstr="時 "/>
+	<message msgid="m" msgstr="分 "/>
+	<message msgid="s" msgstr="秒"/>
+	<message msgid="Day " msgstr="日"/>
+	<message msgid="h " msgstr="時"/>
+	<message msgid="m " msgstr="分"/>
+	<message msgid="s " msgstr="秒"/>
+	<message msgid="Sync with Your PC" msgstr="複製本地時間"/>
+	<message msgid="(1~60 minutes)" msgstr="(範圍:1~60分鐘)"/>
+	<message msgid="Type of logs to display:" msgstr="日誌分類查看："/>
+	<message msgid="Up to 4 entries can be configured!" msgstr="最多只能設定4條記錄"/>
+	<message msgid="Index" msgstr="索引"/>
+	<message msgid="Log Content" msgstr="日誌內容"/>
+	<message msgid="Page %s" msgstr="第 %s 頁"/>
+	<message msgid="Log Server IP" msgstr="日誌伺服器IP位址"/>
+	<message msgid="Are you sure you want to delete this rule?" msgstr="確認要刪除嗎？"/>
+	<message msgid="The number of logs must be between 100~300!" msgstr="日誌條數設定錯誤！"/>
+	<message msgid="Please enter a port number." msgstr="請輸入埠號"/>
+	<message msgid="Server IP" msgstr="伺服器IP"/>
+	<message msgid="Port number must be between 1 and 65535!" msgstr="埠必須在1-65535之間"/>
+	<message msgid="The log server IP entered is used by gateway. Please retry!" msgstr="添加的日誌伺服器IP位址與閘道IP相同,請正確添加！"/>
+	<message msgid="No repeated log server!" msgstr="對不起，您已經配置了相同的日誌伺服器！"/>
+	<message msgid="(Default: 150, Range: 100~300)" msgstr="預設150,範圍100~300"/>
+	<message msgid="Add Log" msgstr="添加日誌設定"/>
+	<message msgid="This section allows you to save current settings or restore previous settings." msgstr="這裡您可以備份/恢復AP的當前設定。"/>
+	<message msgid="Save Settings to Local Hard Drive" msgstr="選擇您要備份的檔目錄"/>
+	<message msgid="Load Settings from Local Hard Drive" msgstr="選擇您要導入的設定檔"/>
+	<message msgid="Click this button to reset the device to factory default values." msgstr="按一下此按鈕將使AP的所有設定恢復到出廠時的預設狀態。"/>
+	<message msgid="Access Mode" msgstr="用戶類型"/>
+	<message msgid="User Name" msgstr="用戶名"/>
+	<message msgid="Change" msgstr="修改"/>
+	<message msgid="Old User Name" msgstr="原用戶名"/>
+	<message msgid="New User Name" msgstr="新用戶名"/>
+	<message msgid="Diagnostics" msgstr="診斷工具"/>
+	<message msgid="Input an IP address(eg: 192.168.0.254) or a domain name(eg: www.google.com):" msgstr="請輸入如下格式內容,如:ping 192.168.0.254"/>
+	<message msgid="Please enter:" msgstr="請輸入："/>
+	<message msgid="LED Control" msgstr="LED燈控制"/>
+	<message msgid="Enable all LEDs" msgstr="開啟所有LED燈"/>
+	<message msgid="Disable all LEDs" msgstr="關閉所有LED燈"/>
+	<message msgid="Uplink Detection" msgstr="上行鏈路檢測"/>
+	<message msgid="Ping Host1" msgstr="Ping 主機1"/>
+	<message msgid="Ping Host2" msgstr="Ping 主機2"/>
+	<message msgid="Ping Interval" msgstr="Ping 間隔"/>
+	<message msgid="10 ~ 100 Minutes"" msgstr="(10~100分鐘)"/>
+	<message msgid="Please input a valid Ping IP address!" msgstr="請輸入一個有效的Ping IP位址！"/>
+	<message msgid="Please input a valid Ping interval!" msgstr="請輸入一個正確的間隔時間！"/>
+	<message msgid="By default , the "Uplink Detection" function is disabled." msgstr="預設情況下，上行鏈路檢測功能功能是禁用的。"/>
+	<message msgid="Ping Host: Two different Ping Hosts can be added to the list for monitoring the connectivity.  If the "Uplink Detection" is enabled, the AP will ping those specified hosts periodically at the Ping Interval configured." msgstr="Ping 主機：可以輸入兩個主機IP位址，當該功能開啟時，AP就會在間隔的時間週期內通過乙太網口去ping已配置的主機。"/>
+	<message msgid="Ping Interval: The default interval is 10 minutes." msgstr="Ping 間隔：預設時間間隔是10分鐘。"/>
+	<message msgid="When "Uplink Detection" is enabled, if the AP loses its uplink connectivity, it forces the clients to re-associate with another AP by shutdown the SSID broadcast. This action can protect the client from connecting to a AP which has no backhaul to the Internet end." msgstr="說明：啟用上行鏈路檢測後，如果所配置的Ping主機都無法到達，AP將不能提供無線接入服務。"/>
+	<message msgid="Current Firmware Version:" msgstr="當前系統版本："/>
+	<message msgid="Release Date: " msgstr="發佈日期:"/>
+	<message msgid="Please enter right time!" msgstr="請輸入正確時間，只能為正整數！"/>
+	<message msgid="Please enter " msgstr="請輸入"/>
+	<message msgid="%s Must be alphanumeric characters or underscore!" msgstr="%s 輸入有誤,只能輸入字母,數位和底線！"/>
+	<message msgid="Invalid device name. %s can't be included." msgstr="字串中含有非法字元%s。"/>
+	<message msgid="System will be redirected to home page in 1 minute." msgstr="一分鐘後系統會重新連結至首頁。"/>
+	<message msgid="New User Name and Administrator Name cannot be the same!" msgstr="新用戶名不能與管理員用戶名相同！"/>
+	<message msgid="Username error!" msgstr="原用戶名錯誤！"/>
+	<message msgid="Passwords mismatched!" msgstr="新密碼與確認新密碼不一致，請重新輸入！"/>
+	<message msgid="Please first select a valid configuration file!" msgstr="請首先選擇導入的檔！"/>
+	<message msgid="The file to import MUST have a file name suffix of cfg." msgstr="導入文件的尾碼為cfg！"/>
+	<message msgid="Please select a path on your computer to save the configuration file." msgstr="匯出配置參數,請指定儲存參數的路徑！"/>
+	<message msgid="Please select a firmware file!" msgstr="請首先選擇升級檔！"/>
+	<message msgid="Country/Region" msgstr="國家或地區"/>
+	<message msgid="England" msgstr="英國"/>
+	<message msgid="Spain" msgstr="西班牙"/>
+	<message msgid="Italy" msgstr="義大利"/>
+	<message msgid="France" msgstr="法國"/>
+	<message msgid="Germany" msgstr="德國"/>
+	<message msgid="Netherlands" msgstr="荷蘭"/>
+	<message msgid="CzechRepublic" msgstr="捷克"/>
+	<message msgid="Poland" msgstr="波蘭"/>
+	<message msgid="Estonia" msgstr="愛沙尼亞"/>
+	<message msgid="Russia" msgstr="俄羅斯"/>
+	<message msgid="Turkey" msgstr="土耳其"/>
+	<message msgid="Sweden" msgstr="瑞典"/>
+	<message msgid="Switzerland" msgstr="瑞士"/>
+	<message msgid="Denmark" msgstr="丹麥"/>
+	<message msgid="Belgium" msgstr="比利時"/>
+	<message msgid="Bulgaria" msgstr="保加利亞"/>
+	<message msgid="Armenia" msgstr="亞美尼亞"/>
+	<message msgid="Finland" msgstr="芬蘭"/>
+	<message msgid="Slovenia" msgstr="斯洛維尼亞"/>
+	<message msgid="Slovak Republic" msgstr="斯洛伐克"/>
+	<message msgid="Romania" msgstr="羅馬尼亞"/>
+	<message msgid="Portugal" msgstr="葡萄牙"/>
+	<message msgid="Austria" msgstr="奧地利"/>
+	<message msgid="Greece" msgstr="希臘"/>
+	<message msgid="United States" msgstr="美國"/>
+	<message msgid="Canada" msgstr="加拿大"/>
+	<message msgid="Mexico" msgstr="墨西哥"/>
+	<message msgid="Brazil" msgstr="巴西"/>
+	<message msgid="Argentina" msgstr="阿根廷"/>
+	<message msgid="Chile" msgstr="智利"/>
+	<message msgid="Colombia" msgstr="哥倫比亞"/>
+	<message msgid="Peru" msgstr="秘魯"/>
+	<message msgid="Bolivia" msgstr="玻利維亞"/>
+	<message msgid="Latvia" msgstr="拉脫維亞"/>
+	<message msgid="China" msgstr="中國"/>
+	<message msgid="India" msgstr="印度"/>
+	<message msgid="Indonesia" msgstr="印尼"/>
+	<message msgid="Philippines" msgstr="菲律賓"/>
+	<message msgid="Vietnam" msgstr="越南"/>
+	<message msgid="Thailand" msgstr="泰國"/>
+	<message msgid="Korea Republic" msgstr="韓國"/>
+	<message msgid="Hong Kong" msgstr="香港"/>
+	<message msgid="Taiwan" msgstr="臺灣"/>
+	<message msgid="Malaysia" msgstr="馬來西亞"/>
+	<message msgid="New Zealand" msgstr="紐西蘭"/>
+	<message msgid="Australia" msgstr="澳大利亞"/>
+	<message msgid="Pakistan" msgstr="巴基斯坦"/>
+	<message msgid="United ArabEmirates" msgstr="阿聯酋"/>
+	<message msgid="Iraq" msgstr="伊拉克"/>
+	<message msgid="Iran" msgstr="伊朗"/>
+	<message msgid="SaudiArabia" msgstr="沙烏地阿拉伯"/>
+	<message msgid="South Afica" msgstr="南非"/>
+	<message msgid="Egypt" msgstr="埃及"/>
+	<message msgid="Morocco" msgstr="摩洛哥"/>
+	<message msgid="Syria" msgstr="敘利亞"/>
+	<message msgid="Israel" msgstr="以色列"/>
+	<message msgid="Deployment" msgstr="部署模式"/>
+	<message msgid="Local" msgstr="本地部署"/>
+	<message msgid="Cloud" msgstr="雲端部署"/>
+	<message msgid="Cloud AC Address" msgstr="雲端AC控制器地址"/>
+	<message msgid="(The WAN IP address of the router that the Root AC connects to)" msgstr="(主AC的出口路由網際網路地址)"/>
+	<message msgid="Cloud AC Manage Port" msgstr="雲端AC管理埠"/>
+	<message msgid="Cloud AC Upgrade Port" msgstr="雲端AC升級埠"/>
+	<message msgid="(Valid Range: 1024~65535)" msgstr="(取值範圍：1024~65535)"/>
+	<message msgid="Please specify a valid manage port" msgstr="請輸入一個合法的管理埠"/>
+	<message msgid="Please specify a valid upgrade port" msgstr="請輸入一個合法的升級埠"/>
+	<message msgid="This page allows you to configure different modes to manage APs. Two modes are supported: Local and Cloud." msgstr="本頁可以設定不同的部署模式來管理AP，可以在本地部署和雲端部署之間進行切換。"/>
+	<message msgid="Local: When this option is selected, all current APs can only be managed by the local AC." msgstr="本地部署：當選擇本地部署時，當前AP只能被本地AC進行管理。"/>
+	<message msgid="Cloud: When this option is selected, all current APs can only be managed by the cloud AC or a cloud server." msgstr="雲端部署：當選擇雲端部署時，當前AP只能被雲端AC或者雲端伺服器進行管理。"/>
+	<message msgid="Options need to be configured in Cloud mode:" msgstr="其中，雲端部署模式需要設定項："/>
+	<message msgid="Device Name: Note information of the AP." msgstr="設備名稱：AP的備註訊息。"/>
+	<message msgid="Cloud AC Address: The WAN IP address of the router that the cloud AC connects to." msgstr="雲端AC控制器地址：雲端AC的出口路由網際網路地址。"/>
+	<message msgid="Cloud AC Manage Port: The port of the router that the cloud AC connects to and that is used for managing APs (Range: 1024~65535)." msgstr="雲端AC管理埠：雲端AC出口路由需開放的埠號，用於管理雲端AP埠，取值範圍：1024~65535。"/>
+	<message msgid="Cloud AC Upgrade Port: The port of the router that the cloud AC connects to and that is used for upgrading APs (Range: 1024~65535)." msgstr="雲端AC升級埠：雲端AC出口路由需開放的埠號，用於升級雲端AP埠，取值範圍：1024~65535。"/>
+	<message msgid="WAN Status" msgstr="WAN口狀態"/>
+	<message msgid="PPPoE Mode" msgstr="PPPOE模式"/>
+	<message msgid="MPPE" msgstr="MPPE加密"/>
+	<message msgid="(Range:256~1492)" msgstr="(範圍：256-1492位元組)"/>
+	<message msgid="%s is not allowed included in username and password!" msgstr="寬頻用戶名和密碼中不能包含 %s！"/>
+	<message msgid="Please enter a MTU value between 256 and 1492." msgstr="請輸入有效的MTU值，範圍為 256 - 1492。"/>
+	<message msgid="Please enter a valid user name or password!" msgstr="請輸入用戶名或密碼！"/>
+	<message msgid="Enter the user name and password your ISP has provided; The default MTU is 1492, do not change it unless necessary; MPPE is only used for some Ethernet cable users. If your ISP has provided MPPE, you need to enable MPPE on the device; If not, keep the default." msgstr="輸入寬頻運營商提供給您的用戶名和密碼；MTU值保持預設1492位元組即可，如有特殊情況可以修改；MPPE選項在某些社區寬頻中使用,如使用MPPE加密，需要啟用後才能實現正常撥號連線。"/>
+	<message msgid="Connecting" msgstr="連接中"/>
+	<message msgid="Default Gateway" msgstr="預設閘道器"/>
+	<message msgid="Manage VLAN" msgstr="管理VLAN"/>
+	<message msgid="Trunk Port" msgstr="Trunk口"/>
+	<message msgid="Wired LAN Port" msgstr="有線LAN口"/>
+	<message msgid="PVID: The VLAN ID for native vlan of trunk port." msgstr="PVID：設定trunk口本身的PVID。"/>
+	<message msgid="Trunk Port: Set the port to work in trunk mode." msgstr="Trunk口：將指定的介面設定成trunk模式。"/>
+	<message msgid="VLAN for LAN port: Assign specific VLAN ID for the LAN Port to establish different access right." msgstr="有線口VLAN配置：將有線口映射到指定的VLAN。"/>
+	<message msgid="VLAN ID: It specifies the ID of the VLAN to which an SSID is mapped." msgstr="SSID VLAN配置：將SSID映射到指定的VLAN。"/>
+	<message msgid="Manage VLAN: the VLAN to manage AP and login to AP UI." msgstr="管理VLAN：設定可以管理AP的VLAN資訊。"/>
+	<message msgid="LAN0 usually is the port connected to the PoE switch." msgstr="LAN0介面為PoE供電介面,用於連接交換機"/>
+	<message msgid="Please select one LAN port to work in trunk mode at least!" msgstr="請至少選擇一個lan埠做為trunk口！"/>
+	<message msgid="SNMP Agent" msgstr="SNMP"/>
+</po>

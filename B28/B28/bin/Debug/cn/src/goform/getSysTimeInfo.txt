@@ -1,0 +1,6 @@
+{
+        "checkTimeEn": "true",
+        "checkTimeInterval": "86400",
+        "timeZone": "8",
+        "systemTime": "2011-05-01-03-46-33"
+    }

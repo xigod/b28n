@@ -1,0 +1,17 @@
+{
+        "wmmEn": "true",
+        "wmmMode": "throughput",
+        "noAckEn": "true/false",
+        "wmmConfig": {
+            "BE": "1 2 33 45 0",
+            "BK": "12 33 44 55 0",
+            "VI": "22 33 12 34 0",
+            "VO": "33 21 12 32 0" 
+        },
+        "wmmStaConfig": {
+            "STABE": "1 2 33 45 1",
+            "STABK": "12 33 44 55 2",
+            "STAVI": "22 33 12 34 4",
+            "STAVO": "33 21 12 32 3" 
+        }
+    }

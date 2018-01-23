@@ -1,0 +1,7 @@
+{
+    "manualRebootEn": "true",  
+    "rebootType": "timing",    
+    "intervalTime": "600",                 
+    "rebootTime": "2:00",                   
+    "rebootDate": "1001011"        
+}

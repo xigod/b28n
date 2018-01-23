@@ -1,0 +1,315 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,
+textarea,select,p,blockquote,th,td {margin: 0;padding: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+fieldset,img {border: 0;}
+address,button,caption,cite,code,dfn,em,
+input,optgroup,option,select,strong,textarea,th,var {font:inherit;}
+del,ins {text-decoration: none;}
+li {list-style: none;}
+/*caption,th {text-align: left;}*/
+h1,h2,h3,h4,h5,h6 {font-size: 100%;font-weight: normal;}
+q:before,q:after {content: '';}
+abbr,acronym {border: 0;font-variant: normal;}
+sup {vertical-align: baseline;}
+legend {color: #000;}
+/*===================================
+ * Fonts css
+=================================== */
+body{font:12px/2 tahoma,arial,"Times New Roman";*font-size:small;*font:x-small;}select,input,textarea,button{font:99% arial,helvetica,clean,sans-serif}table{font-size:inherit;font:100%}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}
+/*=================================
+*CSS base
+=================================*/
+h1 {/* 18px via YUI Fonts CSS foundation. */font-size: 138.5%;}
+h2 {/* 16px via YUI Fonts CSS foundation. */font-size: 123.1%;}
+h3 {/* 14px via YUI Fonts CSS foundation. */font-size: 108%;}
+/* Top & bottom margin based on font size. */
+h1,h2,h3,h4,h5,h6,strong{font-weight: bold;}
+optgroup {font-weight:normal;}
+/* make IE scale images properly */
+/* see http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+img { -ms-interpolation-mode:bicubic;}
+/*Ű*/
+.fl2{font-size:12px;}.fl3{font-size:13px;}.fl4{font-size:14px;}.fl6{font-size:16px;}.f20{font-size:20px;}
+.fb{font-weight:bold}
+.lh150{line-height:150%}.lh180{line-height:180%}.lh200{line-height:200%}
+.unl{text-decoration:underline}.no_unl{text-decoration:none}.red{ color:#f00}.blue{ color:#00f}
+
+/*λ*/
+.fl{ float:left; display:inline-block}.fr{ float:right; display:inline-block}.fn{ float:none;}
+.tl{ text-align:left;}.tr{ text-align:right;}.tc{ text-align:center;}
+.bc{margin-left:auto;margin-right:auto}
+.cb{clear:both;}.cl{clear:left}.cr{clear:right}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.vm{vertical-align:middle}
+.pr{position:relative}.pa{position:absolute}
+abs-right{position:absolute;right:0}.zoom{zoom:1}
+.hideden{visibility:hidden}.none{display:none}
+
+/*ȸ߶*/
+.w10{width:10px}.w20{width:20px}.w30{width:30px}.w40{width:40px}.w50{width:50px}.w60{width:60px}.w70{width:70px}.w75{width:75px}
+.w80{width:80px}.w84{width: 84px}.w90{width:90px}.w100{width:100px}.w110{width:110px}.w120{width:120px;}.w150{width:150px}.w350{width: 350px;}.w190{width:190px}.w500{width: 500px}.w540{width: 580px}.w600{width: 600px}.w618{width: 635px;}.w638{width:638px}.w640{width:640px}.w750{width:750px;overflow:hidden}.w720{width: 720px;}.w807{width:807px;}.w900{width:900px;}.w{width:100%}.w1200{width:1400px;overflow:hidden}
+.h25{height:25px}.h30{height: 30px}.h50{height:50px}.h80{height:80px}.h100{height:100px}.h150{height:150px}.h200{height:200px}.h{height:100%}
+
+/*⣬ڱ߾*/
+.m5{margin:5px}.mt5{margin-top:5px}.mb5{margin-bottom:5px}.ml5{margin-left:5px}.mr5{margin-right:5px}
+.m10{margin:10px}.m15{margin:15px}.m20{margin:20px}
+.mt10{margin-top:10px}.mt15{margin-top:15px}.mt20{margin-top:20px}
+.mt30{margin-top:30px}.mt50{margin-top:50px}.mt100{margin-top:100px}
+.mb10{margin-bottom:10px}.mb15{margin-bottom:15px}.mb20{margin-bottom:20px}
+.mb30{margin-bottom:30px}.mb50{margin-bottom:50px}.mb100{margin-bottom:100px}
+.ml10{margin-left:10px}.ml13{margin-left: 13px}.ml15{margin-left:15px} .ml28{margin-left: 28px}.ml20{margin-left:20px}.ml23{margin-left: 23px}.ml33{margin-left: 33px}
+.ml40{margin-left:40px}.ml44{margin-left: 44px}.ml46{margin-left: 46px}.ml50{margin-left:50px}.ml100{margin-left:100px}
+.mr10{margin-right:10px}.mr15{margin-right:15px}.mr20{margin-right:20px}
+.mr30{margin-right:30px}.mr50{margin-right:50px}.mr100{margin-right:100px}
+.p10{padding:10px}.p15{padding:15px}.p20{padding:20px}
+.pt10{padding-top:10px}.pt15{padding-top:15px}.pt20{padding-top:20px}
+.pt30{padding-top:30px}.pt50{padding-top:50px}.pt100{padding-top:100px}
+.pb10{padding-bottom:10px}.pb15{padding-bottom:15px}.pb20{padding-bottom:20px}
+.pb30{padding-bottom:30px}.pb50{padding-bottom:50px}.pb100{padding-bottom:100px}
+.pl10{padding-left:10px}.pl15{padding-left:15px}.pl20{padding-left:20px}
+.pl30{padding-left:30px}.pl35{padding-left:35px}.pl40{padding-left:40px}.pl50{padding-left:50px}.pl60{padding-left:60px}.pl88{padding-left: 88px;}.pl100{padding-left:102px}
+.pr10{padding-right:10px}.pr15{padding-right:15px}.pr20{padding-right:20px}
+.pr30{padding-right:30px}.pr40{padding-right:40px}.pr50{padding-right:50px}.pr100{padding-right:100px}
+/*---page style---*/
+/*---login.asp---*/
+#mid_content{ border:outset 2px #999; height:210px; width:386px; background-color: #e5e5e5; margin:150px auto 0;}
+.loagin_title{ height:36px; line-height:36px; font-size:16px; background:url(../images/login_logo.gif?version=4112); color:#fff; font-weight:bold; text-align:center}
+#login{ width:204px; height:130px; border: solid #9ea2a5 1px; margin:20px auto; background-color:#FFFFFF; text-align:center;}
+#login td{ height:26px;}
+/*---index.asp---*/
+	/*---#middle->#middle_right---*/
+form{ float:left;}
+a{ line-height: 18px; letter-spacing: 1px; font-size: 9pt; text-decoration:none; color:#000;}
+/*a:link { font-weight: bold;}
+a:visited {	font-weight: bold;}*/
+.button { height: 25px; font-weight:bold; min-width:64px}
+.button1 { height: 25px; font-weight:bold; padding:0 5px; }
+input.text { border: 1px solid #C0C0C0; padding: 1px 4px; width:150px;}
+select.list { border: #000000 1px solid; height: 18px; line-height: normal; *line-height: 30px; *height:24px;}
+.divbody{ position:relative; padding:10px;margin-bottom:60px}
+#head table tr{ height:24px;}
+#tail{ float:left; width:80px; margin-left:10px;}
+table tr{ height:30px;}
+.myTable{ width:640px; margin-left:20px;}
+.lang-en .myTable tr td:first-child{width:178px;}
+.myTable tr td:first-child{ padding-right:40px; width:150px; text-align:right;}
+#help{ margin:15px;/* border:#ccc solid 1px;*/ float:left; width:630px;}
+.a1{ background-color:#dddddd; cursor:default;}
+.a2{ background-color:#eeeeee; cursor:default;}
+.a3{ background-color:#bbbbbb; cursor:default;}
+.a4{ background-color:#999999; cursor:default;}
+/*menu.js*/
+.bg1{ background-image:url(../images/bg1.gif?version=350); width:5px;float:left;height: 24px;}
+.menu-bg1{ background-image:url(../images/bg1.gif?version=350); width:5px;float:left;height: 24px;}
+.bg2{ background-image:url(../images/bg2.gif?version=350); width:5px;float:left;height: 24px;}
+.menu-bg2{ background-image:url(../images/bg2.gif?version=350); width:5px;float:left;height: 24px;}
+.bg3{ background-image:url(../images/bg3.gif?version=350); float:left; display: inline-block;cursor: pointer;}
+.menu-bg3{ background-image:url(../images/bg3.gif?version=350); float:left; display: inline-block;cursor: pointer;}
+.cubg1{ background-image:url(../images/cubg1.gif?version=350); width:5px;float:left;height: 24px;}
+.menu-cubg1{ background-image:url(../images/cubg1.gif?version=350); width:5px;float:left;height: 24px;}
+.cubg2{ background-image:url(../images/cubg2.gif?version=350); width:5px; float:left;height: 24px;}
+.menu-cubg2{ background-image:url(../images/cubg2.gif?version=350); width:5px; float:left;height: 24px;}
+.cubg3{ background-image:url(../images/cubg3.gif?version=350);float:left;display: inline-block; cursor: pointer;}
+.menu-cubg3{ background-image:url(../images/cubg3.gif?version=350);float:left;display: inline-block; cursor: pointer;}
+#red_line{ height:3px; background-color:#cc0000; top:27px;clear: both;}
+/*wizard.asp  for scan table*/
+.signal1{ background:url(../images/wifi_signal.gif?version=350) right 2px no-repeat; padding-left:5px; text-align:left;}
+.signal2{ background:url(../images/wifi_signal.gif?version=350) right -23px no-repeat; padding-left:5px; text-align:left;}
+.signal3{ background:url(../images/wifi_signal.gif?version=350) right -48px no-repeat; padding-left:5px; text-align:left;}
+.signal4{ background:url(../images/wifi_signal.gif?version=350) right -73px no-repeat; padding-left:5px; text-align:left;}
+.signal5{ background:url(../images/wifi_signal.gif?version=350) right -98px no-repeat; padding-left:5px; text-align:left;}
+.control-notice { margin:40px; padding:20px;font-size:16px;font-weight:bold;border:1px #ccc solid; width:600px;}
+.radio{ margin-right: 10px;}
+.table-fixed {
+table-layout: fixed;
+}
+.table-fixed  tr  td.fixed, .table-fixed  tr  th.fixed {
+overflow: hidden;
+text-overflow: ellipsis;
+word-break: keep-all;
+white-space: nowrap;
+}
+.table-fixed  tr  td[title], .table-fixed  tr  th[title] {
+cursor: pointer;
+}
+.check_box {
+    margin-left:5px;
+}
+.check_all {
+    margin-left:130px;
+}
+.all_rigth {
+    padding-right: 10px;
+}
+.btn_middle {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.th30 {
+    background-color:#bbbbbb; 
+    cursor:pointer;
+    text-align: center;
+}
+.th30_bgcolor {
+    color: #fff;
+    background-color: #7E7E7E;
+}
+.onRed {
+    color:#f00;
+    font-weight: bold;
+}
+#groupNav li span[name=delete]{
+    float: right;
+    margin-right: -75px;
+}
+.grey_icon2 {
+    background:url(../images/img.png?version=4112)  no-repeat;
+    background-position: 0 -33px;
+    padding: 10px 8px;
+    cursor: pointer;
+}
+.grey_icon2:hover {
+    background:url(../images/img.png?version=4112)  no-repeat;
+    background-position: 0 2px;
+    padding: 10px 8px;
+    cursor: pointer;
+}
+.grey_icon{
+    background:url(../images/img.png?version=4112)  no-repeat;
+    background-position: 0 -32px;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+.grey_icon:hover {
+    background:url(../images/img.png?version=4112)  no-repeat;
+    background-position: 0 2px;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+.save_icon{
+    background:url(../images/img.png?version=4112)  no-repeat;
+    background-position: 0px -59px;
+    padding: 8px 11px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.cancel_icon{
+    background:url(../images/img.png?version=4112)  no-repeat;
+    background-position: 0px -101px;
+    padding: 8px 11px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.addGroup {
+    width: 100px;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.divBottom {
+    height: 35px;
+    border-top: solid 1px #c3c3c3;
+}
+.divLeft {
+    float:left;
+    margin-left:20px;
+    width: 240px;
+    border:solid 1px #A2A2A2;
+}
+.divRight {
+    float:left;
+    margin-left:20px;
+    width: 460px;
+    border:solid 1px #A2A2A2;
+}
+#groupNav li {
+    height: 30px;
+}
+#groupNav li label{
+    float: right;
+    margin-right: 10px;
+    width: 70px;
+}
+
+.uGroup:hover {
+    background-color: #E6E6E6;
+}
+.uGroup input[type=checkbox] {
+    float: left;
+    margin-top: 6px;
+    margin-right: 4px;
+}
+.tabHead {
+    width: 350px;
+    margin: 20px auto;
+}
+
+.vac-input {
+    margin: 2px;
+}
+/* Form control-group */
+.control-group {
+	margin-bottom: 5px;
+    padding: 2px 0px;
+	*zoom: 1;
+}
+.control-group:before, .control-group:after {
+	display: table;
+	line-height: 0;
+	content: '';
+}
+.control-group:after{
+	clear: both;
+}
+
+.control-label{
+	float: left;
+	width: 170px;
+	text-align: right;
+}
+.control-label-title {
+	float: none;
+}
+.controls{
+	margin-left: 190px;
+	color:#333;
+	
+	/* for IE7 */
+	/**padding-left: 20px;*/
+	/**margin-left: 0;*/
+}
+
+.label-bold {
+    font-weight: normal;
+}
+
+.third-menu1 {
+    color:#fff;
+}
+
+.third-menu2 {
+    color:#000;
+}
+
+.text-help {
+    font-size: 12px;
+    color: #999;
+    margin-left: 3px;
+}
+.table-td  th {
+    border-right: 1px;
+    border-bottom: 1px;
+}
+.table-td  td {
+    border-right: 1px;
+    border-bottom: 1px;
+}
+
+.offline {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}

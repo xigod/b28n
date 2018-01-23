@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html><head>
+<title>Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="./public/style.css?version=350">
+<script src="./lang/b28n.js?version=350"></script>
+<script src="./public/j.js?version=350"></script>
+<script src="./public/menu.js?version=350"></script>
+<script>B.setTextDomain("all");
+var maxPower = top.maxPower || 23,
+	minPower = top.minPower || 8,
+	defPower =  top.defPower || 23;
+var pppoeHelpStr = "";
+
+var help_array=new Array(
+'help ?'
+	,'<b>没有找到帮助项</b>'
+
+,'st_system'
+	,'<b>' + _("System Status") + '</b><br>' +
+	_("Device Name: name of this device. If this device is not the only one of its kind in the network, this name help you identify the device. You can change the name of this device on the Network > LAN Setup page.") + '<br>' +
+	_("System Time: system time of this device.") + '<br>' +
+	_("Uptime: time during which this device is operating.") + '<br>' +
+	_("Number of Wireless Clients: number of wireless clients connected to this device.") + '<br>' +
+	_("Firmware Version: system software version number of this device.") + '<br>' +
+	_("Hardware Version: hardware version number of this device.") + '<br>' +
+	 '<strong>' + _("LAN Status") + '</strong><br>' +
+	_("MAC Address: MAC address of the LAN port of this device. If you connect this device to other devices using Ethernet cables, this device uses this MAC address to communicate with the other devices.") + '<br>' +
+	_("IP Address: IP address (also called management IP address) of this device. You can access the web UI of this device using this IP address. You can change this IP address on the Network > LAN Setup page.") + '<br>' +
+	_("Subnet Mask: subnet where this device resides. You can understand the maximum number of hosts in the subnet based on the subnet mask. The default subnet mask is 255.255.255.0, where the last number indicates the host field. If the default subnet mask is used, a maximum number of 254 hosts are allowed in the subnet, including this device. Therefore, there can be another 253 hosts in the subnet. That is, you can set the IP address of your computer to 192.168.0.X, where X ranges from 1 through 253, so that the computer can access the web UI of this device.") + '<br>' + 
+	_("Primary DNS Server: IP address of the primary DNS server of this device.") + '<br>' +
+	_("Secondary DNS Server: IP address of the secondary DNS server of this device.")
+	
+,'st_wireless'
+	,'<strong>' + _("Radio Status") + '</strong>' + '<br>' +
+	_("Radio (On/Off): whether the wireless function of this device is enabled. You can enable or disable the wireless function on the Wireless > Radio page.") + '<br>' +
+	_("Network Mode: wireless network mode of this device. You can change it on the Wireless > Radio page.") + '<br>' +
+	_("Channel: channel used by the device to transmit radio signals. You can change it on the Wireless > Radio page.") + '<br>' +
+	'<strong>' + _("SSID Status") + '</strong><br>' +
+	_("SSID: wireless network name. You can change it on the Wireless > SSID page.") + '<br>' +
+	_("MAC Address: MAC address of a specified SSID.") + '<br>' +
+	_("Working Status: whether a specified SSID is enabled. Enabled indicates that this device transmits radio signals of a specified SSID and other devices can detect the SSID. Disabled indicates that this device does not transmit radio signals of a specified SSID and other devices cannot detect the SSID. You can change SSID working status on the Wireless > SSID page.") + '<br>' +
+	_("Security Mode: wireless security mode of a specified SSID. You can change it on the Wireless > SSID page.")
+
+,'st_ap'
+	,'<strong>' + _("Traffic Statistics") + '</strong><br>' +
+	_("SSID: SSID of an enabled wireless network of this device.") + '<br>' +
+	_("Received Traffic: total number of bytes received by a wireless network.") + '<br>' +
+	_("Received Packets: total number of packets received by a wireless network.") + '<br>' +
+	_("Transmitted Traffic: total number of bytes transmitted by a wireless network.") + '<br>' +
+	_("Transmitted Packets: total number of packets transmitted by a wireless network. 
+Note: All the statistics are cleared when the wireless function is disabled or this device is restarted. All the wireless network statistics of an SSID are cleared when the SSID is disabled.")
+
+,'st_wirelesslist'
+	,'<strong>' + _("Wireless Clients") + '</strong><br>' +
+	_("After you select an SSID, wireless client information appears accordingly.") + '<br>' +
+	_("MAC Address: MAC address of a wireless client.") + '<br>' +
+	_("IP Address: IP address of a wireless client.") + '<br>' +
+	_("Connection Duration: duration of a connection between a wireless client and a wireless network with a specified SSID.") + '<br>' +
+	_("Transmit Rate: current transmit rate of a wireless client.") + '<br>' +
+	_("Receive Rate: current receive rate of a wireless client.")
+
+,'wizard'
+	,'<b>' + _("Quick Setup") + '</b><br>' +
+	_("This device supports 3 working modes. You can select the one you need.") + '<br>' +
+	_("AP Mode: In this mode, this device can be connected to wireless clients, but cannot connect to other APs actively.") + '<br>' +
+	_("WDS Mode: In this mode, maxiume 4 Aps can access to the device at same time.") + '<br>' +
+	_("Client+AP: In this mode, this device extends an existing wireless network for broader network coverage.") + '<br>' +
+	_("In this case, the secondary SSID functions as an AP SSID for connecting to wireless clients. In this mode, the DHCP server of this device is disabled.")
+
+,'wl_wizard'
+	,'<strong>' + _("AP") + '</strong><br>' +
+	_("In this mode, wireless clients can connect to this device, but this device cannot connect to peers.") + '<br>' +
+	_("SSID: primary SSID of this device.") + '<br>' +
+	_("Security Mode: security mode for the primary SSID of this device. After selecting a security mode, you can set the password of the primary SSID.") + '<br>' +
+	'<strong>' + _("Client+AP") + '</strong><br>' +
+	_("In this mode, this device is bridged wirelessly to an upstream device and provides the wireless access service to clients. After it is bridged, the SSID of %s does not change. When wireless clients connect to %s and the upstream device functions as a DHCP server, the clients can obtain IP addresses from the upstream device.") + '<br>' +
+	_("SSID: wireless network name of the upstream device. The SSID is automatically populated when an upstream device detected is selected.") + '<br>' +
+	_("Security Mode: security mode of the upstream device. The security mode is automatically populated when an upstream device detected is selected.") + '<br>' +
+	_("Upstream Device Channel: channel of the upstream device. The channel is automatically populated when an upstream device detected is selected.")
+
+,'lan'
+	,'<b>' + _("LAN Setup") + '</b><br>' +
+	_("You can configure the LAN IP address of this device here.") + '<br>' +
+    _("IP Address Type: method for this device to obtain an IP address. The default option is Static IP Address.") + '<br>' +
+    _("Static IP Address: If Static IP Address is selected, you can manually set the IP address, subnet mask, default gateway IP address, primary DNS server IP address and secondary DNS IP address of this device.") + '<br>' +
+    _("DHCP: If DHCP is selected, this device automatically obtains its IP address, subnet mask, default gateway IP address, primary DNS server IP address, and secondary DNS server IP address from an existing DHCP server.  Before the next login to this device, you need to check the IP address from the clients list of the DHCP server, and then use this IP address to login.") + '<br>' +
+	_("IP Address: IP address (also called management IP address) of this device. The default IP address is 192.168.0.254. You can access the web UI of this device using this IP address.") + '<br>' +
+	_("Subnet Mask: subnet mask of this device.") + '<br>' +
+	_("Gateway: default gateway IP address of this device. If this device must access the internet, you can set the default gateway to the LAN IP address of the egress router of this device.") + '<br>' +
+	_("Primary DNS Server: mandatory. Set it to the DNS server IP address provided by your ISP. If you are uncertain about the IP address, consult your ISP.") + '<br>' +
+	_("Secondary DNS Server: optional. Set it to the second DNS server address (if any) provided by your ISP.")  + '<br>' +
+	'<b>' + _("Note:") + '</b><br>' +
+	_("If necessary, you can press the RST or RESET button on the device to restore factory settings.")+ '<br>' +
+	_("If you change this IP address, you can log in to the web UI of this device only with the new IP address.") + '<br />' +
+	'<b>' + _("Auto Negotiation") + '</b><br>' +
+	_("Auto Negotiation: In this mode, this device can be powered through the LAN0 port (PoE port) using a CAT 5E or better Ethernet cable with a maximum length of 100 meters.") + '<br />' +
+	'<b>' + _("10 Mbps Half Duplex") + '</b><br>' +
+	_("The 10 Mbps Half Duplex mode is applicable only in special deployment environments and may cause LAN0 port (PoE port) throughput reduction to this device.")
+
+,'dhcpserverset'
+	,'<b>' + _("DHCP Server") + '</b><br>' +
+	_("DHCP Server: select this option if this device is required to assign IP addresses to LAN computers.") + '<br>' +
+	_("Start IP Address: start IP address in the IP address pool (range of IP addresses that the DHCP server can assign) of the DHCP server.") + '<br>' +
+	_("End IP Address: end IP address in the IP address pool of the DHCP server.") + '<br>' +
+	_("Lease Time: validity period of an IP address assigned by the DHCP server.") + '<br>' +
+	_("Subnet Mask: subnet mask of this device.") + '<br>' +
+	_("Gateway: default gateway IP address of this device. If this device must access the internet, you can set the default gateway to the LAN IP address of the egress router of this device.") + '<br>' +
+	_("Primary DNS Server: mandatory. Set it to the DNS server IP address provided by your ISP. If you are uncertain about the IP address, consult your ISP.") + '<br>' +
+	_("Secondary DNS Server: optional. Set it to the second DNS server address (if any) provided by your ISP.") + '<br>' +
+	'<strong>' + _("Note:") + '</strong><br>' +
+	_("To apply the DHCP server settings to all your LAN computers, select the "Obtain an IP address automatically" and "Obtain DNS server address automatically" options on all the computers.")
+
+,'wl_basic'
+	,'<b>' + _("SSID") + '</b><br>' +
+	_("You can configure basic wireless settings of this device here. You are recommended to change only the SSID and security mode settings and retain the other default settings.") + '<br>' +
+	_("Enable: whether to enable the SSID.") + '<br>' +
+	/*_("Hide SSID Automatically: whether the SSID is hidden automatically when its number of clients reaches the maximum.") + '<br>' +*/
+	_("Broadcast SSID: whether to broadcast the SSID. Enable indicates that the SSID is broadcast and nearby wireless devices can find the SSID. Disable indicates that the SSID is not broadcast and nearby wireless devices cannot find the SSID.") + '<br>' +
+	_("Isolate Client: whether to disable communication among the clients connected to this device using the SSID. Enable indicates that the clients cannot communicate with each other. This increases wireless network security. Disable indicates that the clients can communicate with each other.") + '<br>' +
+    _("WMF: whether to forward multicast packets through unicast tunnels. Generally, multicast packets are usually transmitted at the lowest rate, such as 1 Mbps, leading to poor transmission efficiency.  WMF leverages the high auto-negotiated rate and reliable feedback mechanism of unicast packets to address multicast problems such as video playback stalls caused by packet loss and long delays over a wireless network.") + '<br>' +
+	_("Suppress Broadcast Probe Response: whether to respond to probe requests without an SSID. By default, wireless devices keep sending Probe Request packets that include the SSID field to scan their nearby wireless networks. After receiving such packets, this device determines whether the wireless devices are allowed to access its wireless networks based on the packets and responds using the Probe Response packets (including all Beacon frame parameters), which consumes a lot of wireless resources. After this function is enabled, this device does not respond to the requests without an SSID, saving wireless resources.") + '<br>' +
+	_("SSID: wireless network name.") + '<br>' +
+	_("Chinese SSID Encoding: encoding format of Chinese SSIDs. This parameter is valid only when an SSID contains Chinese characters. You can select UTF-8 or GB2312, whichever is supported by your wireless clients, to enable proper display of Chinese SSIDs. The default option is UTF-8.") + '<br>' +
+	_("Security Mode:") + '<br>' +
+	_("(1) WEP: Wired Equivalent Privacy algorithm.") + '<br>' +
+	_("Authentication Type: type of WEP-based authentication. The available options include Open (without a key), Shared (with a shared key), and 802.1x (with a RADIUS server).") + '<br>' +
+	_("If the Open or Shared option is used, enter one to four WEP keys, each of which consists of 5 or 13 ASCII characters or 10 or 26 hexadecimal characters. Only the default key is effective. If the 802.1x option is used, enter the IP address, port number, and key of the RADIUS server.") + '<br>' +
+	_("(2) WPA-PSK/WPA2-PSK: security modes implemented based on a shared key, including WPA-PSK, WPA2-PSK, and Mixed WPA/WPA2-PSK.") + '<br>' +
+	_("Encryption Algorithm: algorithm for WPA encryption.") + '<br>' +
+	_("Key: preshared WPA key. It consists of 8 to 63 ASCII characters or 8 to 64 hexadecimal characters.") + '<br>' +
+	_("Key Update Interval: interval at which a WPA key is updated. A shorter interval leads to higher security. The value 0 indicates that no key update is performed.") + '<br>' +
+	_("(3) WPA/WPA2: security modes implemented based on RADIUS server authentication to obtain a key, including WPA and WPA2.") + '<br>' +
+	_("RADIUS Server: IP address of the RADIUS server for authentication.") + '<br>' +
+	_("RADIUS Port: authentication port of the RADIUS server. The default port number is 1812.") + '<br>' +
+	_("RADIUS Password: shared password of the RADIUS server.") + '<br>' +
+	_("Encryption Algorithm: algorithm for WPA encryption.") + '<br>' +
+	_("Key Update Interval: interval at which a WPA key is updated. A shorter interval leads to higher security. The value 0 indicates that no key update is performed.")+ '<br>' +
+	'<strong>' + _("Note:") + '&nbsp;' + '</strong>' + _("If you set the security mode to WEP, WPA, or WPA2, ensure that your wireless clients support the mode.")
+
+,'wl_radio'
+	,'<b>' + _("Radio Status") + '</b><br>' +
+	_("You can configure radio settings here.") + '<br>' +
+	_("Country/Region: country or region where this device is located. You can select the country or region to ensure that this device complies with the channel regulations of the country or region.  The default option is China.") + '<br>' +
+	_("Network Mode: network mode of this device. For a 2.4 GHz network, the available options include 11b/g, 11b, 11g, and 11 b/g/n. For a 5 GHz network, the available options include 11ac, 11a/n, and 11a.") + '<br>' +
+	_("Channel: channel in which this device operates. Automatic indicates that this device automatically changes to a channel rarely used in the ambient environment to prevent interference.") + '<br>' +
+	_("Channel Bandwidth: width of the frequency band of the channel of this device.") + '<br>' +
+	_("Extension Channel: used to determine the operating frequency band of this device when it uses the 40 MHz channel bandwidth in 11n mode.") + '<br>' +
+	_("Lock Channel: whether to lock the Country/Region, Network Mode, Channel, Channel Bandwidth, and Extension Channel settings.") + '<br>' +
+   _(_("Transmit Power: transmit power of this device."), [minPower, maxPower, defPower, minPower, maxPower, defPower])  + '<br>' +
+	_("Lock Power: whether the current transmit power settings of this device can be changed.") + '<br>' +
+	_("Preamble: a group of bits located at the beginning of a packet to enable a receiver of the packet to perform synchronization and prepare for receiving data. By default, the Long Preamble option is selected for compatibility with old network adopters installed on wireless clients. To achieve better synchronization performance of networks, you can select the Short Preamble option.") + '<br>' +
+	_("Short GI: short guard interval for preventing data block interference. 
+Propagation delays may occur on the receiver side due to factors such as multipath wireless signal transmission. If a data block is transmitted at an overly high speed, it may interfere with the previous data block. The short GI helps prevent such interference.  Enabling the short GI can yield a 10% improvement in wireless data throughput. 
+   Disable: The short GI function is disabled. 
+   Enable: The short GI function is enabled. 
+   Automatic: The short GI function is enabled or disabled depending on the actual environment.") + '<br>' +
+	_("Isolate SSID: whether to disable communications among the clients connected to this device using different SSIDs. SSID isolation increases wireless network security.")
+
+,'wl_wds'
+	,'<b>' + _("WDS") + '</b>' +
+	_("WDS Mode: In this mode, you can perform a scan so that the MAC address of the selected peer device is added automatically to the MAC address field of this device. Then, you need to manually set the primary SSID, channel, security mode and wireless password of this device to those of the peer device.")
+
+,'wl_advance'
+	,""
+
+,'wl_filter'
+	,'<b>' + _("Access Control") + '</b><br>' +
+	_("You can specify MAC address filter rules to allow or disallow specified clients to connect to the wireless network of this device.") + '<br>' +
+	_("Disable: It indicates that wireless network access control is disabled. In this case, all wireless devices can access the wireless network of this device. 
+Allow: It indicates that only the wireless devices with the specified MAC addresses can access the wireless networks of this device. 
+Disallow: It indicates that only the wireless devices with the specified MAC addresses cannot access the wireless networks of this device.")
+
+,'wl_qvlan'
+	,'<b>' + _("QVLAN") + '</b><br>' +
+	_("This device supports the IEEE 802.1Q VLAN function. It enables this device to work with switches that support such function to establish multiple VLANs. Clients connecting to VLANs with different VLAN IDs cannot communicate with each other.") + '<br>' +
+	_("Management VLAN: ID of the management VLAN of this device. The default ID is 1. After changing the management VLAN, you can manage this device only after connecting your computer to the new management VLAN.") + '<br>' +
+	_("PVID: ID of the default native VLAN of the trunk port. The default ID is 1.") + '<br>' +
+	_("Trunk Port: port working in trunk mode. The default trunk port is LAN0.") + '<br>' +
+	_("LAN Port VLAN ID: ID of the VLAN to which a LAN port is mapped. The default ID is 1.") + '<br>' +
+	_("SSID: SSID of an enabled wireless network of this device.") + '<br>' +
+	_("SSID VLAN ID: ID of the VLAN to which an SSID is mapped. The default ID is 1000.") + '<br>' +
+	_("You can configure SSID's binding info to VLAN here. The default is 1000(1-4094).") + '<br>'
+,'qos_qos', '<b>' + _("Traffic Control") + '</b><br>' +
+        _("Some apps, such as P2P download apps, require lots of bandwidth. However, the internet connection bandwidth is limited. If these apps use too much bandwidth, other apps will be affected. To ensure that all users can access network resources properly, you can use the traffic control function to limit the traffic of wireless clients.") + '<br>' + 
+        _("This device supports the following traffic control modes:") + '<br>' + 
+        _("(1) Manual: You can manually set the maximum upload and download rates for SSIDs and users to specify the total bandwidth available to SSIDs and evenly allocate bandwidth to users. This prevents the slow network connection or network unavailability problem caused by excessive bandwidth usage by a low-priority user network (such as the guest network) or a user.") + '<br>' + 
+        _("(2) Automatic: You only need to set Total AP Bandwidth to the bandwidth offered by your ISP and set the maximum upload and download rates for SSIDs. With the settings, this device dynamically and evenly allocate the total bandwidth of the device to all its wireless clients, and dynamically and evenly allocate the total bandwidth of an SSID to all the wireless clients connected using the SSID.")  + '<br>' + 
+        _("Note: The bandwidth and rate range from 0.01 through 1000. A total of 2 decimal places are allowed. The unit is Mb/s. Blank indicates that no limit is imposed.")
+
+        ,'wirelesspacket'
+	,'<b>' + _("无线抓包") + '</b><br>' +'开启无线抓包能够抓取ap桥接模式下连接的上级AP与各无线智能终端通信时的所有数据包'
+,'deploy'
+	,'<b>' + _("Deployment") + '</b><br>' +
+	_("You can configure different deployment modes for centralized device management with an AC in different scenarios.") + '<br>' +
+	_("Local: It indicates that this device can only be managed by the local AC.") + '<br>' +
+	_("Cloud: It indicates that this device can be managed only by the cloud AC (located on the internet or another network) with a specified IP address.") + '<br>' +
+	_("In cloud deployment mode, set the following parameters as well:") + '<br>' +
+	_("Device Name: name of this device. A unique device name helps you quickly identify this device when there are multiple peers on your network.") + '<br>' +
+	_("Cloud AC Address: The WAN IP address of the router that the cloud AC connects to.") + '<br>' +
+	_("Cloud AC Management Port: port of the egress router to which the cloud AC connects for managing this device. Range: 1024 to 65535.") + '<br>' +
+	_("Cloud AC Upgrade Port: port of the egress router to which the cloud AC connects for upgrading this device. Range: 1024 to 65535.")
+,'snmp'
+	,'<b>' + _("SNMP") + '</b><br>' +
+	_("You can configure SNMP settings here. SNMP v1 and SNMP V2C are supported.") + '<br>' +
+	_("SNMP Agent: whether to enable the SNMP agent function.") + '<br>' +
+	_("Read Community: Read password used between an NMS and the SNMP agent. The SNMP agent allows the NMS to use the Read community to read variables in the MIB of this device.") + '<br>' +
+	_("Read/Write Community: Read/Write password used between an NMS and the SNMP agent. The SNMP agent allows the NMS to use the Read/Write community to read/write variables in the MIB of this device.")
+
+,'timeReboot'
+	,'<b>' + _("Reboot Schedule") + '</b><br>' +
+	_("You can create a reboot schedule for this device here. If this function is enabled, verify that the device is connected to the internet and the system time of the device is synchronized with the GMT time through the internet to ensure proper operation of the function.") 
+,'time'
+	,'<b>' + _("Date & Time") + '</b><br>' +
+	_("You can set the system time of this device here. 
+If the function for synchronizing the system time with the GMT time through the internet is enabled, this device synchronizes the system time after being connected to the internet. 
+You can manually change the system time of this device or synchronize it with the system time of the computer currently used to manage this device.")
+
+,'overtime'
+	,'<b>' + _("Login Timeout Interval") + '</b><br>'+
+	_("You can set the login timeout interval of this device here. If you perform no operation within the interval after logging in to the device, the system logs you out.")
+
+,'restore'
+	,'<b>' + _("Reset") +'</b><br>' +
+	_("If you click the Reset button, the factory settings of this device are restored.") + '<br>' +
+	_("Default user name: admin") + '<br>' +
+	_("Default password: admin") + '<br>' +
+	_("Default IP address: 192.168.0.254") + '<br>' +
+	_("Default subnet mask: 255.255.255.0")
+
+,'password'
+	,'<b>' + _("User Name & Password") + '</b><br>' +
+	_("You can manage login accounts of this device here.") + '<br>' +
+    _("Administrator: account that allows you to view and modify settings of this device.") + '<br>' +
+    _("User: account that allows you to view settings of this device.") + '<br>' 
+	
+,'logsetting'
+	,'<b>' + _("Log Settings") + '</b><br>' +
+	_("You can configure log server settings and set the number of logs to be displayed on the web UI here.") + '<br>' +
+    _("You can manage login accounts of this device here.") + '<br>' +
+    _("Log Server: log server to which this device synchronizes its logs. After this device synchronizes its logs to the log server, you can view the logs on the server.") + '<br>' +
+    _("Log Server IP Address: IP address of the computer that functions as a log server.") + '<br>' +
+    _("Log Server Port: port number of the log server. The default port number is 514. Change it to the actual port number of the log server.  ") + '<br>' +
+    _("Enable: whether to enable the corresponding log server.") + '<br>' 
+
+,'led'
+	,'<b>' + _("LED Control") + '</b><br>' +
+	_("You can turn on/off the LED indicators of this device here.")
+	
+,'uplink'
+	,'<b>' + _("Uplink Check") + '</b><br>' +
+	_('By default , the _("Uplink Check") function is disabled.') + '<br>' +
+	_('Ping Host: Two different Ping Hosts can be added to the list for monitoring the connectivity.  If the _("Uplink Check") is enabled, the AP will ping those specified hosts periodically at the Ping Interval configured.') + '<br>' +
+	_("Ping Interval: interval at which this device checks the uplink. The default interval is 10 minutes.") + '<br>' +
+	_('When _("Uplink Check") is enabled, if the AP loses its uplink connectivity, it forces the clients to re-associate with another AP by shutdown the SSID broadcast. This action can protect the client from connecting to a AP which has no backhaul to the Internet end.')
+, 'wl_rate', '<b>' + _("Frequency Analysis") + '</b><br>' + 
+        _("You can perform frequency analysis to learn about the usage of each channel, and select a channel with low usage as the operating channel of this device for better wireless transmission efficiency.") + '<br>' + 
+        _("The number of signals indicates the number of APs (or routers) detected in the ambient environment. A greater number indicates greater interference.") + '<br>' + 
+        _("A channel usage ranging from 0% to 50% is displayed in green, indicating that the channel is idle. A channel usage ranging from 51% to 80% is displayed in yellow, indicating that the channel is busy. A channel usage ranging from 81% to 100% is displayed in red, indicating that the channel is congested.")
+
+   , 'wl_channel', '<b>' + _("Rouge AP") + '</b><br>' +
+        _("This function enables you to learn about other wireless signals in the ambient environment of this device, including SSIDs, MAC addresses, channels, and signal strength.")
+
+        , 'wl_broadcast', '<b>' + _("Advanced") + '</b><br>' +
+        _("Identify Client Type: whether to identify operating system types of wireless clients connected to this device.  · Android: wireless clients running an Android operating system 
+        · iOS: wireless clients running an iOS operating system 
+        · WPhone: wireless clients running a Windows Phone operating system 
+        · Windows: wireless clients running a Windows operating system 
+        · Mac OS: wireless clients running a Mac operating system 
+        · Other: wireless clients running any other operating systems") + '<br>' + _("Broadcast Packet Filter: whether to filter broadcast packets. By default, this device forwards lots of invalid broadcast packets of wired networks, which may affect service data transfer. The broadcast packet filter allows you to filter broadcast packets by type so that invalid packets are not forwarded. This reduces air interface resource usage and ensures more bandwidth for service data transfer.")
+
+        , 'log_view', '<b>' + _("Logs") + '</b><br>' + 
+        _("The system logs of this device record various problems that occur after system startup and operations performed by users on this device. In case of a network failure, you can perform troubleshooting based on the logs.")
+
+        , 'wl_wmm', 
+	'<b>' + _("WMM") + '</b><br>' +
+    _("Optimization Mode: This device supports the following WMM optimization modes: 
+   Optimized for scenario with 1 - 10 users: Generally, if 10 or less clients are connected to this device, this mode is recommended for higher throughput. 
+   Optimized for scenario with more than 10 users: Generally, when more than 10 clients are connected to this device, this mode is recommended for higher user capacity. 
+      Custom: This mode allows you to define WMM EDCA parameters for user-specific optimization.") + '<br>' + 
+    _("EDCA (Enhanced Distributed Channel Access): It indicates a channel contention mechanism for WMM to ensure that packets with high priorities are sent before packets with low priorities and sent with more bandwidth.") + '<br>' +
+    _("No ACK: It indicates a policy that uses no ACK packet to acknowledge packet reception during wireless packet transmission. In environments with little interference, this policy can effectively improve transmission efficiency. In environments with strong interference, this policy may result in a higher packet loss rate and overall performance decrease because lost packets are not sent again.") + '<br>' +
+    _("AC (Access Category): 
+The WMM mechanism divides WLAN traffic by priority in descending order into the AC-VO (voice stream), AC-VI (video stream), AC-BE (best effort), and AC-BK (background) access categories. The access category uses queues with different priorities to send packets. 
+The WMM mechanism ensures that packets in queues with higher priorities have more opportunities to access channels.") + '<br>' +
+    _("You can customize the CWmin, CWmax, AIFS, and TXOP Limit values of the four access categories.") + '<br>' +
+    _("(1) CWmin (Exponent form of CWmin) and CWmax (Exponent form of CWmax) together specify the average backoff time. The average backoff time increases along with these values.") + '<br>' +
+    _("(2) AIFSN (Arbitration Inter Frame Spacing Number) specifies the Distributed Inter-frame Spacing (DIFS) period for an access category. According to WMM, different ACs can have different DIFS periods. A greater AIFSN value indicates a longer DIFS period.") + '<br>' +
+    _("(3) TXOP Limit (Transmission Opportunity Limit) specifies the channel availability time after contention success. A greater value indicates a longer channel availability time. The value 0 indicates that only one packet is sent when a channel is available.")
+);</script>
+</head>
+<body>
+<div class="divbody">
+	<div id="head"></div>
+	<div class="w750">
+		<table id="help">
+			<tbody><tr>
+				<td id="help_msg" class="p15"></td>
+			</tr>
+		</tbody></table>
+		<div id="tail"><br><input type="button" class="button" onclick="history.go(-1)" value="Back"></div>
+	</div>
+</div>
+
+<script>$(function(){
+	var htag=window.location.hash.replace(/#/,'');
+	//console.log(htag);
+	document.getElementById("head").innerHTML = tbl_head(20);
+	if (htag == '') htag='help';
+	var help_msg = help_array[1];
+	for (var i = 0; i < help_array.length; i += 2)
+	{	
+		if (help_array[i] == htag)
+		{	
+			if("wl_advance" === htag) {
+				var powerHelp = "",
+					rssiHelp = "",
+					interference = "",
+					helpStr = "";
+					Signal_Level="";
+				var product_num = parseInt(top.CONFIG_PRODUCT.slice(1,4),10);
+				if(product_num == "65" || product_num == "75" || product_num == "85" ||product_num == "185" ||product_num == "175") {
+					interference = '' ;
+				} else {
+					interference = "";
+				}
+				if(product_num == "605"){
+				   Signal_Level=__("Signal Reception Level: used to adjust the signal reception level. A higher level indicates better signal reception capability.")+ '<br>' ;
+				}else{
+				   Signal_Level="";
+				}
+				if(Number(top.CONFIG_5G_MAX_SSID_NUMBER) == 0) {
+					rssiHelp = _("Minimum RSSI Threshold: minimum strength of received signals acceptable to this device. If the strength of the signals transmitted by a wireless device is weaker than this threshold, the wireless device cannot connect to this device.");
+				} else {
+					rssiHelp = _("Minimum RSSI Threshold: minimum strength of received signals acceptable to this device. If the strength of the signals transmitted by a wireless device is weaker than this threshold, the wireless device cannot connect to this device.");
+				}
+				
+				if(Number(top.CONFIG_5G_MAX_SSID_NUMBER) == 0) {
+					powerHelp = _(_("Transmit Power: transmit power of this device."), [minPower, maxPower, defPower]);
+				} else {
+					powerHelp = _(_("Transmit Power: transmit power of this device."), [minPower, maxPower, defPower, minPower, maxPower, defPower]);
+					//helpStr = _("Prioritize 5 GHz: enables a wireless client to use the 5 GHz SSID first to connect to this device if the wireless client supports 5 GHz and 2.4 GHz wireless networks and the 5 GHz and 2.4 GHz wireless networks of this device share the same SSID and password.");
+				}
+
+				var startBeaconVal = +top.GLOBAL.ssidEnCount > 6 ? 200 : 100;
+				help_array[i+1] = '<b>' + _("Radio Optimization") + '</b><br>' +
+					_("You can configure wireless performance settings here. If you are not familiar with the settings, it is recommended that you retain the default settings.") + '<br>' +
+					_(_("Beacon Interval: interval at which this device sends Beacon frames. 
+    Beacon frames are sent at the interval to announce the existence of a wireless network. Generally, a smaller interval allows wireless clients to connect to this device sooner, while a larger interval allows the wireless network to transmit data quicker."),[startBeaconVal, startBeaconVal]) + '<br>' +
+					_("Fragment Threshold: threshold of a fragment. The unit is byte. 
+    Fragmenting is a process that divides a frame into several fragments, which are transmitted and acknowledged separately. If the size of a frame exceeds this threshold, the frame is fragmented.  
+    In case of a high error rate, you can reduce the threshold to enable this device to resend only the fragments that have not been sent successfully, so as to increase the frame throughput.  
+    In an environment with little interference, you can increase the threshold to reduce the number of frames, so as to increase the frame throughput.") + '<br>' +
+					_("RTS Threshold: Specify a valid value between 1 and 2347. The default is 2347. If a packet exceeds the preset value, RTS/CTS scheme will be used to reduce collisions. A smaller value is recommended if you have distant clients or interference on your network.") + '<br>' +
+					_("DTIM Interval: countdown before this device transmits broadcast and multicast frames in its cache. The unit is Beacon interval. 
+      For example, if DTIM Interval is set to 1, this device transmits all cached frames at one Beacon interval.") + '<br>' +
+					rssiHelp +
+					interference + '<br>' +
+					Signal_Level +
+					_("Prioritize 5 GHz: enables a wireless client to use the 5 GHz SSID first to connect to this device if the wireless client supports 5 GHz and 2.4 GHz wireless networks and the 5 GHz and 2.4 GHz wireless networks of this device share the same SSID and password.") + "<br />" +
+					_("Air Interface Scheduling: used to assign the same download time to users experiencing different download rates. This enables the users experiencing high download rates to download more data, so that this device can achieve higher system throughput and connect to a greater number of clients.") + '<br>' +
+					_("APSD: Automatic Power Save Delivery. If it is enabled, the power consumption of this device is reduced after a specified period during which no traffic is transmitted or received. By default, it is disabled.") + '<br>' +
+					_("Client Timeout Interval: wireless client disconnection interval of this device. The device disconnects from a wireless client if no traffic is transmitted or received by the wireless client within the interval.") + '<br>' +
+					_("Mandatory Rate:  rates that wireless clients must support in order to connect to the wireless networks of this device.") + '<br>' +
+					_("Optional Rate: additional rates that this device supports, and are optional to wireless clients. Wireless clients supporting the rates can connect to this device at the rates.") + '<br>' +
+				
+					helpStr;
+			}
+			help_msg=help_array[i+1];
+			break;
+		}
+	}
+	if(top.CONFIG_NET_WAN_PPPOE == "y" && htag == 'wl_wizard') {
+		help_msg += '<br><strong>' + _("PPPoE") + '</strong><br>';
+		help_msg += _("Enter the user name and password provided by your ISP. The default MTU is 1492. Do not change it unless necessary. MPPE is only used for some Ethernet cable users. If your ISP adopts MPPE, you need to enable MPPE on this device so that the device can set up a dial-up connection.");	
+	}
+	document.getElementById("help_msg").innerHTML = help_msg;
+});</script>
+</body></html>

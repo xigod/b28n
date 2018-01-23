@@ -1,0 +1,12 @@
+{
+        "lanIp": "192.168.0.254",
+        "lanMask": "255.255.255.0",
+        "dhcpEn": "true",
+        "dhcpGw": "192.168.0.3",
+        "dhcpDns1": "8.8.8.8",
+        "dhcpDns2": "5.5.5.5",
+        "dhcpStartIp": "192.168.0.100",
+        "dhcpEndIp": "192.168.0.200",
+        "dhcpMask": "255.255.255.0",
+        "dhcpLeaseTime": "259200"
+    }

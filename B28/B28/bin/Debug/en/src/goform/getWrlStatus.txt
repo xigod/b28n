@@ -1,0 +1,25 @@
+
+    {
+        "wrlMode": "wds",
+        "baseNetMode": "bg",
+        "baseChannel": "11",
+        "baseSsidEn": "true",
+        "ssidList": [{
+            "ssid": "%E4%B8%AD%E6%96%87",
+            "mac": "c8:3a:35:22:11:22",
+            "ssidEn":"true",
+            "secMode": "none"
+        },{
+            "ssid": "ssid2",
+            "mac": "c8:3a:35:22:11:23",
+            "ssidEn":"false",
+            "secMode": "wpapsk"
+        }],
+        "wdsList":[{ 
+            "mac": "32:22:22:22:22:21",
+            "connectStatus": "down"
+        },{ 
+            "mac": "32:22:22:22:22:22",
+            "connectStatus": "up"
+        }]
+    }

@@ -1,0 +1,20 @@
+{
+        "syslogNum": "123",
+        "sysRuleEn": "true",
+        "logRuleList": [{
+            "index": "",
+            "logIp": "192.168.23.1",
+            "logPort": "123",
+            "enable": "true"
+        },{
+            "index": "",
+            "logIp": "192.168.23.2",
+            "logPort": "124",
+            "enable": "true"
+        },{
+            "index": "",
+            "logIp": "192.168.23.3",
+            "logPort": "125",
+            "enable": "true"
+        }]
+    }

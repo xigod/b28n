@@ -1,0 +1,18 @@
+{
+        "beacon":"13",
+        "fragment": "233",
+        "rts": "1234",
+        "dtim": "1235",
+        "RSSI": "-80",
+        "txPower": "22",
+        "interference": "3",
+        "signalLevel": "2",
+        "powerLockEn": "false",
+        "wrlLed": "true",
+        "preamble": "long",
+        "penetration": "123",
+        "deploy": "123",
+        "minPower": "17",
+        "maxPower": "29",
+        "defPower": "19"
+    }

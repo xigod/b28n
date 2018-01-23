@@ -1,0 +1,35 @@
+{
+        "wrlRadio":"2.4G",
+        "wrlMode": "ap",
+        "wrl2":{
+        	"ssid":"heheda"
+        },
+        "wrl5":{
+        	"ssid":"hehehdaa"
+        },
+        "enableClientNum": "123",
+        "modeInfo": {
+            "ssid":"xxxxxxxx",                
+            "secMode":"none",
+            "wepAuth":"open",
+            "wepDefaultKey":"2",
+            "wepKey1":"12345",
+            "wepKey2":"2345656789",
+            "wepKey3":"34567",
+            "wepKey4":"45678",
+            "radiusServerIp":"192.168.3.2",
+            "radiusPort":"2033",
+            "radiusPwd":"66666666",
+            "cipherType":"aes",
+            "wifiPwd":"12345678",
+            "upLinkMac":"",                    
+            "uplinkNetWork":"",
+            "uplinkChannel":"",
+            "uplinkExtendChannel":"",
+            "uplinkBandwidth":"",
+            "pppoeUser": "",
+            "pppoePwd": "",
+            "pppoeMTU": "",
+            "mppeEn": "true"
+        }
+    }

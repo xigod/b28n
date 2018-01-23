@@ -1,0 +1,21 @@
+{
+        "scanList": [{
+            "ssid": "gyugyu%E7%9F%BF%E5%B9%B3%E5%BA%A6%E5%92%8C",
+            "mac": "22:22:33:22:22:22",  
+            "netWork": "bgn",
+            "bandwidth": "20",
+            "channel": "11",
+            "extChannel": "9",
+            "secMode": "wpa&wpa2/aes",
+            "signal": "-44"
+        },{
+            "ssid": "xxxxxxxxxxxxxkfweopgfjewopfjgoopx",
+            "mac": "aa:aa:aa:aa:aa:aa",
+            "netWork": "bg",
+            "channel": "7",
+            "bandwidth": "40",
+            "extChannel": "12",
+            "secMode": "none",
+            "signal": "-62"
+        }]
+    }

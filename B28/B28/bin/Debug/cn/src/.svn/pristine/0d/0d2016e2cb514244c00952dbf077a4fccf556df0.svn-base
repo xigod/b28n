@@ -1,0 +1,11 @@
+{
+        "lanMode": "static",
+        "lanIp": "192.168.0.254",
+        "lanMask": "255.255.255.0",
+        "lanGw": "192.168.0.34",
+        "lanMac": "c8:3a:35:22:aa:dd:44",
+        "lanDns1": "8.8.8.8",
+        "lanDns2": "4.4.4.4",
+        "apName": "W6Mini",
+        "ethMode": "10M"
+    }

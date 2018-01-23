@@ -1,0 +1,22 @@
+2016/3/3
+完成翻译文件夹功能（之前是单一文件）
+2016/3/16
+完成多国语言包EXCEL转JSON（之前只能指定key值，现在增加value参数指定要翻译成的语言，ps：value可以是多种语言数组,用逗号隔开）
+例 node EXCEL2JSON.js -f lang/lang-en.xlsx -o lang -key zh -value en,fr
+2016/3/30
+完成语言包中未被翻译项的标记导出工作,翻译流程基本完成，下一步完成GUI
+2016/4/1
+解决图片和css文件复制过去为空文件的问题
+不对待翻译项前后的空格进行去除（去掉trim（））会导致一些意外
+2016/4
+增加使用excel文件直接翻译功能（周安）
+2016/6/17
+解决重复翻译文件的问题（在getNodeValue函数中需要清空nodeValueArray数组，否则一直会递加）
+2016/6/18
+解决含参数翻译中参数为待翻译项的问题
+解决reasy-ui中data-options中提示信息未翻译的问题
+
+基本命令
+node node_b28.js 
+node JSON2EXCEL.js
+node EXCEL2JSON.js

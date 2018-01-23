@@ -1,0 +1,16 @@
+{
+        "wirelessEn": "true",
+        "country": "CN/9",
+        "netMode": "2",
+        "channel": "11",
+        "bandwidth": "0",
+        "extendChannel": "upper",
+        "channelLockEn": "true",
+        "ssidIsolationEn": "false",
+        "wmmEn": "false",
+        "apsdEn": "true",
+        "ageTime": "15",
+        "txrxChain": "1",
+	"ssidEnCount": 5,
+        "txrxChainPort": "2"
+    }

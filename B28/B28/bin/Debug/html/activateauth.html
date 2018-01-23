@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IP-COM</title>
+<link rel="stylesheet" type="text/css" href="css/screen.css">
+<script src="js/b28n_async.js"></script>
+<script>
+B.setTextDomain(["translate"]);
+</script>
+</head>
+<body class="body-scroll-right">
+<div class="page-head">
+	<div class="container head-inner">
+		<a href="http://www.ip-com.com.cn"><img src="images/logo-ipcom.png" class="brand" /></a>
+		<span class="brand-slogan" data-lang="brandSlogan">WI-FI 网络专家</span>
+		<div id="helpsection">
+			<ul id="infolist" class="none">
+				<li><a class="product-info" href="http://www.ip-com.com.cn/cn/Product.aspx" target="_blank" data-lang="productInfo">产品信息</a></li>
+				<li><a class="tech-support" href="http://www.ip-com.com.cn/cn/Service.aspx" target="_blank" data-lang="techSupport">技术支持</a></li>
+				<li><a class="connect-us" href="http://www.ip-com.com.cn/cn/AboutConnect.aspx" target="_blank" data-lang="contactUs">联系我们</a></li>
+				<li><a class="help" href="http://www.ip-com.com.cn/cn/" target="_blank" data-lang="help">帮助</a></li>
+			</ul>
+		</div>
+		<a id="logout" class="logout" data-lang="Logout">注销</a>
+	</div>
+	<div class="container head-bottom">
+		<p class="auth-info">
+			<a id="auth_state" class="text-inactive" href="systemtool.html#maintain.html" data-lang="unlicensed">未授权</a>
+			<span id="auth_obj"></span>
+		</p>
+	</div>
+</div>
+<div class="wrap">
+	<div class="container">
+        <div class="sub-menu">
+			<ul class="nav-list">
+				<li><a href="devscan.asp" class="img-icons icons-dev-scan" data-lang="menu_scan">设备扫描</a></li>
+				<li><a href="wirelesspolicy.html" class="img-icons icons-wl-policy" data-lang="menu_wlPolicy">无线策略</a></li>
+				<li><a href="devmanage.html" class="img-icons icons-dev-manage" data-lang="menu_apManage">AP管理</a></li>
+				<li><a href="stastatus.html" class="img-icons icons-sta-state" data-lang="menu_stastate">用户状态</a></li>
+				<li><a href="advpolicy.html" class="img-icons icons-adv-policy" data-lang="menu_advPolicy">高级策略</a></li>
+				<li><a href="advsetup.html" class="img-icons icons-adv-setup" data-lang="menu_advSetup">高级配置</a></li>
+				<li><a href="systemtool.html#maintain.html" class="img-icons icons-activate-auth active" data-lang="menu_LIC">授权激活</a></li>
+				<li><a href="advertisement.html" class="img-icons icons-ad-push" data-lang="adDistribution">广告投放</a></li>
+				<li><a href="passenger.html" class="img-icons icons-activate-auth" data-lang="userAnalysis">客流分析</a></li>
+				<li><a href="workmode.html" class="img-icons icons-activate-auth" data-lang="sysMode">系统模式</a></li>
+				<li><a href="systemtool.html" class="img-icons icons-system-tool" data-lang="menu_sysTool">系统工具</a></li>
+			</ul>
+        </div>
+		<div class="main-content clearfix">
+			<div class="main-full">
+			<form name="setLicInfo" method="post" action="/cgi-bin/SetLicInfo" enctype="multipart/form-data">
+				<div class="control-group">
+					<div class="control-label" data-lang="licenseStat">授权状态</div>
+					<div class="controls">
+						<span class="text-success" id="activateState"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label" data-lang="uniqueId">唯一识别码</div>
+					<div class="controls">
+						<input type="text" id="unique_code" class="input-large" value="" disabled />
+						<input type="button" class="btn" id="copy_input" data-lang="copy" value="复制" />
+						<span id="copy_msg"></span>
+						<div class="text-inactive" data-lang="copyErr"> 如果复制无响应，请手动选取内容并复制</div>
+					</div>
+				</div>
+				<div class="control-group none" id="manageApNum">
+					<div class="control-label" data-lang="apNumber">授权管理AP数量</div>
+					<div class="controls">
+						<span class="text-success" id="apNumber">300</span>
+						<div class="text-error none" id="ipNotEnough"></div>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label" data-lang="authDev">授权设备</div>
+					<div class="controls">
+						<label class="btn" for="selfile" data-lang="importFile">文件导入</label>
+						<input type="file" name="selfile" id="selfile" value="" class="file-hidden" />
+					</div>
+				</div>
+			</form>
+			</div>
+		</div>   
+	</div>
+</div>
+<div id="saveMsg" class="none"></div>
+<script src="js/libs/jquery-1.10.1.min.js"></script>
+<script src="js/libs/respond.min.js"></script>
+<script src="js/libs/common.js"></script>
+<script src="js/activateauth.js"></script>
+<script src="js/jquery.zclip.min.js"></script>
+<script>
+</script>
+</body>
+</html>

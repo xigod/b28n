@@ -1,0 +1,33 @@
+{
+        "qvlanEn": "true",
+        "wrlMode": "ap",
+        "wrlMode5G": "ap",
+        "pvid": "1",
+        "manageVlan": "33",
+        "trunkPort": "0;1",
+        "wiredLanPort": [{
+            "portName": "LAN0",
+            "vlanId": "1000"
+        },{
+            "portName": "LAN1",
+            "vlanId": "2000"
+        }],
+        "ssidQvlan": [{
+            "ssid": "%E5%91%B5%E5%91%B5%E9%87%91%E9%A2%9D",
+            "vlanId": "1234",
+            "ssidEn": "true"
+        },{
+            "ssid": "%E4%B8%AD%E6%96%87",
+            "vlanId": "331",
+            "ssidEn": "true"
+        }],
+        "ssidQvlan5G": [{
+            "ssid": "%E4%B8%AD%E6%96%87",
+            "vlanId": "231",
+            "ssidEn": "false"
+        },{
+            "ssid": "%E5%91%B5%E5%91%B5%E9%87%91%E9%A2%9D",
+            "vlanId": "311",
+            "ssidEn": "true"
+        }]
+    }

@@ -1,0 +1,16 @@
+{
+        "ssidList": [{              
+            "ssid": "%E4%B8%AD%E6%96%87",
+            "rxTraffic": "123",
+            "rxPacketNum": "1231",
+            "txTraffic": "1223",
+            "txPacketNum": "12312"
+        },{
+            "ssid": "ssid2",
+            "rxTraffic": "332",
+            "rxPacketNum": "1232",
+            "txTraffic": "11",
+            "txPacketNum": "333"
+        }]
+    
+    }

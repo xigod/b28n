@@ -1,0 +1,409 @@
+body {
+    font-family: "微软雅黑", "Microsoft YaHei", "宋体";
+}
+
+.main-wrapper {
+    position: static;
+    display: table;
+}
+
+.main-wrapper .middle {
+    display: table-cell;
+    vertical-align: middle;
+    position: static;
+}
+
+.masthead {
+    height: 60px;
+    background: #4e4d49;
+    border-bottom: 1px solid #444;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.masthead .logo {
+    height: 85%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.masthead .nav-bar {
+    height: 100%;
+    float: right;
+    padding-right: 70px;
+}
+
+.masthead .nav-bar ul > li {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.masthead .nav-bar ul > li a {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#mainBody {
+    padding-top: 60px;
+    position: fixed;
+    -webkit-transition: top ease-in-out 1s;
+    -moz-transition: top ease-in-out 1s;
+    -o-transition: top ease-in-out 1s;
+    transition: top ease-in-out 1s;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    height: 364px;
+    -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.slider-container .slider {
+    width: 100%;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container .slider .slider-items {
+    height: 100%;
+    position: absolute;
+    -webkit-transition: top ease-in 0.8s;
+    -moz-transition: top ease-in 0.8s;
+    -o-transition: top ease-in 0.8s;
+    transition: top ease-in 0.8s;
+    width: 100%;
+}
+
+.slider-container .slider .play-text {
+    display: none;
+}
+
+.slider-container .slider-right {
+    width: 100%;
+    float: left;
+    /* display: table; */
+    background: #f3f3f3;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (min-width: 835px) {
+    .slider-container .slider-right {
+        height: 30px;
+    }
+}
+
+/* @media (min-width: 360px, max-width: 834px) {
+    .slider-container .slider-right {
+        height: 40px;
+    }
+}
+
+@media (max-width: 359px) {
+    .slider-container .slider-right {
+        height: 63px;
+    }
+} */
+
+.slider-container .slider-right .postext {
+    text-align: center;
+    /* display: table-cell; */
+    height:30px;
+    width: 1%;
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.slider-container .slider-right .postext .inner {
+    vertical-align: middle;
+}
+
+.slider-container .slider-right .postext + .postext > .inner {
+    /* border-top: #ddd 1px solid; */
+}
+
+.slider-container .slider-right .postext:hover {
+    background: #fcfcfc;
+}
+
+.slider-container .slider-right .postext.active {
+    background: #8484D0;
+    color: #FFF;
+    height:30px;
+    /* background: #fcfcfc;
+                border: 1px solid #F4F4F4;
+                border-right: none;
+                border-bottom: none;
+                box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3); */
+}
+
+.slider-container .slider-right .postext:first-child {
+    /* border-top: none !important; */
+}
+
+.slider-container img {
+    width: 100%;
+    height: 410px;
+}
+
+.form-container {
+    max-width: 340px;
+    min-width: 300px;
+    margin: auto;
+    border: 1px solid #e0e0e0;
+    border: 1px solid rgba(224, 224, 224, 0);
+    -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 25px 35px;
+}
+
+.form-bottom ul {
+    overflow: hidden;
+    padding: 0;
+}
+
+.form-bottom ul li {
+    list-style: none;
+    float: left;
+    padding: 0 5px;
+}
+
+
+.goBtn {
+    padding: 16px 0;
+    width: 283px;
+    margin: auto;
+}
+
+.footer {
+    padding: 0px;
+    border-top: 1px dotted #888;
+    line-height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #444;
+}
+
+.footer .copyright {
+    text-align: center;
+    color: #999;
+    font-size: 0.8em;
+}
+
+@media (min-width: 994px) {
+    .input-box {
+        margin-left: 10.333333% !important;
+    }
+    .other-auth {
+        padding-top: 50px;
+        padding-left: 30%;
+    }
+    #otherAuth a {
+        margin: 1px 4.5%;
+    }
+    .login-section {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 993px) {
+    .login-section {
+        padding-top: 0px;
+    }
+    .input-box {
+        float: none;
+    }
+    .other-auth {
+        margin-left: 35%;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider {
+        width: 100% ;
+    }
+    .slider-right {
+        width: 100% !important;
+    }
+    
+    .slider-right .postext .inner {
+
+    }
+    .slider-right .postext.active {
+        border-bottom-color: #AF7DED;
+    }
+    .masthead .nav-bar {
+        width: 100%;
+        height: 40px;
+        padding-right: 0;
+        background: #333;
+        padding-top: 7px;
+    }
+    #mainBody {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        position: relative;
+    }
+    section {
+        height: auto !important;
+    }
+    .form-container {
+        max-width: 100% !important;
+    }
+    .other-auth {
+        padding-top: 30px;
+        margin-left: 0px;
+    }
+    #otherAuth a {
+        margin: 1px 2.5%;
+    }
+}
+
+@media (max-width: 360px) {
+    .authType {
+        display: block;
+    }
+}
+
+
+/* @media (min-width: 361px) {
+    .authType {
+        display: inline;
+    }
+} */
+
+.tip-text {
+    font-size: 12px;
+    background: #3f0;
+    border: 1px solid #d00;
+    display: inline-block;
+    width: 150px;
+    color: #000;
+    position: absolute;
+    right: 20px;
+    padding: 8px;
+}
+
+
+.bs-example-modal-sm .modal-header {
+    padding: 10px;
+}
+
+.authLable {
+    float: left;
+}
+
+/* .authType {
+    display: inline;
+} */
+
+.authType a {
+    color: rgba(0, 0, 0, 0);
+    background: url(/images/login_icons.png?version=350) no-repeat;
+    display: inline-block;
+    width: 80px;
+    height: 82px;
+    float: left;
+}
+
+.authType #qq {
+    background-position: 0px -442px;
+}
+
+.authType #weichat {
+    background-position: 0px -87px;
+}
+
+.authType #sms {
+    background-position: 0px -263px;
+}
+
+.authType #QRCode {
+    background-position: 0px -353px;
+}
+
+.authType #accessCode {
+    background-position: 0px 0px;
+}
+
+.logo img {
+    height: 48px;
+    width: 96px;
+}
+
+/* .input-box {
+    margin-left: 11.333333%;
+} */
+
+.accessCode-box {
+    margin-top: 50px;
+}
+
+/* .other-auth {
+    padding-top: 330px;
+    padding-left: 23%;
+} */
+
+.other-padding {
+    padding-left: 30.5%;
+}
+.none {
+    display: none; 
+}
+#otherAuth .none {
+    display: none; 
+}
+#otherAuth li {
+    display: inline;
+}
+
+
+
+#otherAuth a {
+    cursor: pointer;
+}
+
+.other-auth-only {
+      padding-top: 135px;
+}
+
+#otherAuth {
+    clear: both;
+}
+
+/*AC2000微信二维码*/
+.weichart-main-content {
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+}
+
+.weichart-main-content-qrcode {
+    width: 200px;
+    height: 200px;
+}
+    

@@ -1,0 +1,6 @@
+{
+    "upLinkEn": "true", 
+    "pingHostIp1": "192.168.0.11",      
+    "pingHostIp2": "192.168.1.22",    
+    "pingInterval": "300"      
+}

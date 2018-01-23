@@ -1,0 +1,7 @@
+{
+        "deployType": "local",
+        "apDeviceName": "AP255",
+        "yunAcIp": "10.0.0.3",
+        "yunAcManagePort": "332",
+        "yunAcUpgradePort": "1123"
+    }

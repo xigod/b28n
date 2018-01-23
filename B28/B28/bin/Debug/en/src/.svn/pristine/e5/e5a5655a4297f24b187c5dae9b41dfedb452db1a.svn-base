@@ -1,0 +1,9 @@
+/*升级或重启进度条*/
+#gbx_overlay { width:100%; height:100%; position:fixed; left:0; top:0; margin:0; z-index:9; background: #000; opacity:0.5; filter: alpha(opacity=50); -moz-opacity: 0.5; }
+* html #gbx_overlay { _height:150%; position:absolute; /*IE does not work with position fixed*/  top:expression((0 + (ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop)) + 'px');
+ right: expression((0 + (ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft)) + 'px');
+width:110%; }
+#loading_div { width:300px; position:absolute; border:2px solid #333; background-color:#ccc; text-align:center; z-index:10; padding-top:30px; }
+.upgrading,.rebooting { width:260px; height:20px; background-color:#fff; border:1px solid #333; display:inline-block; text-align:left; }
+.upgrade_pc,.reboot_pc { background:#333 url(../images/load_bg.gif?version=4093) center repeat-x; height:20px; display:inline-block }
+#upgrade_text,#reboot_text { font-size:20px;}

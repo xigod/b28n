@@ -1,0 +1,227 @@
+<section class="container-fluid">
+  <form class="form-horizontal">
+    <h2 class="legend">&nbsp;</h2>
+    <fieldset>
+      <div class="form-group">
+        <label class="col-xs-5 col-sm-4 col-md-3 control-label" for="wifiEn">IPv6</label>
+        <div class="col-xs-9 col-sm-8 col-md-9"> 
+          <span id="ipv6En" class="switch icon-toggle-on"></span> 
+        </div>
+      </div>
+    </fieldset>
+    <div id="ipv6Wrap" class="none">
+      <h2 class="legend">WAN Setup</h2>
+      <fieldset>
+        <div id="ipv6Wan">
+          <div class="form-group">
+  <label class="col-sm-4 col-md-3 control-label">Connection Type</label>
+  <div class="col-sm-8">
+    <label class="radio-inline" for="adsl">
+      <input type="radio" id="adsl" name="ipv6WanType" value="pppoe" />
+      PPPoEv6</label>
+    <label class="radio-inline" for="dhcp">
+      <input type="radio" id="dhcp" name="ipv6WanType" value="dhcp" />
+      DHCPv6</label>
+    <br class="visible-xs">
+    <label class="radio-inline" for="static">
+      <input type="radio" id="static" name="ipv6WanType" value="static" />
+      Staticv6</label>
+  </div>
+</div>
+          <div id="ipv6PppoeWrap">
+  <div class="form-group">
+    <label class="col-sm-4 col-md-3 control-label" for="ipv6WanPPPoEUser">User Name</label>
+    <div class="col-sm-5 col-md-4">
+      <input type="text" id="ipv6WanPPPoEUser" class="form-control validatebox" name="ipv6WanPPPoEUser" required="required" data-options='{"type": "pppoe"}' maxLength="128"  />
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 col-md-3 control-label" for="ipv6WanPPPoEPwd">Password</label>
+    <div class="col-sm-5 col-md-4">
+      <input type="password" id="ipv6WanPPPoEPwd" class="form-control validatebox" name="ipv6WanPPPoEPwd" required="required" data-options='{"type": "pppoe"}'  maxLength="128"/>
+    </div>
+  </div>
+</div>
+          <div id="ipv6StaticWrap">
+  <div class="form-group">
+    <label class="col-sm-4 col-md-3 control-label" for="ipv6WanIP">IPv6 Address</label>
+    <div class="col-sm-5 col-md-4">
+      <input type="text" id="ipv6WanIP" class="form-control validatebox" name="ipv6WanIP" required="required" data-options='{"type": "ipv6"}' maxLength="40"  />
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 col-md-3 control-label" for="ipv6WanGateway">Default Gateway</label>
+    <div class="col-sm-5 col-md-4">
+      <input type="text" id="ipv6WanGateway" class="form-control validatebox" name="ipv6WanGateway" required="required" data-options='{"type": "ipv6"}'  maxLength="40"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 col-md-3 control-label" for="ipv6WanDns1">Preferred DNS</label>
+    <div class="col-sm-5 col-md-4">
+      <input type="text" id="ipv6WanDns1" class="form-control validatebox" name="ipv6WanDns1" required="required" data-options='{"type": "ipv6"}'  maxLength="40"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 col-md-3 control-label" for="ipv6WanDns2">Alternative DNS</label>
+    <div class="col-sm-5 col-md-4">
+      <input type="text" id="ipv6WanDns2" class="form-control validatebox" name="ipv6WanDns2" data-options='{"type": "ipv6"}'  maxLength="40"/>
+    </div>
+  </div>
+</div>
+          <div id="ipv6WayWrap">
+  <div class="form-group">
+    <label class="col-sm-4 col-md-3 control-label">Get IPv6 Address Way</label>
+    <div class="col-sm-8">
+      <div class="checkbox">
+        <label for="ipv6WayTemporary">
+          <input type="checkbox" id="ipv6WayTemporary">
+          Get non-temporary IPv6 address </label>
+      </div>
+      <div class="checkbox">
+        <label for="ipv6WayDelegation">
+          <input type="checkbox" id="ipv6WayDelegation">
+          Get IPv6 prefix delegation </label>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </fieldset>
+      <h2 class="legend">LAN Setup</h2>
+      <fieldset>
+        <div class="form-group">
+  <label class="col-sm-4 col-md-3 control-label">LAN IPv6</label>
+  <div class="col-sm-4">
+    <select class="form-control" id="ipv6LanType">
+      <option value="auto">Auto</option>
+      <option value="manual">Manual</option>
+    </select>
+  </div>
+  <div class="col-sm-4 control-gap">
+    <div id="ipv6LanIPWrap">
+      <input type="text" id="ipv6LanIP" class="form-control validatebox" name="ipv6LanIP" required="required" data-options='{"type": "ipv6"}'  maxLength="128"/>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-sm-4 col-md-3 control-label">LAN IPv6 Prefix</label>
+  <div class="col-sm-4">
+    <select class="form-control" id="ipv6LanDhcpPrefixType">
+      <option value="auto">Auto</option>
+      <option value="manual">Manual</option>
+    </select>
+  </div>
+  <div class="col-sm-4 control-gap">
+    <div id="ipv6LanDhcpPrefixWrap">
+      <input type="text" id="ipv6LanDhcpPrefix" class="form-control validatebox" name="ipv6LanDhcpPrefix" required="required" data-options='{"type": "ipv6Prefix"}'  maxLength="128"/>
+    </div>
+  </div>
+</div>
+        <div class="form-group">
+  <label class="col-sm-4 col-md-3 control-label">IPv6 DHCP</label>
+  <div class="col-sm-4">
+    <select class="form-control" id="ipv6LanDhcpEn">
+      <option value="true">Enable</option>
+      <option value="false">Disable</option>
+    </select>
+  </div>
+</div>
+<div id="ipv6LanDhcpWrap">
+  <div class="form-group">
+    <label class="col-sm-4 col-md-3 control-label">LAN IPv6 Type</label>
+    <div class="col-sm-4">
+      <select class="form-control" id="ipv6LanDhcpType">
+        <option value="auto">Auto</option>
+        <option value="manual">Manual</option>
+      </select>
+    </div>
+  </div>
+  <div id="ipv6DhcpIDWrap">
+    <div class="form-group">
+      <label class="col-sm-4 col-md-3 control-label">Start ID</label>
+      <div class="col-sm-4">
+        <input type="text" id="ipv6LanDhcpStartID" class="form-control validatebox" name="ipv6LanDhcpStartID" required="required" data-options='{"type": "ipv6Postfix"}'  maxLength="128"/>
+      </div>
+      <div class="col-sm-3"> <span class="help-block">::xx or a:b:c:d </span> </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-4 col-md-3 control-label">End ID</label>
+      <div class="col-sm-4">
+        <input type="text" id="ipv6LanDhcpEndID" class="form-control validatebox" name="ipv6LanDhcpEndID" required="required" data-options='{"type": "ipv6Postfix"}'  maxLength="128"/>
+      </div>
+      <div class="col-sm-3"> <span class="help-block">::xx or a:b:c:d </span> </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-4 col-md-3 control-label">LAN IPv6 DNS</label>
+    <div class="col-sm-4">
+      <select class="form-control" id="ipv6LanDnsType">
+        <option value="auto">Auto</option>
+        <option value="manual">Manual</option>
+      </select>
+    </div>
+  </div>
+  <div id="ipv6LanDnsTypeWrap">
+    <div class="form-group">
+      <label class="col-sm-4 col-md-3 control-label">Preferred DNS</label>
+      <div class="col-sm-4">
+        <input type="text" id="ipv6LanDns1" class="form-control validatebox" name="ipv6LanDns1" required="required" data-options='{"type": "ipv6"}'  maxLength="128"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-4 col-md-3 control-label">Alternative DNS</label>
+      <div class="col-sm-4">
+        <input type="text" id="ipv6LanDns2" class="form-control validatebox" name="ipv6LanDns2" required="required" data-options='{"type": "ipv6"}'  maxLength="128"/>
+      </div>
+    </div>
+  </div>
+</div>
+      </fieldset>
+      <div id="statusIPv6Wrap">
+  <h2 class="legend">IPv6 Status</h2>
+  <fieldset>
+    <div class="col-xs-12 col-md-6">
+      <div class="form-group">
+        <label class="col-xs-6 col-sm-5 control-label">Connection Type</label>
+        <div class="col-xs-6 col-sm-7">
+          <p id="statusIPv6WanType" class="help-block"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-6 col-sm-5 control-label">Wan IPv6 Address</label>
+        <div class="col-xs-6 col-sm-7">
+          <p id="statusIPv6WanIP" class="help-block"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-6 col-sm-5 control-label">IPv6 Default Gateway</label>
+        <div class="col-xs-6 col-sm-7">
+          <p id="statusIPv6WanGateway" class="help-block"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="form-group">
+        <label class="col-xs-6 col-sm-5 control-label">LAN IPv6</label>
+        <div class="col-xs-6 col-sm-7">
+          <p id="statusIPv6LanIP" class="help-block"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-6 col-sm-5 control-label">Preferred IPv6 DNS</label>
+        <div class="col-xs-6 col-sm-7">
+          <p id="statusIPv6Dns1" class="help-block"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-6 col-sm-5 control-label">Alternative IPv6 DNS</label>
+        <div class="col-xs-6 col-sm-7">
+          <p id="statusIPv6Dns2" class="help-block"></p>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+    </div>
+  </form>
+</section>

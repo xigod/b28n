@@ -1,0 +1,8 @@
+{
+        "snmpEn": "true",
+        "snmpAdmin": "eeeee",
+        "deviceName": "AP255",
+        "location": "shenzhen",
+        "readCommunity": "public",
+        "readWriteCommunity": "private"
+    }

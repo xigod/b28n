@@ -1,0 +1,25 @@
+{
+        "system": {
+            "deviceName": "!@#%&(_+/\",
+            "systemTime": " 2011-05-01 17:36:02",
+            "runningTime": "1231",
+            "clientNum": "12",
+            "hardVersion": "V1.0",
+            "wrlMode": "ap"
+        },
+        "lan": {
+            "lanMac": "c8:3a:35:22:21:11",
+            "lanIp": "192.168.0.3",
+            "lanMask": "255.255.255.0",
+            "lanDns1": "8.8.8.8",
+            "lanDns2": "8.8.4.4"
+        },
+        "wan": {
+            "connectStatus": "disconnected",
+            "wanIp": "",
+            "wanMask": "",
+            "wanGw": "",
+            "wanDns1": "",
+            "wanDns2": ""
+        }
+    }

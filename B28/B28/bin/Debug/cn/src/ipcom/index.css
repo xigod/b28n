@@ -1,0 +1,32 @@
+.topbody { font: 10pt/2 tahoma, arial, \5b8b\4f53, sans-seri, 微软雅黑, Sans-Serif, Helvetica; height:100%; background:#C2C2C2; overflow:hidden; }
+/*顶部logo部份*/
+#top { position: absolute; /*公共*/ top: 0; left: 0; width: 100%; height: 84px; }
+#top_left { width:1000px; height:84px; position:absolute; background:url(../images/tenda_logo.jpg?version=350) no-repeat 0 0; display:inline; overflow:hidden }
+#top_right { width:100%; height:84px; background:url(../images/border.gif?version=350) repeat-x 0 0; float:right; }
+/*中间左边nav部份*/
+#top_right_title { position:absolute; top:2px; right:30px; height:30px; text-align:center; margin-top: -60px; }
+#top_right_title span { color:#5B5B5B; font-family:宋体; }
+#middle { width:100%; position: fixed; *position:absolute; *height:100%; top:84px; bottom:0; }
+#middle_left { float:left; width:195px; height:100%; background-color:#a6a6a6; border:1px solid #696969; padding-left:3px; padding-top:40px; border-top:none; }
+#middle_left span { width:12px; height:9px; display:inline-block }
+.red { background-image:url(../images/item_redsel.gif?version=350); }
+.yellow { background-image:url(../images/item_sel.gif?version=350); }
+/*中间右边主内容部份*/
+#middle_right { margin-left:200px; height:92%; _margin-left:198px; background-color:#fafafa; }
+/*#right_top { width:100%; height:28px; background:url(../images/top_bg.png) repeat-x 0 0; }*/
+/*底部状态栏*/
+ /*#bottom { position: absolute;bottom: 0; left: 0; width: 100%; height: 26px; background:url(../images/bottom.jpg) repeat-x left top; overflow: auto !important; background-color:Orange; }
+#bottom img { float:right; margin:2px 5px 0px 0px; display:inline-block; }*/
+/*升级或重启进度条*/
+#gbx_overlay { width:100%; height:100%; position:fixed; left:0; top:0; margin:0; z-index:9; background: #000; opacity:0.5; filter: alpha(opacity=50); -moz-opacity: 0.5; }
+* html #gbx_overlay { _height:150%; position:absolute; /*IE does not work with position fixed*/  top:expression((0 + (ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop)) + 'px');
+ right: expression((0 + (ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft)) + 'px');
+width:110%; }
+#loading_div { width:300px; position:absolute; border:2px solid #333; background-color:#ccc; text-align:center; z-index:10; padding-top:30px; }
+.upgrading,.rebooting { width:260px; height:20px; background-color:#fff; border:1px solid #333; display:inline-block; text-align:left; }
+.upgrade_pc,.reboot_pc { background:#333 url(../images/load_bg.gif?version=350) center repeat-x; height:20px; display:inline-block }
+#upgrade_text,#reboot_text { font-size:20px;}
+
+.Bborder { border-bottom: #ffffff 1px dashed; width:192px; }
+li a { color:#fff; text-decoration:none; font-weight:bold; cursor: pointer;}
+li a:hover { color:yellow; cursor: pointer;}

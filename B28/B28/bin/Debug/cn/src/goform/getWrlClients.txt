@@ -1,0 +1,18 @@
+{
+        "ssidList": ["%E4%B8%AD%E6%96%87","ssid2","ssid3"],
+        "clients": [{
+            "index": "1",
+            "mac": "22:22:22:22:11:22",
+            "ip": "192.168.0.3",
+            "connectTime": "12312",
+            "sendSpeed": "223",
+            "receiveSpeed": "1231"
+        },{
+            "index": "1",
+            "mac": "22:22:22:22:11:22",
+            "ip": "192.168.0.3",
+            "connectTime": "12312",
+            "sendSpeed": "223",
+            "receiveSpeed": "1231"
+        }]
+    }

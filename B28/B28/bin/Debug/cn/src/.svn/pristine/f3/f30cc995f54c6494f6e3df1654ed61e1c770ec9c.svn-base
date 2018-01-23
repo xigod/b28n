@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="./public/style.css?version=350" />
+<script src="./lang/b28n.js?version=350"></script>
+<script src="./public/j.js?version=350"></script>
+<script src="./public/menu.js?version=350"></script>
+<script>
+B.setTextDomain("all");
+var maxPower = 22,
+	minPower = 10,
+	defPower = 18,
+	maxPower_5g = 22,
+	minPower_5g = 10,
+	defPower_5g = 18;
+var pppoeHelpStr = "";
+
+var help_array=new Array(
+'help ?'
+	,'<b>没有找到帮助项</b>'
+
+,'st_system'
+	,'<b>' + _("System Status") + '</b><br>' +
+	_("Device Name: Displays the device name.") + '<br>' +
+	_("System Time: Displays the current system time.") + '<br>' +
+	_("Up Time: Displays the device's uptime.") + '<br>' +
+	_("Number of Wireless Clients: Displays the information of wireless connected clients.") + '<br>' +
+	_("Firmware Version: Displays the device's current firmware version.") + '<br>' +
+	_("Hardware Version: Displays the device's hardware version.") + '<br>' +
+	 '<strong>' + _("LAN Status") + '</strong><br>' +
+	_("MAC Address: Displays the current AP's LAN MAC address.") + '<br>' +
+	_("IP Address: Displays the current AP's IP address.") + '<br>' +
+	_("Subnet Mask: Displays the current AP's subnet mask. The default is 255.255.255.0.") + '<br>' + 
+	_("Primary DNS Server:  Displays the necessary DNS address provided by your ISP.") + '<br>' +
+	_("Secondary DNS Server:  Displays the other DNS address if your ISP offers you two DNS addresses.")
+	
+,'st_wireless'
+	,'<strong>' + _("Radio") + '</strong>' + '<br>' +
+	_("Radio (On/Off): Displays the primary SSID's wireless status.") + '<br>' +
+	_("Network Mode: Displays currently operative network mode. For 2.4G, 11b/g/n mixed mode is suggested; For 5G, 11AC is suggested.") + '<br>' +
+	_("Channel: Displays the channel which is currently operating on.") + '<br>' +
+	'<strong>' + _("SSID Status") + '</strong><br>' +
+	_("SSID: Displays the current SSIDs of the wireless network.") + '<br>' +
+	_("MAC Address: Displays the current AP's MAC addresses.") + '<br>' +
+	_("Working Status: Displays SSID's enabling status.") + '<br>' +
+	_("Security Mode: Displays current security mode.")
+
+,'st_ap'
+	,'<strong>' + _("Traffic Statistics") + '</strong><br>' +
+	_("SSID: It specifies the SSID of an enabled wireless network of the AP.") + '<br>' +
+	_("Total RX Traffic: Total RX bytes SSID has received.") + '<br>' +
+	_("Total RX Packets: Total RX packets SSID has received.") + '<br>' +
+	_("Total TX Traffic: Total TX bytes SSID has transmitted.") + '<br>' +
+	_("Total TX Packets: Total TX packets SSID has transmitted.")
+
+,'st_wirelesslist'
+	,'<strong>' + _("Client List") + '</strong><br>' +
+	_("Select the SSID you want to check and wireless client information will appear accordingly.") + '<br>' +
+	_("MAC Address : Displays wireless client's MAC address.") + '<br>' +
+	_("IP Address : Displays wireless client's IP address.") + '<br>' +
+	_("Connection Duration: Displays connection duration SSID has connected to.") + '<br>' +
+	_("TX Rate: Displays the current device's send speed.") + '<br>' +
+	_("RX Rate: Displays the current device's receive speed.")
+
+,'wizard'
+	,'<b>' + _("Quick Setup") + '</b><br>' +
+	_("This device supports 3 working modes. You can select it as you need.") + '<br>' +
+	_("AP Mode: In this mode, this device can be connected to wireless clients, but cannot connect to other APs actively.") + '<br>' +
+	_("WDS Mode: In this mode, maxiume 4 Aps can access to the device at same time.") + '<br>' +
+	_("Client AP: The primary SSID and channel will be the same as that of the upstream AP automatically. So will the security mode and key") + '<br>' +
+	_("The secondary SSID (wireless network) now works as a wireless Access Point, providing access to wireless clients. In this mode, the DHCP server is disabled automatically.")
+
+,'wl_wizard'
+	,'<strong>' + _("AP Mode") + '</strong><br>' +
+	_("In this mode, this device can be connected to wireless clients, but cannot connect to other APs actively.") + '<br>' +
+	_("SSID: Displays the primary SSID's name.") + '<br>' +
+	_("Security Mode: Displays primary SSID's security mode.") + '<br>' +
+	'<strong>' + _("APClient Mode") + '</strong><br>' +
+	_("In this mode, this AP negotiates with the upstream AP successfully and also provides access to lower clients. The SSID of this AP would not be changed.") + '<br>' +
+	_("SSID: You can configure the upstream AP's SSID name here.") + '<br>' +
+	_("Security Mode: You can configure the upstream AP's security mode here.") + '<br>' +
+	_("Upstream AP Channel: You can configure the upstream AP's channel here.")
+
+,'lan'
+	,'<b>' + _("LAN Setup") + '</b><br>' +
+	_("Here you can configure the LAN IP address.") + '<br>' +
+    _("Address Mode: It specifies the mode in which the AP obtains an IP address and related parameters. The default address mode is \"Static IP\".") + '<br>' +
+    _("Static IP: If Static IP is selected, you can manually set an IP address, subnet mask, gateway, primary DNS server IP address and secondary DNS IP address for the LAN.") + '<br>' +
+    _("Dynamic IP: If Dynamic IP is selected, the AP automatically gets IP address, subnet mask, gateway, primary DNS server IP address and secondary DNS server IP address for the LAN from an existing DHCP server. Before the next login to the AP, you need to check the IP address from the clients list of the DHCP server, and then use this IP address to login.") + '<br>' +
+	_("IP Address: The AP's LAN IP address. The default is 192.168.0.254.") + '<br>' +
+	_("Subnet Mask: The AP's LAN subnet mask.") + '<br>' +
+	_("Gateway: Enter the IP address of the upstream router.") + '<br>' +
+	_("Primary DNS Server:  Enter the necessary DNS address provided by your ISP (This field cannot be blank). Consult your ISP if you are not clear.") + '<br>' +
+	_("Secondary DNS Server:  Enter the other DNS address if your ISP offers you two DNS addresses (This field is optional).")  + '<br>' +
+	'<b>' + _("Note") + '</b><br>' +
+	_("If necessary please press the Reset button to restore factory settings.")+ '<br>' +
+	_("If you change this IP address, you must use the new one to re-log on to this web UI.") + '<br />' +
+	'<b>' + _("Auto-negotiation") + '</b><br>' +
+	_("In this mode, AP can transfer data and supply power by CAT 5e/6 UTP cables, the max distance is 100 meters.") + '<br />' +
+	'<b>' + _("10M half-duplex") + '</b><br>' +
+	_("In this mode, AP can transfer data and supply power by CAT5e/6 UTP cables, the max distance is 150-200 meters. Only for some tough deploy condition, and the performance can deteriorate.")
+
+,'dhcpserverset'
+	,'<b>' + _("DHCP Server") + '</b><br>' +
+	_("DHCP Server: Select whether to enable or disable the DHCP server feature.") + '<br>' +
+	_("Start IP:  Enter the starting IP address for the DHCP server's IP assignment.") + '<br>' +
+	_("End IP:  Enter the ending IP address for the DHCP server's IP assignment.") + '<br>' +
+	_("Lease Time:  The length of time for the IP address lease.") + '<br>' +
+	_("Subnet Mask: The AP's LAN subnet mask.") + '<br>' +
+	_("Gateway: Enter the IP address of the upstream router.") + '<br>' +
+	_("Primary DNS Server:  Enter the necessary DNS address provided by your ISP (This field cannot be blank). Consult your ISP if you are not clear.") + '<br>' +
+	_("Secondary DNS Server:  Enter the other DNS address if your ISP offers you two DNS addresses (This field is optional).") + '<br>' +
+	'<strong>' + _("Note") + '</strong><br>' +
+	_("To apply the DHCP server settings to all your LAN PCs, you must set all PCs to 'Obtain an IP address automatically' and 'Obtain DNS server address automatically' respectively.")
+
+,'wl_basic'
+	,'<b>' + _("SSID Setup") + '</b><br>' +
+	_("In this section you can configure the basic wireless settings of the device such as the SSID (name of the network) and broadcast channel.") + '<br>' +
+	_("Enable: Select it to enable this SSID.") + '<br>' +
+	/*_("Hide SSID automatically: If you select this item, and when number of clients reach to the maximum, this SSID will be hidden automatically.If you select this item,SSID Broadcast can't be selected.") + '<br>' +*/
+	_("SSID Broadcast: This option allows you to broadcast SSID publicly, if you choose to disable it, the SSID will be hidden.") + '<br>' +
+	_("Client Isolation: Isolates clients connecting to the same SSID.") + '<br>' +
+    _("WMF: Generally, multicast packets are usually transmitted at the lowest rate, like 1 Mbps. As unicast packets have advantages, like high auto-negotiation rate and reliable feedback mechanism, multicast-to-unicast can be a solution to packets drooping and large transmission delay.") + '<br>' +
+	_("Probe Broadcast Packets Control: For probe request without SSID info, AP won't respond to it. In this way, it will efficiently reduce the consumption of the air interface.") + '<br>' +
+	_("SSID: This is the public name of your wireless network. Select the SSID you wish to configure from the drop-down list.") + '<br>' +
+	_("Chinese SSID Encode: To support Chinese SSID according to the wireless client supports codeing format selection UFT-8/GB2312 code, the default is UTF-8.") + '<br>' +
+	_("Security Mode: Select WEP, WPA-PSK or WPA2-PSK.") + '<br>' +
+	_("(1)WEP: compliance with the full IEEE 802.11 standard.") + '<br>' +
+	_("Encryption Type: Open, Shared, 802.1X.") + '<br>' +
+	_("Enter a WEP key that is either 5~13 ASCII characters or 10~26 Hex characters when your encryption type is Open and Shared.") + '<br>' +
+	_("(2)WPA/WPA2-PSK: A mode based on WPA/WPA2-PSK .You can enable personal (PSK) or mixed mode, but you must make sure that the wireless client also supports the selected encryption method.") + '<br>' +
+	_("Cipher Type: Select AES, TKIP and TKIP&AES.") + '<br>' +
+	_("Key: Enter a security key that is either 8-63 ASCII characters or 8-64 Hex characters.") + '<br>' +
+	_("Key Update Interval: You can configure security key's upgrade cycle here(60—99999 seconds).") + '<br>' +
+	_("(3)WPA/WPA2 : A mode based on Radius server authentication.") + '<br>' +
+	_("RADIUS Server: Displays the Radius server's IP address.") + '<br>' +
+	_("RADIUS Port : Authentication port for Radius server. The default is 1812.") + '<br>' +
+	_("RADIUS Password: Enter a key that is 1-64 ASCII characters.") + '<br>' +
+	_("Cipher Type: Select AES, TKIP and TKIP&AES.") + '<br>' +
+	_("Key Update Interval: You can configure security key's upgrade cycle here.60—99999 seconds. If set to 0, key will not be updated.")+ '<br>' +
+	'<strong>' + _("Note:") + '&nbsp;' + '</strong>' + _("When your security mode is WEP or WPA/WPA2, please be sure your wireless client supports it.")
+
+,'wl_radio'
+	,'<b>' + _("Radio") + '</b><br>' +
+	_("Here you can configure basic wireless settings including network mode, channel, extension channel, channel bandwidth and etc.") + '<br>' +
+	_("Country: Select the country in which the AP is operating.") + '<br>' +
+	_("Network Mode: You may select a proper network mode: 11 b/g/n mixed, 11 b/g mixed, 11g or 11b on the network (2.4GHz),and you may select a proper network mode: 11ac, 11a/n and 11a on the network (5GHz).") + '<br>' +
+	_("Channel: Select a channel or Auto from the drop-down list. The best selection is a channel that is the least used by neighboring networks.") + '<br>' +
+	_("Channel Bandwidth: Channel Bandwidth is used to set the upper frequency limitation and lower frequency limitation for specified channel.") + '<br>' +
+	_("Extension Channel: This is used to ensure N speeds for 802.11n devices on the network (2.4GHz),and also used for determining the frequency band of 40 in 5GHz.") + '<br>' +
+	_("Channel Lockout: Once this option is enabled, you can’t modify the channel, channel bandwidth and extension channel manually.") + '<br>' +
+    _("TX Power: It specifies the transmit power of the AP. For the 2.4 GHz network, the value range is 10 dBm to 20 dBm. The default value is 20 dBm. For the 5 GHz network, the value range is 10 dBm to 18 dBm. The default value is 18 dBm.") + '<br>' +
+	_("Power Lockout: Once enabled, you can lockout this configuration.") + '<br>' +
+	_("The 8 bytes of the preamble and the Start of Frame create a pattern of 64 bits. 7 bytes of the preamble are for synchronization and 1 byte is for SFD, which basically says here comes a new frame, being a 'get ready' notification. There are two types of preambles: long preamble and short preamble. By default, the device transmits data using the long preamble.") + '<br>' +
+	_("Short GI: The purpose of the guard interval is to introduce immunity to propagation delays. Enabling the short GI can yield a 10% improvement in data throughput.") + '<br>' +
+	_("Inter-SSID User Isolation: Configure the AP’s different SSIDs’ isolation status. Once enabled, clients connect to different SSIDs can't communicate with each other.")
+
+,'wl_wds'
+	,'<b>' + _("WDS") + '</b>' +
+	_("WDS Mode: If you select WDS Repeater mode, you can enable scan to automatically add the MAC address of the selected remote device to the AP MAC address field and then manually set the primary SSID, mode, channel, security mode and security key of your AP to match the remote AP.For better compatibility with the remote AP, WEP encryption is recommended.")
+
+,'wl_advance'
+	,""
+
+,'wl_filter'
+	,'<b>' + _("Wireless Access Control") + '</b><br>' +
+	_("Specify a list of devices to allow or disallow a connection to your wireless network via the device's MAC addresses.") + '<br>' +
+	_("To deactivate this feature, select 'Disable'; to activate it, select 'Allow' or 'Deny'.")
+
+,'wl_qvlan'
+	,'<b>' + _("QVLAN Configuration") + '</b><br>' +
+	_("This AP supports the IEEE 802.1Q VLAN function. It enables the AP to work with switches that support such function to establish multiple VLANs. Clients connecting to VLANs with different VLAN IDs cannot communicate with each other.") + '<br>' +
+	_("Manage VLAN: the VLAN to manage AP and login to AP UI.") + '<br>' +
+	_("PVID: The VLAN ID for native vlan of trunk port.") + '<br>' +
+	_("Trunk Port: Set the port to work in trunk mode,When there's only one LAN port, this item will be hidden.") + '<br>' +
+	_("VLAN for LAN port: Assign specific VLAN ID for the LAN Port to establish different access right,When there's only one LAN port, this item will be hidden.") + '<br>' +
+	_("SSID: It specifies the SSID of an enabled wireless network of the AP.") + '<br>' +
+	_("VLAN ID: It specifies the ID of the VLAN to which an SSID is mapped.") + '<br>' +
+	_("You can configure SSID's binding info to VLAN here. The default is 1000(1-4094).") + '<br>'
+,'qos_qos', '<b>' + _("Traffic Control") + '</b><br>' +
+        _("Some apps, like P2P download, may consume lots of bandwidth. However, the total bandwidth is limited. If some apps consume too much bandwidth, others' network experience will be affected. To ensure that all users can share network resources properly, you can limit wireless clients' traffic via the Traffic Control feature.") + '<br>' + 
+        _("The following two traffic control methods are supported on this device:") + '<br>' + 
+        _("(1) Smart: Based on the total bandwidth the ISP has provided, all clients dynamically share the AP's total bandwidth on average in case of bandwidth waste.") + '<br>' + 
+        _("(2) Manual: Every SSID and every client can only use the pre-configured bandwidth and the actual traffic can't be greater than the set limit.")  + '<br>' + 
+        _("Note: range of the total bandwidth and the rate is 0.01~1000Mb/s, supporting 2 digits after the decimal point.Empty means unlimited.")
+
+        ,'wirelesspacket'
+	,'<b>' + _("无线抓包") + '</b><br>' +'开启无线抓包能够抓取ap桥接模式下连接的上级AP与各无线智能终端通信时的所有数据包'
+,'deploy'
+	,'<b>' + _("Deployment") + '</b><br>' +
+	_("This page allows you to configure different modes to manage APs. Two modes are supported: Local and Cloud.") + '<br>' +
+	_("Local: When this option is selected, all current APs can only be managed by the local AC.") + '<br>' +
+	_("Cloud: When this option is selected, all current APs can only be managed by the cloud AC or a cloud server.") + '<br>' +
+	_("Options need to be configured in Cloud mode:") + '<br>' +
+	_("Device Name: Note information of the AP.") + '<br>' +
+	_("Cloud AC Address: The WAN IP address of the router that the cloud AC connects to.") + '<br>' +
+	_("Cloud AC Manage Port: The port of the router that the cloud AC connects to and that is used for managing APs (Range: 1024~65535).") + '<br>' +
+	_("Cloud AC Upgrade Port: The port of the router that the cloud AC connects to and that is used for upgrading APs (Range: 1024~65535).")
+,'snmp'
+	,'<b>' + _("SNMP") + '</b><br>' +
+	_("Here you can configure SNMP v1 & v2c that can read and write Administrator Name, Device Name, and Location.") + '<br>' +
+	_("SNMP Agent: Enable/disable the SNMP agent feature.") + '<br>' +
+	_("Read Community: Specify a community string for reading SNMP proxy information.") + '<br>' +
+	_("Write/Read Community: Specify a community string for writing/reading SNMP proxy information.")
+
+,'timeReboot'
+	,'<b>' + _("Time Reboot") + '</b><br>' +
+	_("Here you can time the AP to reboot. Time is based on 24hs/day format. When setting the time reboot feature, make sure the device's system time synchronizes with Internet time server.") 
+,'time'
+	,'<b>' + _("Time & Date") + '</b><br>' +
+	_("This section assists you in setting the device's current time; you can select to either  set the time and date manually or obtain the GMT time from Internet automatically.")
+
+,'overtime'
+	,'<b>' + _("Timeout Setup") + '</b><br>'+
+	_("Here you can configure the web login timeout (1-60 minutes). The default is 5 minutes.")
+
+,'restore'
+	,'<b>' + _("Restore to Factory Default") +'</b><br>' +
+	_("Click this button to reset the device to factory default values.") + '<br>' +
+	_("Default User Name: admin.") + '<br>' +
+	_("Default Password: admin.") + '<br>' +
+	_("Default IP Address: 192.168.0.254") + '<br>' +
+	_("Default Subnet Mask: 255.255.255.0")
+
+,'password'
+	,'<b>' + _("Username & Password") + '</b><br>' +
+	_("You can manage login accounts of the AP here.") + '<br>' +
+    _("Administrator: It specifies an account that allows you to view and modify settings of the AP.") + '<br>' +
+    _("User: It specifies an account that allows you to view settings of the AP.") + '<br>' 
+	
+,'logsetting'
+	,'<b>' + _("Log Settings") + '</b><br>' +
+	_("You can configure log server settings and set the number of logs to be displayed on the AP management page here.") + '<br>' +
+    _("Number of Logs Displayed: It specifies the number of logs displayed on the AP management page.") + '<br>' +
+    _("Log Server: It specifies the log server to which the AP synchronizes its logs. After the AP synchronizes its logs to the log server, you can view the logs on the server.") + '<br>' +
+    _("Log Server IP Address: It specifies the IP address of the PC that functions as a log server.") + '<br>' +
+    _("Log Server Port: It specifies the port number of the log server. The default port number is 514. Change it to the actual port number of the log server.") + '<br>' +
+    _("Enable: It specifies whether to enable the corresponding log server.") + '<br>' 
+
+,'led'
+	,'<b>' + _("LED") + '</b><br>' +
+	_("You can turn on/off the LED indicators of the AP here.")
+	
+,'uplink'
+	,'<b>' + _("Uplink Detection") + '</b><br>' +
+	_('By default , the "Uplink Detection" function is disabled.') + '<br>' +
+	_('Ping Host: Two different Ping Hosts can be added to the list for monitoring the connectivity.  If the "Uplink Detection" is enabled, the AP will ping those specified hosts periodically at the Ping Interval configured.') + '<br>' +
+	_("Ping Interval: The default interval is 10 minutes.") + '<br>' +
+	_('When "Uplink Detection" is enabled, if the AP loses its uplink connectivity, it forces the clients to re-associate with another AP by shutdown the SSID broadcast. This action can protect the client from connecting to a AP which has no backhaul to the Internet end.')
+, 'wl_rate', '<b>' + _("Frequency Analysis") + '</b><br>' + 
+        _("You can click Enable Scan to view the number of signals by channel and the channel scores.") + '<br>' + 
+        _("The number of signals indicates the number of detected BSSs. A greater number indicates greater interference.") + '<br>' + 
+        _("A channel score ranging from 0% to 50% is displayed in green, indicating that the channel is idle. A channel score ranging from 51% to 80% is displayed in yellow, indicating that the channel is busy. A channel score ranging from 81% to 100% is displayed in red, indicating that the channel is congested.")
+
+   , 'wl_channel', '<b>' + _("Illegal AP Detection") + '</b><br>' +
+        _("Once enabled, AP will scan signal of other devices nearby and display SSID, MAC, channel, signal strength, etc. for the administrator's references.")
+
+        , 'wl_broadcast', '<b>' + _("Advanced") + '</b><br>' +
+        _("Recognize Terminal Type: This will help to manage the wireless network more efficiently.") + '<br>' + _("Filter Broadcast Data: By default, AP will forward lots of invalid broadcast packets, which may affect normal packets transmission. This feature can filter broadcast packets and reduce airtime consumption, ensuring bandwidth of normal packets transmission.")
+
+        , 'log_view', '<b>' + _("Logs") + '</b><br>' + 
+        _("AP system logs record various problems that occur after system startup and operations performed by users on the AP. In case of a network failure, you can perform troubleshooting based on the logs.")
+
+        , 'wl_wmm', 
+	'<b>' + _("WMM Setup") + '</b><br>' +
+    _("Two WMM Optimization templates are provided: If the number of Concurrent Users is less than 10, 'Optimized For Throughput' template is recommended; If the number of Concurrent Users is more than 10, 'Optimized For Capacity' template is recommended. Moreover, users can customize the WMM EDCA parameters.") + '<br>' + 
+    _("EDCA (Enhanced Distributed Channel Access):EDCA is a channel contention mechanism defined by WMM, so that packets who have high priority can be transmitted in advance and get more bandwidth.") + '<br>' +
+    _("No ACK: No ACK is a kind of policy to be used only while the network communication is in good condition with little interference. To some extent, No ACK can improve transmission efficiency. But, if the communication quality is not good, packets dropping may increase.") + '<br>' +
+    _("AC (Access Category): 4 priority queues are ranked from high to low by WMM: AC-VO, AC-VI, AC-BE and AC-BK to ensure that packets with higher priority have more abilities to occupy channels.") + '<br>' +
+    _("By setting CWMIN, CWMAX, AIFS and TXOP, it can refine the window value:") + '<br>' +
+    _("(1)CWmin (Exponent form of Cwmin) and CWmax (Exponent form of Cwmax) codetermine average backoff time. The greater these two values are, the longer the average backoff time will be.") + '<br>' +
+    _("(2)AIFSN (Arbitration Inter Frame Spacing Number): According to WMM, different ACs can have different idle waiting time. The greater the AIFSN value is, the longer the idle waiting time will be.") + '<br>' +
+    _("(3)TXOP Limit(Transmission Opportunity Limit): The maximum use time for the channel for the user while contending successfully. The greater the value is, the longer the channel can be used by the user.")
+);
+</script>
+</head>
+<body>
+<div class="divbody">
+	<div id="head"></div>
+	<div class="w750">
+		<table id="help" >
+			<tr>
+				<td id="help_msg" class="p15"></td>
+			</tr>
+		</table>
+		<div id="tail"><br><input type="button" class="button" onClick="history.go(-1)" value="Continue"></div>
+	</div>
+</div>
+</body>
+<script>
+$(function(){
+	var htag=window.location.hash.replace(/#/,'');
+	//console.log(htag);
+	document.getElementById("head").innerHTML = tbl_head(20);
+	if (htag == '') htag='help';
+	var help_msg = help_array[1];
+	for (var i = 0; i < help_array.length; i += 2)
+	{	
+		if (help_array[i] == htag)
+		{	
+			if("wl_advance" === htag) {
+				var powerHelp = "",
+					rssiHelp = "",
+					interference = "",
+					helpStr = "";
+					Signal_Level="";
+				var product_num = parseInt(top.CONFIG_PRODUCT.slice(1,4),10);
+				if(product_num == "65" || product_num == "75" || product_num == "85" ||product_num == "185" ||product_num == "175") {
+					interference = '' ;
+				} else {
+					interference = "";
+				}
+				if(product_num == "605"){
+				   Signal_Level=__("Signal Level:Used to adjust the signal Level, the higher level means better signal reception ability.")+ '<br>' ;
+				}else{
+				   Signal_Level="";
+				}
+				if(Number(top.CONFIG_5G_MAX_SSID_NUMBER) == 0) {
+					rssiHelp = _("Receive Signal Strength:This section allows AP to receive signal strength (in dBm) , range: (-90 ~ -60) dBm.2.4G :the default is -90dBm.");
+				} else {
+					rssiHelp = _("Receive Signal Strength:This section allows AP to receive signal strength (in dBm) , range: (-90~-60) dBm.2.4GHz :the default is -90dBm,5GHz :the default is -90dBm.");
+				}
+				
+				if(Number(top.CONFIG_5G_MAX_SSID_NUMBER) == 0) {
+					powerHelp = _("TX Power: Control TX power.2.4G range: %s-%sdBm. The default is %sdBm.", [minPower, maxPower, defPower]);
+				} else {
+					powerHelp = _("TX Power: Control TX power.2.4G range: %s-%sdBm. The default is %sdBm, 5G range: %s-%sdBm. The default is %sdBm.", [minPower, maxPower, defPower, minPower_5g, maxPower_5g, defPower_5g]);
+					//helpStr = _("5GHz SSID Priority: If your wireless client supports 5GHz WIFI,client will preferential choose 5GHz ssid which 2.4GHz and 5GHz SSID and security is same.");
+				}
+
+				var startBeaconVal = +top.GLOBAL.ssidEnCount > 6 ? 200 : 100;
+				help_array[i+1] = '<b>' + _("Radio Optimizing") + '</b><br>' +
+					_("This section allows you to configure advanced wireless settings. if you are new to networking and have never configured these settings before, we recommend you to leave the default settings unchanged.") + '<br>' +
+					_("Beacon Interval: This is a time interval between any two consecutive Beacon packets sent by an Access Point to synchronize a wireless network. Specify a valid value between %s and 999. The default setting is %s.",[startBeaconVal, startBeaconVal]) + '<br>' +
+					_("Fragment Threshold: Specify a valid Fragment Threshold value between 255 and 2346. The default is 2346. Any wireless packet exceeding the preset value will be divided into several fragments before transmission.") + '<br>' +
+					_("RTS Threshold: Specify a valid value between 1 and 2347. The default is 2347. If a packet exceeds the preset value, RTS/CTS scheme will be used to reduce collisions. A smaller value is recommended if you have distant clients or interference on your network.") + '<br>' +
+					_("DTIM Interval: A DTIM (Delivery Traffic Indication Message) Interval is a countdown informing clients of the next window for listening to broadcast and multicast messages. When such packets arrive in the router's buffer, the router will send DTIM (delivery traffic indication message) and DTIM interval to alert clients of the receiving packets. Specify a valid value between 1~255. The default is 1.") + '<br>' +
+					rssiHelp +
+					interference + '<br>' +
+					Signal_Level +
+					_("5GHz SSID Priority: If both 2.4GHz and 5GHz are supported on the client, AP will let the client take priority to connect to 5GHz radio. And at the same time, it will check the client RSSI value on 5GHz radio. If the RSSI value is smaller than the set value, it will not let the client connect to 5GHz radio.") + "<br />" +
+					_("Airtime Scheduling: Usually, slow clients consume more airtime to transfer a given amount of data, leaving less airtime for other clients, decreasing network capacity and significantly degrading the performance of all clients on the network. Airtime scheduling equals clients' transmission time, thus leaving more airtime for other clients and enhancing network performance.") + '<br>' +
+					_("APSD: Automatic Power Save Delivery. When no traffic is transmitted on the AP, in APSD mode, it will lead to lower power consumption. It is disabled by default.") + '<br>' +
+					_("Aging Time: When the client connects to the AP successfully, and if there’s no data transmission between the client and the AP within the set ageing time, the client will be disconnected.") + '<br>' +
+					_("Basic Rate Sets: Check the transmission rate sets you want the AP to advertise. Basic rate sets indicate rates that the AP will advertise to the network for the purposes of setting up communication with other APs and client stations on the network.") + '<br>' +
+					_("Supported Rate Sets: Check the transmission rate sets you want the AP to support.  The AP will automatically choose the most efficient rate based on factors like error rates and distance of client stations from the AP.") + '<br>' +
+				
+					helpStr;
+			}
+			help_msg=help_array[i+1];
+			break;
+		}
+	}
+	if(top.CONFIG_NET_WAN_PPPOE == "y" && htag == 'wl_wizard') {
+		help_msg += '<br><strong>' + _("PPPoE Mode") + '</strong><br>';
+		help_msg += _("Enter the user name and password your ISP has provided; The default MTU is 1492, do not change it unless necessary; MPPE is only used for some Ethernet cable users. If your ISP has provided MPPE, you need to enable MPPE on the device; If not, keep the default.");	
+	}
+	document.getElementById("help_msg").innerHTML = help_msg;
+});
+</script>
+</html>
